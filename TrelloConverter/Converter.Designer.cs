@@ -33,11 +33,13 @@
             filePathJSON = new TextBox();
             convertButton = new Button();
             textBox1 = new TextBox();
+            enumerate = new CheckBox();
+            generateMarkdown = new CheckBox();
             SuspendLayout();
             // 
             // chooseFileButton
             // 
-            chooseFileButton.Location = new Point(581, 119);
+            chooseFileButton.Location = new Point(473, 140);
             chooseFileButton.Name = "chooseFileButton";
             chooseFileButton.Size = new Size(112, 34);
             chooseFileButton.TabIndex = 0;
@@ -52,15 +54,15 @@
             // filePathJSON
             // 
             filePathJSON.BorderStyle = BorderStyle.FixedSingle;
-            filePathJSON.Location = new Point(12, 82);
+            filePathJSON.Location = new Point(12, 103);
             filePathJSON.Multiline = true;
             filePathJSON.Name = "filePathJSON";
-            filePathJSON.Size = new Size(799, 31);
+            filePathJSON.Size = new Size(573, 31);
             filePathJSON.TabIndex = 1;
             // 
             // convertButton
             // 
-            convertButton.Location = new Point(699, 119);
+            convertButton.Location = new Point(473, 267);
             convertButton.Name = "convertButton";
             convertButton.Size = new Size(112, 34);
             convertButton.TabIndex = 2;
@@ -75,15 +77,39 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(799, 64);
+            textBox1.Size = new Size(573, 85);
             textBox1.TabIndex = 4;
             textBox1.Text = "Trello Converter. This WinForm app has been developed for converting Trello exports in JSON format into a more malleable CSV and markdown files\r\n";
+            // 
+            // enumerate
+            // 
+            enumerate.AutoSize = true;
+            enumerate.Location = new Point(12, 267);
+            enumerate.Name = "enumerate";
+            enumerate.Size = new Size(122, 29);
+            enumerate.TabIndex = 5;
+            enumerate.Text = "Enumerate";
+            enumerate.UseVisualStyleBackColor = true;
+            enumerate.CheckedChanged += Enumerate_CheckedChanged;
+            // 
+            // generateMarkdown
+            // 
+            generateMarkdown.AutoSize = true;
+            generateMarkdown.Location = new Point(140, 267);
+            generateMarkdown.Name = "generateMarkdown";
+            generateMarkdown.Size = new Size(144, 29);
+            generateMarkdown.TabIndex = 6;
+            generateMarkdown.Text = "Generate .md";
+            generateMarkdown.UseVisualStyleBackColor = true;
+            generateMarkdown.CheckedChanged += generateMarkdown_CheckedChanged;
             // 
             // Converter
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(823, 180);
+            ClientSize = new Size(597, 304);
+            Controls.Add(generateMarkdown);
+            Controls.Add(enumerate);
             Controls.Add(textBox1);
             Controls.Add(convertButton);
             Controls.Add(filePathJSON);
@@ -101,5 +127,7 @@
         private TextBox filePathJSON;
         private Button convertButton;
         private TextBox textBox1;
+        private CheckBox enumerate;
+        private CheckBox generateMarkdown;
     }
 }

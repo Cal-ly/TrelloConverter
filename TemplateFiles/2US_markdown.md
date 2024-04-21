@@ -1,17 +1,19 @@
-### 1. User Story: Kunde - Produktgennemsyn
+### 001 - Produktgennemsyn (Kunde)
 *Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.
 
 **Tasks:**
 - Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori.
-- Opgave 2
+- Implementer opgave 2
 
 **Acceptance Criteria:**
 - *Givet* at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget.
-- Opgave 4
+- *Givet* opgave 2, *når* opgave 2 eksekveres *så* skal brugeren kunne.
 
-**Estimering:** 3
+**Estimate:** 3
 
-### 2. User Story: Bedemand - Speciel Ordre Funktion
+**Sprint:** Sprint 1
+
+### 002 - Speciel Ordre Funktion (Bedemand)
 *Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.
 
 **Tasks:**
@@ -20,6 +22,8 @@
 
 **Acceptance Criteria:**
 - *Givet* at en bedemand er logget ind, *når* de tilgår den dedikerede side, *så* skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser.
-- Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller.
+- *Givet* at en bedemand er logget ind, *når* de tilgår den dedikerede side, *så* skal de kunne vælge mellem lokale kapeller.
 
-**Estimering:** 5
+**Estimate:** 5
+
+**Sprint:** Sprint 1

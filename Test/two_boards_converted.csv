@@ -57,3 +57,4 @@ Card Name,Card Description,Labels,List Name,Checklist,Checklist item
 "US 19 Ordreklargøring (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at markere en ordre som klar til afhentning og fuldført, *Med det formål* at administrere ordreflowet effektivt.","2 (green)","Sprint 2 Backlog",,,
 ,,,,"Acceptance Criteria","Givet at en ordre er færdigpakket, *når* medarbejderen opdaterer systemet, *så* skal statussen ændres, så kunden og andre medarbejdere kan se, at ordren er klar eller afhentet."
 ,,,,"Tasks","Skab en funktion, hvor medarbejdere kan opdatere ordrens status til 'klar til afhentning' og senere 'afhentet'."
+
