@@ -1,13 +1,5 @@
-﻿using CsvHelper;
-using Newtonsoft.Json.Linq;
-using System.Globalization;
-using System.IO;
-using System.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System.Text;
-using System.Text.Json;
-using System.Windows.Forms;
-using Ducktape.Trelloconverter.Models;
-using System.Collections.Generic;
 
 namespace TrelloConverter
 {
