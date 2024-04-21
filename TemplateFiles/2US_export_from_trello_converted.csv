@@ -1,0 +1,11 @@
+Card Name,Card Description,Labels,Checklist,Checklist item
+"US 2 - Bedemand, Speciel Ordre Funktion","*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,,"Opret mulighed for at vælge mellem liste af lokale kapeller"
+,,,"Acceptance Criteria","*Givet* at en bedemand er logget ind, *når* de tilgår den dedikerede side, *så* skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+,,,,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller."
+"US 1 - Kunde, Produktgennemsyn","*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","*Givet* at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 4"

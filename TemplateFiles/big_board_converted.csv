@@ -1,0 +1,1332 @@
+Card Name,Card Description,Labels,Checklist,Checklist item
+"UserStory Empty Template","","2 (green) 1 (green_light) 3 (yellow) 5 (orange) 8 (red)",,
+"S - Navigationsbar","As a useri want to be able to navigate the siteso i can see everything i want‌Storypoints - **S**","",,
+,,,"Acceptance Criteria","Must be placed in layout (as the top bar of the webpage)"
+,,,,"Drop down menu for "Blomster" button"
+,,,,"When logged in as a customer/undertaker the login button changes to customer/undertaker manager dropdown (contains "profile", "my orders", "logout")"
+,,,,"Blomster binderiets logo in the far left of the navigation bar"
+,,,,"Search bar is placed to the far right but before the basket- and user buttons"
+,,,,"When visiting as a guest, a login button is placed in the right corner"
+,,,,"Implement ALL buttons"
+,,,,"When logged in as a admin the login button changes to admin manager dropdown (contains admin pages)"
+,,,"Tasks","Implement navigation bar design as in the paper mockup"
+"S - Footer design, static pages","As a userI want to be able to navigate easily to information pages, like contact info and FAQIn order to clarify what I can expect from the shopStorypoints - **S**","",,
+,,,"Tasks","Also write the static pages with lorum ipsum"
+,,,,"Insert all links to static pages"
+,,,,"implement the design from our design process"
+,,,"Acceptance Criteria","There is a footer"
+,,,,"All links and buttons work"
+,,,,"Footer doesnt cover content on pages"
+"L - Product page","As a customerI want to see all products availableSo I can chose a productStorypoints - **L**","",,
+,,,"Acceptance Criteria","Link navigates to product page"
+,,,,"All products are shown in a grid like view"
+,,,,"Pageination to f.x. 24 products pr page"
+,,,"Tasks","Navigate to product page (navbar link)"
+,,,,"See all products avaliable (web page)"
+,,,,"Mock data"
+"M - See product details","As a customerI want to be able to see the specific products detailsSo i can be sure it is the right product for me‌Storypoints - **M**","",,
+,,,"Acceptance Criteria","Large image of the product"
+,,,,"Description of product"
+,,,,"Button "Tilføj til kurv""
+,,,,"Other versions links to other product page (different versions of same product is created as individual products)"
+,,,,"Change amount field"
+,,,,"Back to product catalog button"
+,,,"Tasks","Create a product details page"
+,,,,"Add link to product details on products in product page"
+"M - Customer account sign up","As a customerI want to sign up and create an accountFor the purpose of in the future reduce amount of times i have to enter my details‌Storypoints - **M**","",,
+,,,"Acceptance Criteria","Visitors can enter sign up page"
+,,,,"Users signed in can not enter sign up page"
+,,,,"Visitors who attempt to sign up has an account created on the server"
+,,,"Tasks","Sign up page (med form)"
+,,,,"Make connection to "opret bruger" button on navbar"
+"XS - Customer account sign up confirmation","As a customerI want to get a confirmation when i registerBecause I want to know if i have done it right (or if someone uses my email)Storypoints - **XS**","",,
+,,,"Acceptance Criteria","Email is sent (if possible)"
+,,,,"When the customer successfully signs up a success message, on modal or different page, is shown"
+,,,,"If something goes wrong (wrong email, name ect) an error message is shown"
+,,,"Tasks","Confirmation to customer (email if possible)"
+,,,,"Signup successful message"
+"S - Sign in, sign out","As a customer i want to loginSo i won't have to enter my details againWith the purpose of not entering my details redundantlyStorypoints - S","",,
+,,,"Acceptance Criteria","User can log in"
+,,,,"User can log out"
+,,,"Tasks","Login using account username and password"
+,,,,"Logout from the webshop"
+"XL - Add to basket","As a UserI want to add a product to my basketIn order to compile my orderStorypoints - **XL**","",,
+,,,"Acceptance Criteria","See all order lines"
+,,,,"Only see orderlines for YOUR OWN ORDER"
+,,,"Tasks","Shows all products in the basket"
+,,,,"Save orderlines somewhere so multiple users do not interfere with eachother"
+"S - Basket not available, when visitor","As ownerI want the customer to be logged in to have access to the basketso I can avoid anonymous purchasesStorypoints - **S**","",,
+,,,"Acceptance Criteria","Given a visitor wants to add products to basket, when not logged in, then they will be prompted to log in."
+,,,"Tasks","Redirect to log in when pushing the basket button "
+,,,,"Redirect to log in when trying to add a product to basket"
+"S - Navigationsbar","As a useri want to be able to navigate the siteso i can see everything i want‌Storypoints - **S**","",,
+,,,"Acceptance Criteria","Must be placed in layout (as the top bar of the webpage)"
+,,,,"Drop down menu for "Blomster" button"
+,,,,"When logged in as a customer/undertaker the login button changes to customer/undertaker manager dropdown (contains "profile", "my orders", "logout")"
+,,,,"Blomster binderiets logo in the far left of the navigation bar"
+,,,,"Search bar is placed to the far right but before the basket- and user buttons"
+,,,,"When visiting as a guest, a login button is placed in the right corner"
+,,,,"Implement ALL buttons"
+,,,,"When logged in as a admin the login button changes to admin manager dropdown (contains admin pages)"
+,,,"Tasks","Implement navigation bar design as in the paper mockup"
+"S - Footer design, static pages","As a userI want to be able to navigate easily to information pages, like contact info and FAQIn order to clarify what I can expect from the shopStorypoints - **S**","",,
+,,,"Acceptance Criteria","There is a footer"
+,,,,"All links and buttons work"
+,,,,"Footer doesnt cover content on pages"
+,,,"Tasks","Also write the static pages with lorum ipsum"
+,,,,"Insert all links to static pages"
+,,,,"implement the design from our design process"
+"L - Product page","As a customerI want to see all products availableSo I can chose a productStorypoints - **L**","",,
+,,,"Acceptance Criteria","Link navigates to product page"
+,,,,"All products are shown in a grid like view"
+,,,,"Pageination to f.x. 24 products pr page"
+,,,"Tasks","Navigate to product page (navbar link)"
+,,,,"See all products avaliable (web page)"
+,,,,"Mock data"
+"M - See product details","As a customerI want to be able to see the specific products detailsSo i can be sure it is the right product for me‌Storypoints - **M**","",,
+,,,"Tasks","Create a product details page"
+,,,,"Add link to product details on products in product page"
+,,,"Acceptance Criteria","Large image of the product"
+,,,,"Description of product"
+,,,,"Button "Tilføj til kurv""
+,,,,"Other versions links to other product page (different versions of same product is created as individual products)"
+,,,,"Change amount field"
+,,,,"Back to product catalog button"
+"M - Customer account sign up","As a customerI want to sign up and create an accountFor the purpose of in the future reduce amount of times i have to enter my details‌Storypoints - **M**","",,
+,,,"Acceptance Criteria","Visitors can enter sign up page"
+,,,,"Users signed in can not enter sign up page"
+,,,,"Visitors who attempt to sign up has an account created on the server"
+,,,"Tasks","Sign up page (med form)"
+,,,,"Make connection to "opret bruger" button on navbar"
+"XS - Customer account sign up confirmation","As a customerI want to get a confirmation when i registerBecause I want to know if i have done it right (or if someone uses my email)Storypoints - **XS**","",,
+,,,"Tasks","Confirmation to customer (email if possible)"
+,,,,"Signup successful message"
+,,,"Acceptance Criteria","Email is sent (if possible)"
+,,,,"When the customer successfully signs up a success message, on modal or different page, is shown"
+,,,,"If something goes wrong (wrong email, name ect) an error message is shown"
+"S - Sign in, sign out","As a customer i want to loginSo i won't have to enter my details againWith the purpose of not entering my details redundantlyStorypoints - S","",,
+,,,"Acceptance Criteria","User can log in"
+,,,,"User can log out"
+,,,"Tasks","Login using account username and password"
+,,,,"Logout from the webshop"
+"XL - Add to basket","As a UserI want to add a product to my basketIn order to compile my orderStorypoints - **XL**","",,
+,,,"Tasks","Shows all products in the basket"
+,,,,"Save orderlines somewhere so multiple users do not interfere with eachother"
+,,,"Acceptance Criteria","See all order lines"
+,,,,"Only see orderlines for YOUR OWN ORDER"
+"S - Basket not available, when visitor","As ownerI want the customer to be logged in to have access to the basketso I can avoid anonymous purchasesStorypoints - **S**","",,
+,,,"Acceptance Criteria","Given a visitor wants to add products to basket, when not logged in, then they will be prompted to log in."
+,,,"Tasks","Redirect to log in when pushing the basket button "
+,,,,"Redirect to log in when trying to add a product to basket"
+"L - Check out (orders)","As a customerI want to create a order from my basketin order to purchase the productsStorypoints - **L**","",,
+,,,"Tasks","A Basket will be converted to an Order object"
+,,,"Acceptance Criteria","Final order is added to the database"
+,,,,"Send confirmation when order is added"
+,,,,"Errors... lack of connection somewhere in communication line"
+,,,,"Given that a basket is converted to Order, when purchasing the order, then the Order correctly reflects the basket"
+"M - Admin create user","As an AdminI want to be able to create a new userin order to manage the websiteStorypoints - **M**","",,
+,,,"Acceptance Criteria","Constraints"
+,,,,"Given that an Admin creates user, when all necessary information and roles has been filled out, then the user is correctly created "
+,,,,"Admin is able to navigate to the "opret bruger" page"
+,,,,"Given a user is created successfully, when an Admin has created a user, then the system will notify the Admin"
+,,,"Tasks","A user create page with appropriate input fields"
+"M - Employee all orders view page","As an employeeI want to be able to see all ordersSo i can get an overviewStorypoints - **M**","",,
+,,,"Acceptance Criteria","Given an employee enters page, when wanting to view all orders, then all orders that are not more than a week old is displayed"
+,,,,"Only for admin and employees"
+,,,,"Can navigate to page"
+,,,"Tasks","Create a see all orders-page"
+,,,,"Page displays all orders from the last week as a standard"
+,,,,"Limit page to employees"
+"M - Employee review order","As a employeeI want to review new ordersSo I can accept or deny the orderStorypoints - M","",,
+,,,"Acceptance Criteria","Given that a order is accepted, when the employee presses "bekræft", then the order status is updated to "Approved""
+,,,,"Given that a order is denied, when the employee presses "Afvis", then the order status is changed to "Denied""
+,,,,"Given that an order is either changed approved or denied, when an order is reviewed, then the customer can see the status update"
+,,,,"An appropiate email, "Fuck you", when denying orders in bulk from same "customer" (nice to have)"
+,,,"Tasks","Make "Bekræft" button"
+,,,,"When "Bekræft" button is pressed, the order status is changed and the customer can see the order has been confirmed"
+,,,,"Make "Afvis" button"
+,,,,"When "Afvis" button is pressed, the order status is changed and the customer can see the order has been denied"
+"S - Assign employee to an order","As an employeeI want to assign an order to myselfSo the responsibility for an order is divided.Storypoints - **S**","",,
+,,,"Tasks","An employee can update the status of an order to in progress and mark it as "theirs""
+,,,"Acceptance Criteria","Only 1 can be assigned at a time per order"
+,,,,"You can take an already assigned order"
+"S - Employee completes an order","As an employeeI want to mark an order as ready (for pickup) and completed (picked up by customer)so orders can be easily managedStorypoints - **S**","",,
+,,,"Acceptance Criteria","Status is colour coded, and has text according to the colour"
+,,,,"The status is changed when an employee tries to change the status"
+,,,"Tasks","Make the order change status to ready when the "klar til levering" button is clicked"
+,,,,"Make the order change status to completed when the "udleveret" button is clicked"
+,,,,"Make the order change color when the status is changed"
+"Update and delete (UD) in basket","As a UserI want to change amount (update and delete) a product in my basketIn order to compile my orderStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Consider arimethic overflow (value goes to below zero when adding absurd amounts of product)"
+,,,,"Given that an amount hits zero or below, when changing amount in the basket, then the product will be removed"
+,,,"Tasks","Change amount of exsisting product in Basket"
+"Customer order update","As a customeri want to get status updates on my orderso i can see the progressStorypoints - **xx**","",,
+,,,"Tasks","Send updates as an email, when the order status changes"
+,,,,"Option to not get status notifications during check out process"
+,,,"Acceptance Criteria","Given an order status changes, when an employee updates order, then an email is sent successfully."
+,,,,"Given a customer doesn't want to get notifications, when having sent an order, then an email will not be sent."
+"Put content onto the index page","As a userI want to be met with a nice index page when i visit the shopSo i can be inspired for my purchase‌Storypoints - **xx**","",,
+,,,"Tasks","Implement the design from the paper mockup"
+,,,"Acceptance Criteria","Images a shown correctly"
+,,,,"Links to products work correctly"
+"User profile page","As a userI would like to view my account detailsBecause i want to check whether i agree with the current detailsStorypoints - **xx**","",,
+,,,"Tasks","Profile details page"
+,,,,"Profile details has same laout as update profile details page"
+,,,,"Add "Opdater" button which moves the user to the update profile details page"
+,,,"Acceptance Criteria","Only user who are logged in can enter this page"
+,,,,"User can only see their own details"
+,,,,"When i enter the page all my details are displayed"
+,,,,"Details can not be changed on this page"
+"Customer view orders page","As a customerI want to be able to see all my ordersIn order to see my current order(s) and to know what i have ordered in the past‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Customer can navigate to the "mine ordrer" page from the profile page"
+,,,,"Customer can see their current order(s) and old orders on the page"
+,,,,"Orders need to be shown with the newest order first"
+,,,,"Show the 20? newest orders, customer can push a "næste side" button if they want to see more orders"
+,,,"Tasks","Create "mine ordrer" page"
+,,,,"Make it possible to navigate to the page from the profile page"
+"Customer update profile","As a customerI want to be able to update my profileIn order to change my info if something changes‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Customer can navigate to the "opdater profil" page"
+,,,,"Customer can fill out the form with new info"
+,,,,"Customer gets a succes message if the profile is updated"
+,,,,"Customer gets an error message if something goes wrong"
+,,,,"Email cannot be updated by customer"
+,,,,"Update profile page has the same design as the profile page"
+,,,,"The update profile form has all the original info in the form"
+,,,"Tasks","Make update profile page (form)"
+,,,,"Make "din profil er opdateret" message"
+,,,,"Make error messages if info in form is against restrictions"
+"Admin show all users","As an adminI want to be able to see all usersIn order to manage the website‌Storypoints - **xx**","",,
+,,,"Tasks","Add link to "vis brugere" page from navbar"
+,,,,"Create "Vis brugere" page"
+,,,,"Filters and sorts on roles and name"
+,,,"Acceptance Criteria","Given when an Admin needs an overview of users, when accessing the "Vis Brugere" page, then the Admin will see all users"
+,,,,"Page take less than 10 seconds to fully load"
+,,,,"Can successfully navigate to "vis bruger" page"
+,,,,"Filters and sort work"
+"Admin update user","As an AdminI want to be able to update an existing userIn order to manage the websiteStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Correct user is updated"
+,,,,"Admin can navigate to "Administrer bruger" page from the the "vis brugere" page"
+,,,,"Success or error message shown"
+,,,"Tasks","Administrer button on all users in see all users"
+,,,,"Create update page"
+,,,,"Make success and error messages"
+"Admin deactivate/delete user","As an adminI want to be able to delete a userIn order to manage employees, undertakers and customersStorypoints - **xx**","",,
+,,,"Tasks","Choose a user to delete"
+,,,,"Set the users status to inactive"
+,,,,"Make "are you sure" page before the user is deleted"
+,,,,"Success and error messages"
+,,,"Acceptance Criteria","The admin can navigate to "slet bruger" from the "administrer bruger" page"
+,,,,"The right user is set to inactive"
+,,,,"Success or error message shown"
+"Employee/Admin manage product","As an employeeI want to update a productin order to manage product inventoryStorypoints - **xx**","",,
+,,,"Tasks","Make "Opdater produkt" page (form)"
+,,,,"Add a pencil icon to every product only visible when logged in as employee or admin"
+,,,,"Success or error message"
+,,,,"A product can be disabled"
+,,,"Acceptance Criteria","You can navigate to the "Opdater produkt" page from the pencil icon on the product page"
+,,,,"Given an employee wants to update a product, when they have successfully filled the updated information, then an confirmation message is displayed"
+,,,,"The update icon is only visible when logged in as employee or admin"
+,,,,"Given an employee wants to update a product, when they have unsuccessfully filled the updated information, then an error message is displayed"
+,,,,"The correct product gets updated"
+"Employee/Admin create product","As an employee/adminI want to be able to create a new productIn order to keep the product page updated with new productsStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Product is successfully created"
+,,,,"The picture is saved in root/database? - Database is recommend when we have multiple razorpage servers"
+,,,,"Given an employee is on the "Opret produkt" page, when the employee has not correctly filled out information for a product, then they get an error message"
+,,,,"Given an employee is on the "Opret produkt" page, when the employee has correctly filled out information, then they get a success message"
+,,,"Tasks",""Opret produkt" button"
+,,,,"Product form page with file input"
+,,,,"Recommend image dimensions"
+,,,,"Make success/error messages"
+"Employee/Admin disable product","As an employee/adminI want to be able to disable a productIn order to remove old products from the product page‌Storypoints - **xx**","",,
+,,,"Tasks","Add "Disabled" bool"
+,,,,"Success or error message"
+,,,,"Make "are you sure" page before the product is disabled"
+,,,"Acceptance Criteria","The correct product is disabled"
+,,,,"Is able to navigate to the disable product page from the "administrer produkt" page"
+,,,,"Success and error messages work"
+"Order page filter and sort","As an EmployeeI want to filter and sort in the orders,so I can have an overview of orders that are due or are my responsibilityStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given that an employee sorts or filters, when interacting with the All Orders page, then the correct filters and sorts are applied"
+,,,"Tasks","Sort by due date"
+,,,,"Filter by due date"
+,,,,"Sort by employee ID"
+,,,,"Filter by employee ID"
+,,,,"Filter by status"
+,,,,"Sort by status"
+,,,,"The default view is all orders, no older than 1 week"
+"Product page filter","As a customerI want to be able to filter the products on the product pageSo i can find the right product easily‌Storypoints - **xx**","",,
+,,,"Tasks","Filter by price"
+,,,,"Filter by colour"
+,,,,"Sort by name"
+,,,,"Sort by price"
+,,,,"Filter by keyword (save this for later)"
+,,,,"Add design to product catalog"
+,,,,""Filtrer og sorter" button"
+,,,"Acceptance Criteria","Filter is persistent"
+,,,,"Sort is persistent"
+,,,,"Buttons are visible and working"
+"Employee gets notification on new order","As an employeeI want to receive a notification from the system when a new order is submittedSo I can expedited the orderStorypoints - **xx**","",,
+,,,"Tasks","New orders are in a different color"
+,,,,"Badge counter for pending orders placed on the button link"
+"Undertaker check out","As an undertakerI want to be able to choose a delivery location and timeIn order to conduct my businessStorypoints - **xx**","",,
+,,,"Tasks","If account is undertaker, redirect to undertaker check out flow"
+,,,,"Delivery page (form)"
+,,,,"Success or error message"
+,,,"Acceptance Criteria","Common customers can not enter undertaker check out flow"
+,,,,"Input constraint on delivery address and deceased name"
+,,,,"Order WITH delivery is successfully created and added to database"
+,,,,"Success and error messages work"
+"Employee see and reenable disabled products","As an employeeI want to be able to see disabled products and reenableIn order to manage product catalogStorypoints - **xx**","",,
+,,,"Tasks","See disabled button on product sides"
+,,,,"Reenable button on disabled products"
+,,,"Acceptance Criteria",""Se udgåede produkter" button works"
+,,,,"reenable button reenables correct product"
+,,,,"See disabled product only visable when logged in as employee or admin"
+,,,,"Disabled products look different from normal products (grey coloured?)"
+"Basket product count badge","As a customerI would like to see the amount of products in the basket without being on the basket pageBecause i'm lazyStorypoints - **xx**","",,
+,,,"Tasks","Add a badge to a basket"
+,,,"Acceptance Criteria","Badge is red"
+,,,,"Badge is placed in bottom right corner of the button"
+,,,,"Badge counts amount of orderlines correct"
+"Website edit icon everywhere","As an employee/adminI want to be able to edit the static elements on the websiteIn order to update themStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Changes gets saved to the database (somehow)"
+,,,,"Changes are immediate (no double confirm)"
+,,,"Tasks","Edit icon next to static text"
+,,,,"Edit icon next to static images"
+,,,,"Only visible when logged in as employee or admin"
+,,,,"When editing a save button appear"
+,,,,"Make changes persistent"
+"Extra nav bar on profile pages","As a customerI want to be able to easily navigate my profile pagesSo the UX feels smooth and unhinderedStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Links to "Profil", "Mine ordrer", "Logout""
+,,,,"Only visable when on a cutomer profil pages"
+,,,,"Only visable when on a cutomer profil pages"
+,,,"Tasks","Extra nav bar (either on the side of the page or below the top navigation bar)"
+"Search bar logic","As a customerI want to search for products by textBecause im fairly sure of what i wantStorypoints - **xx**","",,
+,,,"Acceptance Criteria","If search bar is empty do nothing"
+,,,,"If search bar is not empty begin looking for all products which matches the entered string somehow"
+,,,,"Return the right result"
+,,,,"Shown error when empty result"
+,,,"Tasks","Query in product name from input"
+,,,,"Error message"
+"Search result page","As a userI want to be able to see my search resultsIn order to be able to choose my productStorypoints - **xx**","",,
+,,,"Acceptance Criteria","A search redirects to result page"
+,,,,"Correct products are displayed"
+,,,"Tasks","Create search result page in same design as product pages"
+,,,,"Display search result"
+"User search result sort/filter","As a userI want to be able to sort and filter the given search results, after a product searchSo i better can find, what I am searching forStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given a user has queried a search, when the search results has been displayed, then the user should be able to filter and sort the result"
+,,,"Tasks","Sort by Name, Price etc."
+,,,,"Filter further on Name, Price etc."
+"Allow visitors without account to create orders","As a customerI want to make orders without making an accountI because i want to limit the amunt of accounts i haveStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Can make an order without being signed in"
+"Database connection is lost","Storypoints - **xx**","",,
+,,,"Tasks","Display error message to webpage visitors when connection to database is lost"
+"Mobile friendly design","As a customerI want to be able to navigate the website from multiple devices with different screen sizeIn order to access the services easilyStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Website does not look worse on a smaller or larger screen than the screen it was initially designed for"
+,,,"Tasks","Make the pages scalable to different devices"
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","Zero of the money"
+,,,,"One of the money"
+,,,,"Two for the show"
+,,,"Acceptance Criteria","Three to get ready"
+,,,"Listcheck","Go cat go"
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","One of the money"
+,,,,"Two for the show"
+,,,"AC","Three to get ready"
+,,,"Listcheck","Go cat go"
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","One of the money"
+,,,,"Two for the show"
+,,,"Acceptance Criteria","Three to get ready"
+,,,"Listcheck","Go cat go"
+"Example Card Name","This is card desc","3 (yellow)",,
+,,,"Checklist","One of the money"
+,,,,"Two for the show"
+,,,"Listcheck","Three to get ready"
+,,,,"Go cat go"
+"","","",,
+"Example Card Name","This is card desc","3 (yellow)",,
+,,,"Checklist","One of the money"
+,,,,"Two for the show"
+,,,,"Three to get ready"
+,,,,"Go cat go"
+"Example Card Name","This is card desc","",,
+,,,"Checklist","One of the money"
+,,,,"Two for the show"
+,,,,"Three to get ready"
+,,,,"Go cat go"
+"1. User Story: Kunde - Produktgennemsyn,"Som kunde, Ønsker jeg at kunne se butikkens portefølje i kategorier, Med det formål bedst at kunne vælge det produkt, der opfylder mit behov.",3 (yellow),,,,,Tasks,"Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori.",Opgave 2.,,,Acceptance Criteria,"Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget.",,","","",,
+"1. User Story: Kunde - Produktgennemsyn","Som kunde, Ønsker jeg at kunne se butikkens portefølje i kategorier, Med det formål bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+"1. User Story: Kunde - Produktgennemsyn","Som kunde, Ønsker jeg at kunne se butikkens portefølje i kategorier, Med det formål bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget., Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov.","3 (yellow)",,
+"1. User Story: Kunde - Produktgennemsyn,"Som kunde, Ønsker jeg at kunne se butikkens portefølje i kategorier, Med det formål bedst at kunne vælge det produkt, der opfylder mit behov.",3 (yellow),Tasks,"Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori.",Opgave 2.","","",,
+"UserStory 2","This is the User Story","2 (green)",,
+,,,"Acceptance Criteria Header","Here is a Acceptance Criteria"
+,,,"Tasks  Checklist Header","Here is a Task"
+"UserStory 5","This is the User Story","5 (orange)",,
+,,,"Acceptance Criteria Header","Here is a Acceptance Criteria"
+,,,"Tasks  Checklist Header","Here is a Task"
+"UserStory 3","This is the User Story","3 (yellow)",,
+,,,"Acceptance Criteria Header","Here is a Acceptance Criteria"
+,,,"Tasks  Checklist Header","Here is a Task"
+"UserStory 1","This is the User Story","2 (green) 3 (yellow) 5 (orange) 8 (red) 1 (green_light)",,
+,,,"Acceptance Criteria","Here is a Acceptance Criteria"
+,,,"Tasks Header","Here is a Task"
+"UserStory 1","This is the User Story","1 (green_light)",,
+,,,"Acceptance Criteria Header","Here is a Acceptance Criteria"
+,,,"Tasks  Checklist Header","Here is a Task"
+"UserStory 8","This is the User Story","8 (red)",,
+,,,"Acceptance Criteria Header","Here is a Acceptance Criteria"
+,,,"Tasks  Checklist Header","Here is a Task"
+"Bestyrer - Produktadministration","","",,
+"Kunde - Ordreopfølgning","","",,
+"Navigation i Profil (Kunde)","","",,
+"Navigationsbar","As a useri want to be able to navigate the siteso i can see everything i want‌Storypoints - **xx**","",,
+,,,"Tasks","Implement navigation bar design as in the paper mockup"
+,,,"Acceptance Criteria","Must be placed in layout (as the top bar of the webpage)"
+,,,,"Drop down menu for "Blomster" button"
+,,,,"When logged in as a customer/undertaker the login button changes to customer/undertaker manager dropdown (contains "profile", "my orders", "logout")"
+,,,,"Blomster binderiets logo in the far left of the navigation bar"
+,,,,"Search bar is placed to the far right but before the basket- and user buttons"
+,,,,"When visiting as a guest, a login button is placed in the right corner"
+,,,,"Implement ALL buttons"
+,,,,"When logged in as a admin the login button changes to admin manager dropdown (contains admin pages)"
+"Design footer with links to static pages (about, faq, ect)","Storypoints - **xx**","",,
+"Product page","As a customerI want to see all products availableSo I can chose a productStorypoints - **xx**","",,
+,,,"Tasks","Navigate to product page (navbar link)"
+,,,,"See all products avaliable (web page)"
+,,,"Acceptance Criteria","Link navigates to product page"
+,,,,"All products are shown in a grid like view"
+,,,,"Pageination to f.x. 24 products pr page"
+"See product details","As a customerI want to be able to see the specific products detailsSo i can be sure it is the right product for me‌Storypoints - **xx**","",,
+,,,"Tasks","Create a product details page"
+,,,,"Add link to product details on products in product page"
+,,,"Acceptance Criteria","Large image of the product"
+,,,,"Description of product"
+,,,,"Button "Tilføj til kurv""
+,,,,"Other versions links to other product page (different versions of same product is created as individual products)"
+,,,,"Change amount field"
+,,,,"Back to product catalog button"
+,,,,""Tilføjet til kurv" under "Tilføj til kurv" when product is sucessfully added"
+"Customer account sign up","As a customerI want to sign up and create an accountFor the purpose of in the future reduce amount of times i have to enter my details‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Visitors can enter sign up page"
+,,,,"Users signed in can not enter sign up page"
+,,,,"Visitors who attempt to sign up has an account created on the server"
+,,,"Tasks","Sign up page (med form)"
+,,,,"Make connection to "opret bruger" button on navbar"
+"Customer account sign up confirmation","As a customerI want to get a confirmation when i registerBecause I want to know if i have done it right (or if someone uses my email)Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Email is sent (if possible)"
+,,,,"When the customer successfully signs up a success message, on modal or different page, is shown"
+,,,,"If something goes wrong (wrong email, name ect) an error message is shown"
+,,,"Tasks","Confirmation to customer (email if possible)"
+,,,,"Signup successful message"
+"Sign in, sign out","As a customer i want to loginSo i wont have to enter my details againWith the purpose of not entering my details reduntdantlyStorypoints - **xx**","",,
+,,,"Acceptance Criteria","User can log in"
+,,,,"User can log out"
+,,,"Tasks","Login using account username and password"
+,,,,"Logout from the webshop"
+"Add to basket","As a UserI want to add a product to my basketIn order to compile my orderStorypoints - **xx**","",,
+,,,"Acceptance Criteria","See all order lines"
+,,,,"Only see orderlines for YOUR OWN ORDER"
+,,,"Tasks","Shows all products in the basket"
+,,,,"Save orderlines somewhere so multiple users do not interfere with eachother"
+"Basket N/A (not available) when visitor","As ownerI want the customer to be logged in to have access to the basketso I can avoid anonymous purchasesStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given a visitor wants to add products to basket, when not logged in, then they will be prompted to log in."
+,,,"Tasks","Redirect to log in when pushing the basket button "
+,,,,"Redirect to log in when trying to add a product to basket"
+"Check out (orders)","As a customerI want to create a order from my basketin order to purchase the productsStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Final order is added to the database"
+,,,,"Send confirmation when order is added"
+,,,,"Errors... lack of connection somewhere in communication line"
+,,,,"Given that a basket is converted to Order, when purchasing the order, then the Order correctly reflects the basket"
+,,,"Tasks","A Basket will be converted to a Order object"
+"Admin create user","As an AdminI want to be able to create a new userin order to manage the websiteStorypoints - **xx**","",,
+,,,"Tasks","A user create page with appropriate input fields"
+,,,"Acceptance Criteria","Constraints"
+,,,,"Given that an Admin creates user, when all necessary information and roles has been filled out, then the user is correctly created "
+,,,,"Admin is able to navigate to the "opret bruger" page"
+,,,,"Given a user is created successfully, when an Admin has created a user, then the system will notify the Admin"
+"Employee all orders view page","As an employeeI want to be able to see all ordersSo i can get an overviewStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given an employee enters page, when wanting to view all orders, then all orders that are not more than a week old is displayed"
+,,,"Tasks","Create a see all orders-page"
+,,,,"Page displays all orders from the last week as a standard"
+"Employee review order","As a employeeI want to review new ordersSo I can accept or deny the orderStorypoints - **xx**","",,
+,,,"Tasks","Make "Bekræft" button"
+,,,,"Customer gets email notification when "Bekræft" button is pressed"
+,,,,"Make "Afvis" button"
+,,,,"Customer gets email notification when "Afvis" button is pressed"
+,,,"Acceptance Criteria","Given that a order is accepted, when the employee presses "bekræft", then the order status is updated to "Approved""
+,,,,"Given that a order is denied, when the employee presses "Afvis", then the order status is changed to "Denied""
+,,,,"Given that an order is either changed approved or denied, when an order is reviewed, then the system sends an appropriate email to customer"
+,,,,"An appropiate email, "Fuck you", when denying orders in bulk from same "customer" (nice to have)"
+"Assign employee to an order","As an employeeI want to assign an order to myselfSo the responsibility for an order is divided.Storypoints - **xx**","",,
+,,,"Tasks","An employee can update the status of an order to in progress and mark it as "theirs""
+,,,"Acceptance Criteria","Only 1 can be assigned at a time per order"
+,,,,"You can take an already assigned order"
+"Employee completes an order","As an employeeI want to mark an order as ready (for pickup) and completed (picked up by customer)so orders can be easily managedStorypoints - **xx**","",,
+,,,"Tasks","Make the order change status to ready when the "klar til levering" button is clicked"
+,,,,"Make the order change status to completed when the "udleveret" button is clicked"
+,,,,"Make the order change color when the status is changed"
+,,,"Acceptance Criteria","Status is colour coded, and has text according to the colour"
+,,,,"The status is changed when an employee tries to change the status"
+"Update and delete (UD) in basket","As a UserI want to change amount (update and delete) a product in my basketIn order to compile my orderStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Consider arimethic overflow (value goes to below zero when adding absurd amounts of product)"
+,,,,"Given that an amount hits zero or below, when changing amount in the basket, then the product will be removed"
+,,,"Tasks","Change amount of exsisting product in Basket"
+"Customer order update","As a customeri want to get status updates on my orderso i can see the progressStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given an order status changes, when an employee updates order, then an email is sent successfully."
+,,,,"Given a customer doesn't want to get notifications, when having sent an order, then an email will not be sent."
+,,,"Tasks","Send updates as an email, when the order status changes"
+,,,,"Option to not get status notifications during check out process"
+"Put content onto the index page","Storypoints - **xx**","",,
+"User profile page","As a userI would like to view my account detailsBecause i want to check whether i agree with the current detailsStorypoints - **xx**","",,
+,,,"Tasks","Profile details page"
+,,,,"Profile details has same laout as update profile details page"
+,,,,"Add "Opdater" button which moves the user to the update profile details page"
+,,,"Acceptance Criteria","Only user who are logged in can enter this page"
+,,,,"User can only see their own details"
+,,,,"When i enter the page all my details are displayed"
+,,,,"Details can not be changed on this page"
+"Customer view orders page","As a customerI want to be able to see all my ordersIn order to see my current order(s) and to know what i have ordered in the past‌Storypoints - **xx**","",,
+,,,"Tasks","Create "mine ordrer" page"
+,,,,"Make it possible to navigate to the page from the profile page"
+,,,"Acceptance Criteria","Customer can navigate to the "mine ordrer" page from the profile page"
+,,,,"Customer can see their current order(s) and old orders on the page"
+,,,,"Orders need to be shown with the newest order first"
+,,,,"Show the 20? newest orders, customer can push a "næste side" button if they want to see more orders"
+"Customer update profile","As a customerI want to be able to update my profileIn order to change my info if something changes‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Customer can navigate to the "opdater profil" page"
+,,,,"Customer can fill out the form with new info"
+,,,,"Customer gets a succes message if the profile is updated"
+,,,,"Customer gets an error message if something goes wrong"
+,,,,"Email cannot be updated by customer"
+,,,,"Update profile page has the same design as the profile page"
+,,,,"The update profile form has all the original info in the form"
+,,,"Tasks","Make update profile page (form)"
+,,,,"Make "din profil er opdateret" message"
+,,,,"Make error messages if info in form is against restrictions"
+"Admin show all users","As an adminI want to be able to see all usersIn order to manage the website‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Given when an Admin needs an overview of users, when accessing the "Vis Brugere" page, then the Admin will see all users"
+,,,,"Page take less than 10 seconds to fully load"
+,,,,"Can successfully navigate to "vis bruger" page"
+,,,,"Filters and sort work"
+,,,"Tasks","Add link to "vis brugere" page from navbar"
+,,,,"Create "Vis brugere" page"
+,,,,"Filters and sorts on roles and name"
+"Admin update user","As an AdminI want to be able to update an existing userIn order to manage the websiteStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Correct user is updated"
+,,,,"Admin can navigate to "Administrer bruger" page from the the "vis brugere" page"
+,,,,"Success or error message shown"
+,,,"Tasks","Administrer button on all users in see all users"
+,,,,"Create update page"
+,,,,"Make success and error messages"
+"Admin deactivate/delete user","As an adminI want to be able to delete a userIn order to manage employees, undertakers and customersStorypoints - **xx**","",,
+,,,"Tasks","Choose a user to delete"
+,,,,"Set the users status to inactive"
+,,,,"Make "are you sure" page before the user is deleted"
+,,,,"Success and error messages"
+,,,"Acceptance Criteria","The admin can navigate to "slet bruger" from the "administrer bruger" page"
+,,,,"The right user is set to inactive"
+,,,,"Success or error message shown"
+"Employee/Admin manage product","As an employeeI want to update a productin order to manage product inventoryStorypoints - **xx**","",,
+,,,"Acceptance Criteria","You can navigate to the "Opdater produkt" page from the pencil icon on the product page"
+,,,,"Given an employee wants to update a product, when they have successfully filled the updated information, then an confirmation message is displayed"
+,,,,"The update icon is only visible when logged in as employee or admin"
+,,,,"Given an employee wants to update a product, when they have unsuccessfully filled the updated information, then an error message is displayed"
+,,,,"The correct product gets updated"
+,,,"Tasks","Make "Opdater produkt" page (form)"
+,,,,"Add a pencil icon to every product only visible when logged in as employee or admin"
+,,,,"Success or error message"
+,,,,"A product can be disabled"
+"Employee/Admin create product","As an employee/adminI want to be able to create a new productIn order to keep the product page updated with new productsStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Product is successfully created"
+,,,,"The picture is saved in root/database? - Database is recommend when we have multiple razorpage servers"
+,,,,"Given an employee is on the "Opret produkt" page, when the employee has not correctly filled out information for a product, then they get an error message"
+,,,,"Given an employee is on the "Opret produkt" page, when the employee has correctly filled out information, then they get a success message"
+,,,"Tasks",""Opret produkt" button"
+,,,,"Product form page with file input"
+,,,,"Recommend image dimensions"
+,,,,"Make success/error messages"
+"Employee/Admin disable product","As an employee/adminI want to be able to disable a productIn order to remove old products from the product page‌Storypoints - **xx**","",,
+,,,"Tasks","Add "Disabled" bool"
+,,,,"Success or error message"
+,,,,"Make "are you sure" page before the product is disabled"
+,,,"Acceptance Criteria","The correct product is disabled"
+,,,,"Is able to navigate to the disable product page from the "administrer produkt" page"
+,,,,"Success and error messages work"
+"Order page filter and sort","As an EmployeeI want to filter and sort in the orders,so I can have an overview of orders that are due or are my responsibilityStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given that an employee sorts or filters, when interacting with the All Orders page, then the correct filters and sorts are applied"
+,,,"Tasks","Sort by due date"
+,,,,"Filter by due date"
+,,,,"Sort by employee ID"
+,,,,"Filter by employee ID"
+,,,,"Filter by status"
+,,,,"Sort by status"
+,,,,"The default view is all orders, no older than 1 week"
+"Product page filter","As a customerI want to be able to filter the products on the product pageSo i can find the right product easily‌Storypoints - **xx**","",,
+,,,"Tasks","Filter by price"
+,,,,"Filter by colour"
+,,,,"Sort by name"
+,,,,"Sort by price"
+,,,,"Filter by keyword (save this for later)"
+,,,,"Add design to product catalog"
+,,,,""Filtrer og sorter" button"
+,,,"Acceptance Criteria","Filter is persistent"
+,,,,"Sort is persistent"
+,,,,"Buttons are visible and working"
+"Employee gets notification on new order","As an employeeI want to receive a notification from the system when a new order is submittedSo I can expedited the orderStorypoints - **xx**","",,
+,,,"Tasks","New orders are in a different color"
+,,,,"Badge counter for pending orders placed on the button link"
+"Undertaker check out","As an undertakerI want to be able to choose a delivery location and timeIn order to conduct my businessStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Common customers can not enter undertaker check out flow"
+,,,,"Input constraint on delivery address and deceased name"
+,,,,"Order WITH delivery is successfully created and added to database"
+,,,,"Success and error messages work"
+,,,"Tasks","If account is undertaker, redirect to undertaker check out flow"
+,,,,"Delivery page (form)"
+,,,,"Success or error message"
+"Employee see and reenable disabled products","As an employeeI want to be able to see disabled products and reenableIn order to manage product catalogStorypoints - **xx**","",,
+,,,"Tasks","See disabled button on product sides"
+,,,,"Reenable button on disabled products"
+,,,"Acceptance Criteria",""Se udgåede produkter" button works"
+,,,,"reenable button reenables correct product"
+,,,,"See disabled product only visable when logged in as employee or admin"
+,,,,"Disabled products look different from normal products (grey coloured?)"
+"Basket product count badge","As a customerI would like to see the amount of products in the basket without being on the basket pageBecause i'm lazyStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Badge is red"
+,,,,"Badge is placed in bottom right corner of the button"
+,,,,"Badge counts amount of orderlines correct"
+,,,"Tasks","Add a badge to a basket"
+"Website edit icon everywhere","As an employee/adminI want to be able to edit the static elements on the websiteIn order to update themStorypoints - **xx**","",,
+,,,"Tasks","Edit icon next to static text"
+,,,,"Edit icon next to static images"
+,,,,"Only visible when logged in as employee or admin"
+,,,,"When editing a save button appear"
+,,,,"Make changes persistent"
+,,,"Acceptance Criteria","Changes gets saved to the database (somehow)"
+,,,,"Changes are immediate (no double confirm)"
+"Extra nav bar on profile pages","As a customerI want to be able to easily navigate my profile pagesSo the UX feels smooth and unhinderedStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Links to "Profil", "Mine ordrer", "Logout""
+,,,,"Only visable when on a cutomer profil pages"
+,,,,"Only visable when on a cutomer profil pages"
+,,,"Tasks","Extra nav bar (either on the side of the page or below the top navigation bar)"
+"Search bar logic","As a customerI want to search for products by textBecause im fairly sure of what i wantStorypoints - **xx**","",,
+,,,"Tasks","Query in product name from input"
+,,,,"Error message"
+,,,"Acceptance Criteria","If search bar is empty do nothing"
+,,,,"If search bar is not empty begin looking for all products which matches the entered string somehow"
+,,,,"Return the right result"
+,,,,"Shown error when empty result"
+"Search result page","As a userI want to be able to see my search resultsIn order to be able to choose my productStorypoints - **xx**","",,
+,,,"Tasks","Create search result page in same design as product pages"
+,,,,"Display search result"
+,,,"Acceptance Criteria","A search redirects to result page"
+,,,,"Correct products are displayed"
+"User search result sort/filter","As a userI want to be able to sort and filter the given search results, after a product searchSo i better can find, what I am searching forStorypoints - **xx**","",,
+,,,"Tasks","Sort by Name, Price etc."
+,,,,"Filter further on Name, Price etc."
+,,,"Acceptance Criteria","Given a user has queried a search, when the search results has been displayed, then the user should be able to filter and sort the result"
+"Allow visitors without account to create orders","Storypoints - **xx**","",,
+"Database connection is lost","Storypoints - **xx**","",,
+,,,"Tasks","Display error message to webpage visitors when connection to database is lost"
+"US 2 - Bedemand, Speciel Ordre Funktion","Som bedemand ønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side med det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,,"Opret mulighed for at vælge mellem liste af lokale kapeller"
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+,,,,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller."
+"US 1 - Kunde, Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 4"
+"Medarbejder - Automatiske notifikationer","Medarbejder - Automatiske notifikationer*Som* medarbejder, *Ønsker jeg* at modtage automatiske notifikationer om nye ordrer, *Med det formål* at kunne påbegynde ordrebehandling så hurtigt som muligt.","",,
+"Medarbejder - Automatiske notifikationer","Medarbejder - Automatiske notifikationer*Som* medarbejder, *Ønsker jeg* at modtage automatiske notifikationer om nye ordrer, *Med det formål* at kunne påbegynde ordrebehandling så hurtigt som muligt.","",,
+"Medarbejder - Automatiske notifikationer","Medarbejder - Automatiske notifikationer*Som* medarbejder, *Ønsker jeg* at modtage automatiske notifikationer om nye ordrer, *Med det formål* at kunne påbegynde ordrebehandling så hurtigt som muligt.","",,
+"Kunde - Gavekort og rabatkoder","Kunde - Gavekort og rabatkoder*Som* kunde, *Ønsker jeg* at kunne anvende gavekort og rabatkoder ved checkout, *Med det formål* at udnytte tilbud og spare penge på køb.","",,
+"Kunde - Gavekort og rabatkoder","Kunde - Gavekort og rabatkoder*Som* kunde, *Ønsker jeg* at kunne anvende gavekort og rabatkoder ved checkout, *Med det formål* at udnytte tilbud og spare penge på køb.","",,
+"Kunde - Gavekort og rabatkoder","Kunde - Gavekort og rabatkoder*Som* kunde, *Ønsker jeg* at kunne anvende gavekort og rabatkoder ved checkout, *Med det formål* at udnytte tilbud og spare penge på køb.","",,
+"Bestyrer - Salgsrapporter","Bestyrer - Salgsrapporter*Som* bestyrer, *Ønsker jeg* at kunne generere detaljerede salgsrapporter, *Med det formål* at analysere salgstendenser og foretage datadrevne beslutninger.","",,
+"Bestyrer - Salgsrapporter","Bestyrer - Salgsrapporter*Som* bestyrer, *Ønsker jeg* at kunne generere detaljerede salgsrapporter, *Med det formål* at analysere salgstendenser og foretage datadrevne beslutninger.","",,
+"Bestyrer - Salgsrapporter","Bestyrer - Salgsrapporter*Som* bestyrer, *Ønsker jeg* at kunne generere detaljerede salgsrapporter, *Med det formål* at analysere salgstendenser og foretage datadrevne beslutninger.","",,
+"Medarbejder - Lagerstyring","Medarbejder - Lagerstyring*Som* medarbejder, *Ønsker jeg* et dashboard til at monitorere lagerstatus, *Med det formål* at forebygge mangler og optimere lagerbeholdningen.","",,
+"Medarbejder - Lagerstyring","Medarbejder - Lagerstyring*Som* medarbejder, *Ønsker jeg* et dashboard til at monitorere lagerstatus, *Med det formål* at forebygge mangler og optimere lagerbeholdningen.","",,
+"Medarbejder - Lagerstyring","Medarbejder - Lagerstyring*Som* medarbejder, *Ønsker jeg* et dashboard til at monitorere lagerstatus, *Med det formål* at forebygge mangler og optimere lagerbeholdningen.","",,
+"Bedemand - Automatisk Fakturering","Bedemand - Automatisk Fakturering*Som* bedemand, *Ønsker jeg* automatisk at modtage en faktura ved bestilling, *Med det formål* at forenkle regnskabsprocessen.","",,
+"Bedemand - Automatisk Fakturering","Bedemand - Automatisk Fakturering*Som* bedemand, *Ønsker jeg* automatisk at modtage en faktura ved bestilling, *Med det formål* at forenkle regnskabsprocessen.","",,
+"Bedemand - Automatisk Fakturering","Bedemand - Automatisk Fakturering*Som* bedemand, *Ønsker jeg* automatisk at modtage en faktura ved bestilling, *Med det formål* at forenkle regnskabsprocessen.","",,
+"","","",,
+"Kunde - Ordreopfølgning","Kunde - Ordreopfølgning*Som* kunde, *Ønsker jeg* at kunne spore status for min ordre, *Med det formål* at holde mig opdateret om leveringstidspunktet.","",,
+"Kunde - Ordreopfølgning","Kunde - Ordreopfølgning*Som* kunde, *Ønsker jeg* at kunne spore status for min ordre, *Med det formål* at holde mig opdateret om leveringstidspunktet.","",,
+"Kunde - Ordreopfølgning","Kunde - Ordreopfølgning*Som* kunde, *Ønsker jeg* at kunne spore status for min ordre, *Med det formål* at holde mig opdateret om leveringstidspunktet.","",,
+"US 2 - Bedemand, Speciel Ordre Funktion","Som bedemand ønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side med det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,,"Opret mulighed for at vælge mellem liste af lokale kapeller"
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+,,,,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller."
+"","","",,
+,,,"Checklist","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+",,,,,,,Acceptance Criteria,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser.",,","","",,
+,,,"Checklist","Opgave 5"
+"US 1 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","3 (yellow)",,
+,,,"Tasks","Opgave 1"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 2 - Bedemand, Speciel Ordre Funktion","Som bedemandønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret sidemed det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,,"Opret mulighed for at vælge mellem liste af lokale kapeller"
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+,,,,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller."
+"Bestyrer - Produktadministration","Bestyrer - Produktadministration*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.","",,
+"Bestyrer - Produktadministration","Bestyrer - Produktadministration*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.","",,
+"Bestyrer - Produktadministration","Bestyrer - Produktadministration*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.","",,
+"US 1 - Kunde, Produktgennemsyn","*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+""2. User Story: Bedemand - Speciel Ordre Funktion"",""Som bedemand, Ønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, Med det formål at effektivisere bestillingsprocessen for begravelsesarrangementer."","5 (orange)",,
+,,,"Checklist","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+""2. User Story: Bedemand - Speciel Ordre Funktion","""Som bedemand, Ønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, Med det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.""",5 (orange),,,,,Tasks,Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder.,,","","",,
+,,,"Checklist","Opgave 4"
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Checklist","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 3"
+"US 1 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","3 (yellow)",,
+,,,"Checklist","Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 1 - Kunde, Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 4"
+"Medarbejder - Ordrehåndtering","Medarbejder - Ordrehåndtering*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.","",,
+"Medarbejder - Ordrehåndtering","Medarbejder - Ordrehåndtering*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.","",,
+"Medarbejder - Ordrehåndtering","Medarbejder - Ordrehåndtering*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.","",,
+"US 2 - Bedemand, Speciel Ordre Funktion","Som bedemand ønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side med det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,,"Opret mulighed for at vælge mellem liste af lokale kapeller"
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+,,,,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller."
+"","","",,
+,,,"Checklist","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+",,,,,,,Acceptance Criteria,"Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget.",,","","",,
+,,,"Checklist","Opgave 3"
+"","","",,
+,,,"Checklist","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 3"
+"US 1 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","3 (yellow)",,
+,,,"Checklist","Opgave 1"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 1 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","3 (yellow)",,
+,,,"Tasks","Opgave 1"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 2 - Bedemand, Speciel Ordre Funktion","Som bedemandønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret sidemed det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,,"Opret mulighed for at vælge mellem liste af lokale kapeller"
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+,,,,"Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge mellem lokale kapeller."
+"Bedemand - Speciel Ordre Funktion","Bedemand - Speciel Ordre Funktion*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","",,
+"Bedemand - Speciel Ordre Funktion","Bedemand - Speciel Ordre Funktion*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","",,
+"Bedemand - Speciel Ordre Funktion","Bedemand - Speciel Ordre Funktion*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","",,
+"US 1 - Kunde, Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+"1. User Story: Kunde - Produktgennemsyn","- **Som** kunde,- **Ønsker jeg** at kunne se butikkens portefølje i kategorier,- **Med det formål** bedst at kunne vælge det produkt, der opfylder mit behov.**Som kunde, Ønsker jeg at kunne se butikkens portefølje i kategorier, Med det formål bedst at kunne vælge det produkt, der opfylder mit behov.**","3 (yellow)",,
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,"Tasks ","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Checklist","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori"
+"Kunde - Produktgennemsyn,Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov,3 (yellow),,,,,Tasks,"Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori",,","","",,
+,,,"Checklist","Opgave 2"
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Checklist","Opgave 2"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 3"
+"Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Checklist","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori"
+,,,,"Opgave 2"
+"Nr 1, Kunde - Produktgennemsyn","Som kunde ønsker jeg at kunne se butikkens portefølje i kategorier med det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Checklist","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 3"
+"US 1 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","3 (yellow)",,
+,,,"Checklist","Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 1 - Kunde, Produktgennemsyn","Som kundeønsker jeg at kunne se butikkens portefølje i kategoriermed det formål bedst at kunne vælge det produkt der opfylder mit behov","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,,"Opgave 4"
+"Kunde - Produktgennemsyn","Kunde - Produktgennemsyn*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","",,
+"Kunde - Produktgennemsyn","Kunde - Produktgennemsyn*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","",,
+"Kunde - Produktgennemsyn","Kunde - Produktgennemsyn*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","",,
+"Navigationsbar","As a useri want to be able to navigate the siteso i can see everything i want‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Must be placed in layout (as the top bar of the webpage)"
+,,,,"Drop down menu for "Blomster" button"
+,,,,"When logged in as a customer/undertaker the login button changes to customer/undertaker manager dropdown (contains "profile", "my orders", "logout")"
+,,,,"Blomster binderiets logo in the far left of the navigation bar"
+,,,,"Search bar is placed to the far right but before the basket- and user buttons"
+,,,,"When visiting as a guest, a login button is placed in the right corner"
+,,,,"Implement ALL buttons"
+,,,,"When logged in as a admin the login button changes to admin manager dropdown (contains admin pages)"
+,,,"Tasks","Implement navigation bar design as in the paper mockup"
+"Product page","As a customerI want to see all products availableSo I can chose a productStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Link navigates to product page"
+,,,,"All products are shown in a grid like view"
+,,,,"Pageination to f.x. 24 products pr page"
+,,,"Tasks","Navigate to product page (navbar link)"
+,,,,"See all products avaliable (web page)"
+"See product details","As a customerI want to be able to see the specific products detailsSo i can be sure it is the right product for me‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Large image of the product"
+,,,,"Description of product"
+,,,,"Button "Tilføj til kurv""
+,,,,"Other versions links to other product page (different versions of same product is created as individual products)"
+,,,,"Change amount field"
+,,,,"Back to product catalog button"
+,,,,""Tilføjet til kurv" under "Tilføj til kurv" when product is sucessfully added"
+,,,"Tasks","Create a product details page"
+,,,,"Add link to product details on products in product page"
+"Customer account sign up","As a customerI want to sign up and create an accountFor the purpose of in the future reduce amount of times i have to enter my details‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Visitors can enter sign up page"
+,,,,"Users signed in can not enter sign up page"
+,,,,"Visitors who attempt to sign up has an account created on the server"
+,,,"Tasks","Sign up page (med form)"
+,,,,"Make connection to "opret bruger" button on navbar"
+"Customer account sign up confirmation","As a customerI want to get a confirmation when i registerBecause I want to know if i have done it right (or if someone uses my email)Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Email is sent (if possible)"
+,,,,"When the customer successfully signs up a success message, on modal or different page, is shown"
+,,,,"If something goes wrong (wrong email, name ect) an error message is shown"
+,,,"Tasks","Confirmation to customer (email if possible)"
+,,,,"Signup successful message"
+"Sign in, sign out","As a customer i want to loginSo i wont have to enter my details againWith the purpose of not entering my details reduntdantlyStorypoints - **xx**","",,
+,,,"Acceptance Criteria","User can log in"
+,,,,"User can log out"
+,,,"Tasks","Login using account username and password"
+,,,,"Logout from the webshop"
+"Add to basket","As a UserI want to add a product to my basketIn order to compile my orderStorypoints - **xx**","",,
+,,,"Acceptance Criteria","See all order lines"
+,,,,"Only see orderlines for YOUR OWN ORDER"
+,,,"Tasks","Shows all products in the basket"
+,,,,"Save orderlines somewhere so multiple users do not interfere with eachother"
+"Basket N/A (not available) when visitor","As ownerI want the customer to be logged in to have access to the basketso I can avoid anonymous purchasesStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given a visitor wants to add products to basket, when not logged in, then they will be prompted to log in."
+,,,"Tasks","Redirect to log in when pushing the basket button "
+,,,,"Redirect to log in when trying to add a product to basket"
+"Check out (orders)","As a customerI want to create a order from my basketin order to purchase the productsStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Final order is added to the database"
+,,,,"Send confirmation when order is added"
+,,,,"Errors... lack of connection somewhere in communication line"
+,,,,"Given that a basket is converted to Order, when purchasing the order, then the Order correctly reflects the basket"
+,,,"Tasks","A Basket will be converted to a Order object"
+"Admin create user","As an AdminI want to be able to create a new userin order to manage the websiteStorypoints - **xx**","",,
+,,,"Tasks","A user create page with appropriate input fields"
+,,,"Acceptance Criteria","Constraints"
+,,,,"Given that an Admin creates user, when all necessary information and roles has been filled out, then the user is correctly created "
+,,,,"Admin is able to navigate to the "opret bruger" page"
+,,,,"Given a user is created successfully, when an Admin has created a user, then the system will notify the Admin"
+"Employee all orders view page","As an employeeI want to be able to see all ordersSo i can get an overviewStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given an employee enters page, when wanting to view all orders, then all orders that are not more than a week old is displayed"
+,,,"Tasks","Create a see all orders-page"
+,,,,"Page displays all orders from the last week as a standard"
+"Employee review order","As a employeeI want to review new ordersSo I can accept or deny the orderStorypoints - **xx**","",,
+,,,"Tasks","Make "Bekræft" button"
+,,,,"Customer gets email notification when "Bekræft" button is pressed"
+,,,,"Make "Afvis" button"
+,,,,"Customer gets email notification when "Afvis" button is pressed"
+,,,"Acceptance Criteria","Given that a order is accepted, when the employee presses "bekræft", then the order status is updated to "Approved""
+,,,,"Given that a order is denied, when the employee presses "Afvis", then the order status is changed to "Denied""
+,,,,"Given that an order is either changed approved or denied, when an order is reviewed, then the system sends an appropriate email to customer"
+,,,,"An appropiate email, "Fuck you", when denying orders in bulk from same "customer" (nice to have)"
+"Assign employee to an order","As an employeeI want to assign an order to myselfSo the responsibility for an order is divided.Storypoints - **xx**","",,
+,,,"Tasks","An employee can update the status of an order to in progress and mark it as "theirs""
+,,,"Acceptance Criteria","Only 1 can be assigned at a time per order"
+,,,,"You can take an already assigned order"
+"Employee completes an order","As an employeeI want to mark an order as ready (for pickup) and completed (picked up by customer)so orders can be easily managedStorypoints - **xx**","",,
+,,,"Tasks","Make the order change status to ready when the "klar til levering" button is clicked"
+,,,,"Make the order change status to completed when the "udleveret" button is clicked"
+,,,,"Make the order change color when the status is changed"
+,,,"Acceptance Criteria","Status is colour coded, and has text according to the colour"
+,,,,"The status is changed when an employee tries to change the status"
+"Update and delete (UD) in basket","As a UserI want to change amount (update and delete) a product in my basketIn order to compile my orderStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Consider arimethic overflow (value goes to below zero when adding absurd amounts of product)"
+,,,,"Given that an amount hits zero or below, when changing amount in the basket, then the product will be removed"
+,,,"Tasks","Change amount of exsisting product in Basket"
+"Customer order update","As a customeri want to get status updates on my orderso i can see the progressStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given an order status changes, when an employee updates order, then an email is sent successfully."
+,,,,"Given a customer doesn't want to get notifications, when having sent an order, then an email will not be sent."
+,,,"Tasks","Send updates as an email, when the order status changes"
+,,,,"Option to not get status notifications during check out process"
+"User profile page","As a userI would like to view my account detailsBecause i want to check whether i agree with the current detailsStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Only user who are logged in can enter this page"
+,,,,"User can only see their own details"
+,,,,"When i enter the page all my details are displayed"
+,,,,"Details can not be changed on this page"
+,,,"Tasks","Profile details page"
+,,,,"Profile details has same laout as update profile details page"
+,,,,"Add "Opdater" button which moves the user to the update profile details page"
+"Customer view orders page","As a customerI want to be able to see all my ordersIn order to see my current order(s) and to know what i have ordered in the past‌Storypoints - **xx**","",,
+,,,"Tasks","Create "mine ordrer" page"
+,,,,"Make it possible to navigate to the page from the profile page"
+,,,"Acceptance Criteria","Customer can navigate to the "mine ordrer" page from the profile page"
+,,,,"Customer can see their current order(s) and old orders on the page"
+,,,,"Orders need to be shown with the newest order first"
+,,,,"Show the 20? newest orders, customer can push a "næste side" button if they want to see more orders"
+"Customer update profile","As a customerI want to be able to update my profileIn order to change my info if something changes‌Storypoints - **xx**","",,
+,,,"Tasks","Make update profile page (form)"
+,,,,"Make "din profil er opdateret" message"
+,,,,"Make error messages if info in form is against restrictions"
+,,,"Acceptance Criteria","Customer can navigate to the "opdater profil" page"
+,,,,"Customer can fill out the form with new info"
+,,,,"Customer gets a succes message if the profile is updated"
+,,,,"Customer gets an error message if something goes wrong"
+,,,,"Email cannot be updated by customer"
+,,,,"Update profile page has the same design as the profile page"
+,,,,"The update profile form has all the original info in the form"
+"Admin show all users","As an adminI want to be able to see all usersIn order to manage the website‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Given when an Admin needs an overview of users, when accessing the "Vis Brugere" page, then the Admin will see all users"
+,,,,"Page take less than 10 seconds to fully load"
+,,,,"Can successfully navigate to "vis bruger" page"
+,,,,"Filters and sort work"
+,,,"Tasks","Add link to "vis brugere" page from navbar"
+,,,,"Create "Vis brugere" page"
+,,,,"Filters and sorts on roles and name"
+"Admin update user","As an AdminI want to be able to update an existing userIn order to manage the websiteStorypoints - **xx**","",,
+,,,"Tasks","Administrer button on all users in see all users"
+,,,,"Create update page"
+,,,,"Make success and error messages"
+,,,"Acceptance Criteria","Correct user is updated"
+,,,,"Admin can navigate to "Administrer bruger" page from the the "vis brugere" page"
+,,,,"Success or error message shown"
+"Admin deactivate/delete user","As an adminI want to be able to delete a userIn order to manage employees, undertakers and customersStorypoints - **xx**","",,
+,,,"Tasks","Choose a user to delete"
+,,,,"Set the users status to inactive"
+,,,,"Make "are you sure" page before the user is deleted"
+,,,,"Success and error messages"
+,,,"Acceptance Criteria","The admin can navigate to "slet bruger" from the "administrer bruger" page"
+,,,,"The right user is set to inactive"
+,,,,"Success or error message shown"
+"Employee/Admin manage product","As an employeeI want to update a productin order to manage product inventoryStorypoints - **xx**","",,
+,,,"Acceptance Criteria","You can navigate to the "Opdater produkt" page from the pencil icon on the product page"
+,,,,"Given an employee wants to update a product, when they have successfully filled the updated information, then an confirmation message is displayed"
+,,,,"The update icon is only visible when logged in as employee or admin"
+,,,,"Given an employee wants to update a product, when they have unsuccessfully filled the updated information, then an error message is displayed"
+,,,,"The correct product gets updated"
+,,,"Tasks","Make "Opdater produkt" page (form)"
+,,,,"Add a pencil icon to every product only visible when logged in as employee or admin"
+,,,,"Success or error message"
+,,,,"A product can be disabled"
+"Employee/Admin create product","As an employee/adminI want to be able to create a new productIn order to keep the product page updated with new productsStorypoints - **xx**","",,
+,,,"Tasks",""Opret produkt" button"
+,,,,"Product form page with file input"
+,,,,"Recommend image dimensions"
+,,,,"Make success/error messages"
+,,,"Acceptance Criteria","Product is successfully created"
+,,,,"The picture is saved in root/database? - Database is recommend when we have multiple razorpage servers"
+,,,,"Given an employee is on the "Opret produkt" page, when the employee has not correctly filled out information for a product, then they get an error message"
+,,,,"Given an employee is on the "Opret produkt" page, when the employee has correctly filled out information, then they get a success message"
+"Employee/Admin disable product","As an employee/adminI want to be able to disable a productIn order to remove old products from the product page‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","The correct product is disabled"
+,,,,"Is able to navigate to the disable product page from the "administrer produkt" page"
+,,,,"Success and error messages work"
+,,,"Tasks","Add "Disabled" bool"
+,,,,"Success or error message"
+,,,,"Make "are you sure" page before the product is disabled"
+"Order page filter and sort","As an EmployeeI want to filter and sort in the orders,so I can have an overview of orders that are due or are my responsibilityStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Given that an employee sorts or filters, when interacting with the All Orders page, then the correct filters and sorts are applied"
+,,,"Tasks","Sort by due date"
+,,,,"Filter by due date"
+,,,,"Sort by employee ID"
+,,,,"Filter by employee ID"
+,,,,"Filter by status"
+,,,,"Sort by status"
+,,,,"The default view is all orders, no older than 1 week"
+"Product page filter","As a customerI want to be able to filter the products on the product pageSo i can find the right product easily‌Storypoints - **xx**","",,
+,,,"Acceptance Criteria","Filter is persistent"
+,,,,"Sort is persistent"
+,,,,"Buttons are visible and working"
+,,,"Tasks","Filter by price"
+,,,,"Filter by colour"
+,,,,"Sort by name"
+,,,,"Sort by price"
+,,,,"Filter by keyword (save this for later)"
+,,,,"Add design to product catalog"
+,,,,""Filtrer og sorter" button"
+"Employee gets notification on new order","As an employeeI want to receive a notification from the system when a new order is submittedSo I can expedited the orderStorypoints - **xx**","",,
+,,,"Tasks","New orders are in a different color"
+,,,,"Badge counter for pending orders placed on the button link"
+"Undertaker check out","As an undertakerI want to be able to choose a delivery location and timeIn order to conduct my businessStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Common customers can not enter undertaker check out flow"
+,,,,"Input constraint on delivery address and deceased name"
+,,,,"Order WITH delivery is successfully created and added to database"
+,,,,"Success and error messages work"
+,,,"Tasks","If account is undertaker, redirect to undertaker check out flow"
+,,,,"Delivery page (form)"
+,,,,"Success or error message"
+"Employee see and reenable disabled products","As an employeeI want to be able to see disabled products and reenableIn order to manage product catalogStorypoints - **xx**","",,
+,,,"Acceptance Criteria",""Se udgåede produkter" button works"
+,,,,"reenable button reenables correct product"
+,,,,"See disabled product only visable when logged in as employee or admin"
+,,,,"Disabled products look different from normal products (grey coloured?)"
+,,,"Tasks","See disabled button on product sides"
+,,,,"Reenable button on disabled products"
+"Basket product count badge","As a customerI would like to see the amount of products in the basket without being on the basket pageBecause i'm lazyStorypoints - **xx**","",,
+,,,"Tasks","Add a badge to a basket"
+,,,"Acceptance Criteria","Badge is red"
+,,,,"Badge is placed in bottom right corner of the button"
+,,,,"Badge counts amount of orderlines correct"
+"Website edit icon everywhere","As an employee/adminI want to be able to edit the static elements on the websiteIn order to update themStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Changes gets saved to the database (somehow)"
+,,,,"Changes are immediate (no double confirm)"
+,,,"Tasks","Edit icon next to static text"
+,,,,"Edit icon next to static images"
+,,,,"Only visible when logged in as employee or admin"
+,,,,"When editing a save button appear"
+,,,,"Make changes persistent"
+"Extra nav bar on profile pages","As a customerI want to be able to easily navigate my profile pagesSo the UX feels smooth and unhinderedStorypoints - **xx**","",,
+,,,"Acceptance Criteria","Links to "Profil", "Mine ordrer", "Logout""
+,,,,"Only visable when on a cutomer profil pages"
+,,,,"Only visable when on a cutomer profil pages"
+,,,"Tasks","Extra nav bar (either on the side of the page or below the top navigation bar)"
+"Search bar logic","As a customerI want to search for products by textBecause im fairly sure of what i wantStorypoints - **xx**","",,
+,,,"Tasks","Query in product name from input"
+,,,,"Error message"
+,,,"Acceptance Criteria","If search bar is empty do nothing"
+,,,,"If search bar is not empty begin looking for all products which matches the entered string somehow"
+,,,,"Return the right result"
+,,,,"Shown error when empty result"
+"Search result page","As a userI want to be able to see my search resultsIn order to be able to choose my productStorypoints - **xx**","",,
+,,,"Tasks","Create search result page in same design as product pages"
+,,,,"Display search result"
+,,,"Acceptance Criteria","A search redirects to result page"
+,,,,"Correct products are displayed"
+"User search result sort/filter","As a userI want to be able to sort and filter the given search results, after a product searchSo i better can find, what I am searching forStorypoints - **xx**","",,
+,,,"Tasks","Sort by Name, Price etc."
+,,,,"Filter further on Name, Price etc."
+,,,"Acceptance Criteria","Given a user has queried a search, when the search results has been displayed, then the user should be able to filter and sort the result"
+"Allow visitors without account to create orders","Storypoints - **xx**","",,
+"Database connection is lost","Storypoints - **xx**","",,
+,,,"Tasks","Display error message to webpage visitors when connection to database is lost"
+"US 12 Se Alle Produkter (Kunde)","*Som* kunde, *Ønsker jeg* at se alle tilgængelige produkter, *Med det formål* at vælge et produkt.","1 (green_light)",,
+,,,"Tasks","Implementer en produktoversigtsside med alle tilgængelige produkter."
+,,,"Acceptance Criteria","Givet at en kunde besøger produktoversigtssiden, *når* de kigger igennem siden, *så* skal de kunne se alle produkter, der er til salg."
+"US 38 Oversigt over Produkter (Kunde)","Som kunde vil jeg kunne se en oversigt over blomsterarrangementer, så jeg kan vælge det, der passer til lejligheden.","3 (yellow)",,
+,,,"Tasks","Implementer kategorier, hvor produkter der har samme tema vises"
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget."
+"US 13 Tilføj til Kurv (Kunde)","_Som_ kunde, _Ønsker jeg_ at tilføje et produkt til min kurv, _Med det formål_ at samle min bestilling.","5 (orange)",,
+,,,"Tasks","Implementer en funktion til at tilføje produkter til en indkøbskurv."
+,,,"Acceptance Criteria","Givet at en kunde vælger et produkt, *når* de klikker på "tilføj til kurv"-knappen, *så* skal produktet blive tilføjet til deres kurv."
+"US 20 Ændre Produkter i Kurv (Bruger)","*Som* bruger, *Ønsker jeg* at ændre mængden af produkter i min kurv, *Med det formål* at justere min bestilling før køb.","2 (green)",,
+,,,"Tasks","Implementer en redigeringsfunktion i kurven, hvor brugeren kan opdatere antallet eller fjerne produkter fra kurven."
+,,,"Acceptance Criteria","Givet at en bruger ønsker at ændre sin bestilling, *når* de besøger kurvsiden, *så* skal de kunne ændre antallet af produkter eller fjerne dem fra kurven."
+"US 15 Opret Ordre (Kunde)","*Som* kunde, *Ønsker jeg* at skabe en ordre fra min kurv, *Med det formål* at købe de valgte produkter.","2 (green)",,
+,,,"Tasks","Udvikle en proces, hvor kunden kan omdanne indholdet af kurven til en ordre."
+,,,"Acceptance Criteria","Givet at en kunde har valgt produkter i kurven, *når* de klikker på "bestil", *så* skal de kunne gennemføre købet og se en ordrebekræftelse."
+"US 14 Kurv til Ordre","_Som_ ejer, _Ønsker jeg_ at kunden skal give relevant kontaktinformation for at kunne købe en ordre fra kurven, _Med det formål_ at undgå anonyme køb.","3 (yellow)",,
+,,,"Tasks","Kræv at brugere afgiver kontaktinformation, uden at oprette bruger"
+,,,"Acceptance Criteria","Givet at en anonym kunde ønsker at købe produkterne i kurv, *når* de forsøger at gøre dette, *så* bliver de bedt om at logge ind, oprette en konto eller afgive kontaktinformation."
+"US 44 Registrerer sig (Kunde)","Som kunde, ønsker jeg selv at kunne registrer mig til webshoppen, så jeg hurtigst muligt kan udnytte fordele ved at være registreret bruger","5 (orange)",,
+,,,"Tasks","Implementer registrerings funktion"
+,,,,"Opret registreringsside"
+,,,"Acceptance Criteria","Givet at en anonym bruger, når denne vil registrerer sig på sitet, så vil denne få en bruger, som vedkommende kan logge ind med"
+"US 42 Log ind (Kunde)","Som kunde vil jeg kunne logge ind, så jeg kan se mine ordrer og betalinger.","3 (yellow)",,
+,,,"Tasks","Implementer login funktion"
+,,,,"Implementer "forkert password" funktion"
+,,,"Acceptance Criteria","Givet at en registreret kunde ønsker at logge ind når denne ønsker at interagere med siden som en registreret bruger, så vil denne logge ind, såfremt korrekt password og username er anvendt"
+"US 43 Log ud (Kunde)","Som kunde vil jeg kunne logge ud, så jeg kan sikre, at mine oplysninger ikke er tilgængelige for andre.","3 (yellow)",,
+,,,"Tasks","Implementer log ud funktion"
+,,,,"Implementer auto-log ud funktion"
+,,,"Acceptance Criteria","Givet at en kunde vil logge ud, når denne er færdig med at interagere med sitet, så vil denne logges ud og returneres til forsiden"
+"US 39 Profiloplysninger (Kunde)","Som kunde vil jeg kunne se en oversigt over mine personlige oplysninger, så jeg kan se, hvad I har registreret om mig.","3 (yellow)",,
+,,,"Tasks","Opret side, hvor den kunde, der er logget ind, kan se sine egne oplysninger"
+,,,"Acceptance Criteria","Givet at en kunde vil se sine egne registrerede oplysninger, når kunden er på sin profilside, så vil kunden kunne se dem på en heuristisk designet facon"
+"US 40 Ændre profiloplysninger (Kunde)","Som kunde vil jeg kunne ændre mine personlige oplysninger, så jeg kan sikre, at de er korrekte.","3 (yellow)",,
+,,,"Tasks","Kunde skal kunne ændre i egen personlige oplysninger"
+,,,"Acceptance Criteria","Givet at en kunde vil opdatere sine oplysninger, når disse har ændret sig, så vil kunden kunne se sine oplysninger er opdateret til det af kunden angivne værdier"
+"US 33 Log Ind på Ordreportal (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne logge ind på ordreportalen, *Med det formål* at kunne ekspedere ordrer.","5 (orange)",,
+,,,"Tasks","Implementer en sikker log ind-funktion specifikt for medarbejdere på ordreportalen."
+,,,"Acceptance Criteria","Givet at en medarbejder står foran sin arbejdsstation, *når* de indtaster deres legitimationsoplysninger, *så* skal de have adgang til ordreportalen, hvor de kan administrere ordrer."
+"US 4 Produktadministration (Bestyrer)","*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.","5 (orange)",,
+,,,"Tasks","Udvikle en brugergrænseflade for produktadministration i administrationspanelet."
+,,,,"Implementere et samlet dashboard med oversigt over alle Produkter"
+,,,"Acceptance Criteria","Givet at en bestyrer er logget ind, *når* de tilgår produktadministrationsmodulet, *så* skal de kunne tilføje nye produkter, redigere eksisterende produkter og arkivere forældede produkter."
+"US 16 Ordreoversigt (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se alle ordrer, *Med det formål* at få et overblik over arbejdsbyrden.","3 (yellow)",,
+,,,"Tasks","Udvikle et dashboard, hvor medarbejdere kan se en liste over alle aktuelle ordrer."
+,,,"Acceptance Criteria","Givet at en medarbejder er logget ind, *når* de tilgår dashboardet, *så* skal de kunne se og sortere alle ordrer efter status, dato og andre relevante kriterier."
+"US 3 Ordrehåndtering (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.","3 (yellow)",,
+,,,"Tasks","Implementer en administrationsside for medarbejdere til håndtering af nye ordrer."
+,,,"Acceptance Criteria","Givet at en medarbejder er logget ind, *når* de tilgår administrationspanelet, *så* skal de kunne se en liste over aktive ordrer og opdatere deres status."
+"US 35 Opdatere Ordrestatus (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne opdatere ordrestatus, *Med det formål* at tydeliggøre for alle brugere, hvor langt ordren er i processen.","3 (yellow)",,
+,,,"Tasks","Skabe en funktion, der tillader medarbejdere at opdatere status for en ordre i realtid."
+,,,"Acceptance Criteria","Givet at en ordre er i gang med at blive ekspederet, *når* medarbejderen opdaterer ordrens status, *så* skal denne opdatering være synlig for alle relevante parter, herunder andre medarbejdere og kunden, hvis de tjekker status online."
+"US 34 Se Ordredetaljer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se ordredetaljer om blomsterarrangementet, *Med det formål* at kunne ekspedere ordrer korrekt og effektivt.","1 (green_light)",,
+,,,"Tasks","Udvikle en funktion, der viser fulde detaljer for hver ordre, inklusive specifikationer for blomsterarrangementet."
+,,,"Acceptance Criteria","Givet at en medarbejder behandler en ordre, *når* de tilgår ordren på systemet, *så* skal de kunne se alle relevante detaljer om blomsterarrangementet, som er nødvendige for at færdiggøre ordren korrekt."
+"US 19 Ordreklargøring (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at markere en ordre som klar til afhentning og fuldført, *Med det formål* at administrere ordreflowet effektivt.","2 (green)",,
+,,,"Tasks","Skab en funktion, hvor medarbejdere kan opdatere ordrens status til "klar til afhentning" og senere "afhentet"."
+,,,"Acceptance Criteria","Givet at en ordre er færdigpakket, *når* medarbejderen opdaterer systemet, *så* skal statussen ændres, så kunden og andre medarbejdere kan se, at ordren er klar eller afhentet."
+"US 7 - Medarbejder - Lagerstyring","*Som* medarbejder, *Ønsker jeg* et dashboard til at monitorere lagerstatus, *Med det formål* at forebygge mangler og optimere lagerbeholdningen.","3 (yellow)",,
+,,,"Tasks","- Implementer et lagerstyringsmodul i medarbejderens administrationspanel."
+,,,"Acceptance Criteria","- *Givet* at en medarbejder ønsker at tjekke lagerstatus, *når* de logger ind på dashboardet, *så* skal de kunne se aktuelle lagerantal for alle produkter."
+"US 8 - Bestyrer - Salgsrapporter","*Som* bestyrer, *Ønsker jeg* at kunne generere detaljerede salgsrapporter, *Med det formål* at analysere salgstendenser og foretage datadrevne beslutninger.","3 (yellow)",,
+,,,"Tasks","- Udvikle en funktion til at generere og eksportere salgsrapporter i administrationspanelet."
+,,,"Acceptance Criteria","- *Givet* at en bestyrer ønsker at se salgsdata, *når* de vælger rapporteringsperioden og genererer rapporten, *så* præsenteres de for en detaljeret rapport over salg fordelt på produkter, kategorier og tidspunkter."
+"US 9 - Kunde - Gavekort og rabatkoder","*Som* kunde, *Ønsker jeg* at kunne anvende gavekort og rabatkoder ved checkout, *Med det formål* at udnytte tilbud og spare penge på køb.","3 (yellow)",,
+,,,"Tasks","- Udvikle en funktion, der tillader kunder at indløse gavekort og anvende rabatkoder ved betaling."
+,,,"Acceptance Criteria","- *Givet* at en kunde har et gyldigt gavekort eller rabatkode, *når* de indtaster koden ved checkout, *så* skal den pågældende rabat eller gavekortets værdi fratrækkes fra den samlede ordre."
+"US 10 - Medarbejder - Automatiske notifikationer","*Som* medarbejder, *Ønsker jeg* at modtage automatiske notifikationer om nye ordrer, *Med det formål* at kunne påbegynde ordrebehandling så hurtigt som muligt.","3 (yellow)",,
+,,,"Tasks","- Implementer en notifikationsfunktion, der alarmerer medarbejdere om nye ordrer via e-mail eller systempopup."
+,,,"Acceptance Criteria","- *Givet* at en ny ordre er afgivet, *når* ordren registreres i systemet, *så* modtager relevante medarbejdere en notifikation."
+"US 11 - Kunde - Feedback og anmeldelser","*Som* kunde, *Ønsker jeg* at kunne afgive feedback og anmelde produkter, *Med det formål* at dele min oplevelse med andre kunder og hjælpe dem med at træffe informerede købsbeslutninger.","3 (yellow)",,
+,,,"Tasks","- Implementer en feedback- og anmeldelsesfunktion på produkt siderne."
+,,,"Acceptance Criteria","- *Givet* at en kunde har købt et produkt, *når* de besøger produktets side efter købet, *så* skal de kunne skrive og indsende en anmeldelse."
+"US 12 - Se Produkter","*Som* kunde, *Ønsker jeg* at se alle tilgængelige produkter, *Med det formål* at vælge et produkt.","3 (yellow)",,
+,,,"Tasks","- Implementer en produktoversigtsside med alle tilgængelige produkter."
+,,,"Acceptance Criteria","- *Givet* at en kunde besøger produktoversigtssiden, *når* de kigger igennem siden, *så* skal de kunne se alle produkter, der er til salg."
+"US 13 - Tilføj til Kurv","*Som* bruger, *Ønsker jeg* at tilføje et produkt til min kurv, *Med det formål* at samle min bestilling.","3 (yellow)",,
+,,,"Tasks","- Implementer en funktion til at tilføje produkter til en indkøbskurv."
+,,,"Acceptance Criteria","- *Givet* at en bruger vælger et produkt, *når* de klikker på "tilføj til kurv"-knappen, *så* skal produktet blive tilføjet til deres kurv."
+"US 18 Ordreansvar (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne tildele en ordre til mig selv, *Med det formål* at sikre ansvarsfordelingen for ordrehåndteringen.","2 (green)",,
+,,,"Tasks","Udvikle et system, hvor medarbejdere kan tildele specifikke ordrer til sig selv for håndtering."
+,,,"Acceptance Criteria","Givet at en ordre skal behandles, *når* en medarbejder vælger ordren, *så* skal de kunne markere den som "under behandling" af sig selv."
+"US 25 Ordrefilter og -sortering (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at filtrere og sortere ordrer, *Med det formål* at få et overblik over ordrer, der er forfaldne eller som jeg er ansvarlig for.","3 (yellow)",,
+,,,"Tasks","Implementere filter og sorteringsfunktioner i ordreoversigten."
+,,,"Acceptance Criteria","Givet at der er behov for at organisere ordrer, *når* medarbejderen anvender filter og sorteringsfunktionerne, *så* skal de kunne se en organiseret liste over ordrer."
+"US 2 Speciel Ordre Funktion (Bedemand)","*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","3 (yellow)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, *når* de tilgår den dedikerede side, *så* skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+"US 26 Produktfiltrering (Kunde)","*Som* kunde, *Ønsker jeg* at kunne filtrere produkter på produktsiden, *Med det formål* nemt at finde det rigtige produkt.","3 (yellow)",,
+,,,"Tasks","Oprette filter og sorteringsfunktioner i ordreoversigten."
+,,,"Acceptance Criteria","Givet at en kunde søger efter et specifikt produkt, *når* de bruger filterfunktionerne, *så* skal de kunne se en filtreret liste af produkter, der matcher deres kriterier."
+"US 37 Navigation i Profil (Kunde)","*Som* kunde, *Ønsker jeg* at kunne navigere nemt på mine profilsider, *Med det formål* at brugeroplevelsen føles glidende og uforstyrret.","3 (yellow)",,
+,,,"Tasks","Design en brugervenlig og intuitiv grænseflade for kundens profilområde."
+,,,"Acceptance Criteria","Givet at en kunde ønsker at administrere sin profil, *når* de navigerer på deres profil, *så* skal de kunne gøre det uden forvirring eller forstyrrelser."
+"US 5 Ordreopfølgning (Kunde)","*Som* kunde, *Ønsker jeg* at kunne spore status for min ordre, *Med det formål* at holde mig opdateret om leveringstidspunktet.","3 (yellow)",,
+,,,"Tasks","Implementer en funktion til ordreopfølgning på kundens profilside."
+,,,,"Dashboard til kunden, så de kan se alle deres ordre"
+,,,"Acceptance Criteria","Givet at kunden har afgivet en ordre, *når* de logger ind og tjekker deres ordrestatus, *så* skal de kunne se den aktuelle status og forventet leveringstidspunkt."
+"US 23 Opret Nyt Produkt (Medarbejder/Administrator)","*Som* medarbejder/administrator, *Ønsker jeg* at kunne oprette et nyt produkt, *Med det formål* at holde produktkataloget opdateret med nye varer.","3 (yellow)",,
+,,,"Tasks","Skabe en tilføj produkt-funktion på webshoppen for medarbejdere og administratorer."
+,,,"Acceptance Criteria","Givet at webshoppen skal have nye produkter tilføjet, *når* medarbejder/administrator indtaster produktdetaljerne og uploader billeder, *så* skal det nye produkt være tilgængeligt i webshoppen."
+"US 22 Produktopdatering (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at opdatere produkter, *Med det formål* at styre lagerbeholdningen.","3 (yellow)",,
+,,,"Tasks","Udvikle et interface til opdatering af produktinformationer og lagerstatus."
+,,,"Acceptance Criteria","Givet at et produkt behøver en opdatering, *når* medarbejderen ændrer informationen i systemet, *så* skal disse ændringer være synlige på webshoppen."
+"US 24 Deaktiver Produkt (Medarbejder/Administrator)","*Som* medarbejder/administrator, *Ønsker jeg* at kunne deaktivere et produkt, *Med det formål* at fjerne gamle produkter fra produktkataloget.","5 (orange)",,
+,,,"Tasks","Implementer en funktion til at deaktivere produkter i produktoversigten."
+,,,"Acceptance Criteria","Givet at et produkt ikke længere skal sælges, *når* medarbejder/administrator deaktiverer produktet i systemet, *så* skal produktet ikke længere være synligt for kunder."
+"US 14 - Adgang til Kurv","*Som* ejer, *Ønsker jeg* at kunden skal være logget ind for at få adgang til kurven, *Med det formål* at undgå anonyme køb.","3 (yellow)",,
+,,,"Tasks","- Kræv at brugere logger ind før de kan tilføje produkter til kurven."
+,,,"Acceptance Criteria","- *Givet* at en kunde ønsker at tilføje produkter til en kurv, *når* de forsøger at gøre dette, *så* skal de blive bedt om at logge ind eller oprette en konto."
+"US 15 - Opret Ordre","*Som* kunde, *Ønsker jeg* at skabe en ordre fra min kurv, *Med det formål* at købe de valgte produkter.","3 (yellow)",,
+,,,"Tasks","- Udvikle en proces, hvor kunden kan omdanne indholdet af kurven til en ordre."
+,,,"Acceptance Criteria","- *Givet* at en kunde har valgt produkter i kurven, *når* de klikker på "bestil", *så* skal de kunne gennemføre købet og se en ordrebekræftelse."
+"US 16 - Ordreoversigt (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se alle ordrer, *Med det formål* at få et overblik over arbejdsbyrden.","3 (yellow)",,
+,,,"Tasks","- Udvikle et dashboard, hvor medarbejdere kan se en liste over alle aktuelle ordrer."
+,,,"Acceptance Criteria","- *Givet* at en medarbejder er logget ind, *når* de tilgår dashboardet, *så* skal de kunne se og sortere alle ordrer efter status, dato og andre relevante kriterier."
+"US 17 - Gennemse Nye Ordrer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at gennemgå nye ordrer, *Med det formål* at kunne acceptere eller afvise dem.","3 (yellow)",,
+,,,"Tasks","- Implementer en funktion, hvor medarbejdere kan gennemse og administrere nye ordrer."
+,,,"Acceptance Criteria","- *Givet* at en ny ordre er modtaget, *når* medarbejderen gennemgår ordren, *så* skal de kunne træffe en beslutning om at acceptere eller afvise ordren baseret på lagerbeholdning og andre faktorer."
+"US 18 - Ordreansvar (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne tildele en ordre til mig selv, *Med det formål* at sikre ansvarsfordelingen for ordrehåndteringen.","3 (yellow)",,
+,,,"Tasks","- Udvikle et system, hvor medarbejdere kan tildele specifikke ordrer til sig selv for håndtering."
+,,,"Acceptance Criteria","- *Givet* at en ordre skal behandles, *når* en medarbejder vælger ordren, *så* skal de kunne markere den som "under behandling" af sig selv."
+"US 19 - Ordreklargøring (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at markere en ordre som klar til afhentning og fuldført, *Med det formål* at administrere ordreflowet effektivt.","3 (yellow)",,
+,,,"Tasks","- Skab en funktion, hvor medarbejdere kan opdatere ordrens status til "klar til afhentning" og senere "afhentet"."
+,,,"Acceptance Criteria","- *Givet* at en ordre er færdigpakket, *når* medarbejderen opdaterer systemet, *så* skal statussen ændres, så kunden og andre medarbejdere kan se, at ordren er klar eller afhentet."
+"US 20 - Ændre Ordre i Kurv (Bruger)","*Som* bruger, *Ønsker jeg* at ændre mængden af produkter i min kurv, *Med det formål* at justere min bestilling før køb.","3 (yellow)",,
+,,,"Tasks","- Implementer en redigeringsfunktion i kurven, hvor brugeren kan opdatere antallet eller fjerne produkter fra kurven."
+,,,"Acceptance Criteria","- *Givet* at en bruger ønsker at ændre sin bestilling, *når* de besøger kurvsiden, *så* skal de kunne ændre antallet af produkter eller fjerne dem fra kurven."
+"US 21 - Slet Bruger (Admin)","*Som* administrator, *Ønsker jeg* at kunne slette en bruger, *Med det formål* at kunne administrere medarbejdere, bedemænd og kunder.","3 (yellow)",,
+,,,"Tasks","- Implementer en slet-funktion i adminpanelet for brugere."
+,,,"Acceptance Criteria","- *Givet* at en bruger ikke længere skal have adgang til systemet, *når* administratoren sletter brugeren, *så* skal brugerens konto ikke længere være aktiv eller tilgængelig."
+"US 29 Genskabe Produkt (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se deaktiverede produkter og genaktivere dem, *Med det formål* at administrere produktkataloget.","5 (orange)",,
+,,,"Tasks","Tilføje en funktion til at se og reaktivere deaktiverede produkter."
+,,,"Acceptance Criteria","Givet at et produkt tidligere er blevet deaktiveret, *når* medarbejderen ønsker at genaktivere det, *så* skal produktet igen kunne vises og sælges på hjemmesiden."
+"US 28 Leveringsvalg (Bedemand)","*Som* bedemand, *Ønsker jeg* at kunne vælge leveringssted og -tid, *Med det formål* at kunne drive min forretning.","5 (orange)",,
+,,,"Tasks","Skabe et brugerinterface, hvor bedemænd kan vælge leveringsdetaljer ved bestilling."
+,,,"Acceptance Criteria","Givet at en bedemand laver en bestilling, *når* de indtaster leveringsoplysninger, *så* skal disse oplysninger anvendes til ordren."
+"US 31 Tekstsøgning efter Produkter (Kunde)","*Som* kunde, *Ønsker jeg* at søge efter produkter med tekst, *Med det formål* at hurtigt finde, hvad jeg har i tankerne.","8 (red)",,
+,,,"Tasks","Integrer en søgefunktion i webshoppen, som tillader tekstbaseret søgning."
+,,,"Acceptance Criteria","Givet at en kunde ved, hvad de leder efter, *når* de indtaster søgekriterier, *så* skal de præsenteres for relevante produktresultater."
+"US 36 Visning af Søgeresultater (Bruger)","*Som* bruger, *Ønsker jeg* at kunne se mine søgeresultater, *Med det formål* at kunne vælge et produkt fra resultaterne.","2 (green)",,
+,,,"Tasks","Skabe en visning, der effektivt præsenterer resultaterne af en produktsøgning."
+,,,"Acceptance Criteria","Givet at en bruger har foretaget en søgning, *når* søgeresultaterne vises, *så* skal de være klare og lette at navigere i."
+"US 32 Sortering og Filtrering af Søgeresultater (Bruger)","*Som* bruger, *Ønsker jeg* at kunne sortere og filtrere søgeresultaterne efter en produktsøgning, *Med det formål* bedre at finde det, jeg leder efter.","8 (red)",,
+,,,"Tasks","Tilføj sortering og filtreringsmuligheder til søgeresultatsiden. Bl.a. Fritekst søgning."
+,,,"Acceptance Criteria","Givet at en bruger har udført en søgning og ser på resultaterne, *når* de anvender filtrerings og sorteringsfunktionerne, *så* skal listen over produkter opdatere sig i henhold til de valgte kriterier."
+"US 1 - Kunde - Produktgennemsyn","*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+,,,"Tasks","- Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,"Acceptance Criteria","- *Givet* at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget."
+"US 2 - Bedemand - Speciel Ordre Funktion","*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","3 (yellow)",,
+,,,"Tasks","- Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,"Acceptance Criteria","- *Givet* at en bedemand er logget ind, *når* de tilgår den dedikerede side, *så* skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+"US 3 - Medarbejder - Ordrehåndtering","*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.","3 (yellow)",,
+,,,"Tasks","- Implementer en administrationsside for medarbejdere til håndtering af ordrer."
+,,,"Acceptance Criteria","- *Givet* at en medarbejder er logget ind, *når* de tilgår administrationspanelet, *så* skal de kunne se en liste over aktive ordrer og opdatere deres status."
+"US 4 - Bestyrer - Produktadministration","*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.","3 (yellow)",,
+,,,"Tasks","- Udvikle en brugergrænseflade for produktadministration i administrationspanelet."
+,,,"Acceptance Criteria","- *Givet* at en bestyrer er logget ind, *når* de tilgår produktadministrationsmodulet, *så* skal de kunne tilføje nye produkter, redigere eksisterende produkter og arkivere forældede produkter."
+"US 5 - Kunde - Ordreopfølgning","*Som* kunde, *Ønsker jeg* at kunne spore status for min ordre, *Med det formål* at holde mig opdateret om leveringstidspunktet.","3 (yellow)",,
+,,,"Tasks","- Implementer en funktion til ordreopfølgning på kundens profilside."
+,,,"Acceptance Criteria","- *Givet* at kunden har afgivet en ordre, *når* de logger ind og tjekker deres ordrestatus, *så* skal de kunne se den aktuelle status og forventet leveringstidspunkt."
+"US 6 - Bedemand - Automatisk Fakturering","*Som* bedemand, *Ønsker jeg* automatisk at modtage en faktura ved bestilling, *Med det formål* at forenkle regnskabsprocessen.","3 (yellow)",,
+,,,"Tasks","- Udvikle en automatisk faktureringsproces, der sender fakturaer direkte til bedemandens e-mail efter ordreafgivelse."
+,,,"Acceptance Criteria","- *Givet* at en bedemand afgiver en bestilling, *når* ordren er bekræftet, *så* modtager de en faktura via e-mail."
+"US 30 Kurvindikator (Kunde)","*Som* kunde, *Ønsker jeg* at se antallet af produkter i min kurv uden at være på kurvsiden, *Med det formål* at kunne holde styr på mine valgte varer med lethed.","3 (yellow)",,
+,,,"Tasks","Tilføj en indikator på hjemmesiden, der viser antal produkter i kurven."
+,,,"Acceptance Criteria","Givet at en kunde har tilføjet produkter til deres kurv, *når* de navigerer væk fra kurvsiden, *så* skal de stadig kunne se en indikator med antal produkter i kurven."
+"US 10 Automatiske notifikationer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at modtage automatiske notifikationer om nye ordrer, *Med det formål* at kunne påbegynde ordrebehandling så hurtigt som muligt.","5 (orange)",,
+,,,"Tasks","Implementer en notifikationsfunktion, der alarmerer medarbejdere om nye ordrer via e-mail eller systempopup."
+,,,"Acceptance Criteria","Givet at en ny ordre er afgivet, *når* ordren registreres i systemet, *så* modtager relevante medarbejdere en notifikation."
+"US 8 Salgsrapporter (Bestyrer)","*Som* bestyrer, *Ønsker jeg* at kunne generere detaljerede salgsrapporter, *Med det formål* at analysere salgstendenser og foretage datadrevne beslutninger.","8 (red)",,
+,,,"Tasks","Udvikle en funktion til at generere og eksportere salgsrapporter i administrationspanelet."
+,,,"Acceptance Criteria","Givet at en bestyrer ønsker at se salgsdata, *når* de vælger rapporteringsperioden og genererer rapporten, *så* præsenteres de for en detaljeret rapport over salg fordelt på produkter, kategorier og tidspunkter."
+"US 6 Automatisk Fakturering (Bedemand)","*Som* bedemand, *Ønsker jeg* automatisk at modtage en faktura ved bestilling, *Med det formål* at forenkle regnskabsprocessen.","5 (orange)",,
+,,,"Tasks","Udvikle en automatisk faktureringsproces, der sender fakturaer direkte til bedemandens e-mail efter ordreafgivelse."
+,,,"Acceptance Criteria","Givet at en bedemand afgiver en bestilling, *når* ordren er bekræftet, *så* modtager de en faktura via e-mail."
+"US 21 Slet Bruger (Admin)","*Som* administrator, *Ønsker jeg* at kunne slette en bruger, *Med det formål* at kunne administrere medarbejdere, bedemænd og kunder.","2 (green)",,
+,,,"Tasks","Implementer en slet-funktion i adminpanelet for brugere. Denne må ikke Cascade slette, så Ordre bliver slettet."
+,,,"Acceptance Criteria","Givet at en bruger ikke længere skal have adgang til systemet, *når* administratoren sletter brugeren, *så* skal brugerens konto ikke længere være aktiv eller tilgængelig."
+"US 41 Slette personlige oplysninger (Kunde)","Som kunde vil jeg kunne slette mine personlige oplysninger, så jeg kan sikre, at de ikke længere er tilgængelige.","5 (orange)",,
+,,,"Tasks","Oprette funktion, hvor kundens oplysninger bliver slettet"
+,,,,"Bevar en GUID, så butikkens oversigt over ordre ikke bliver påvirket"
+,,,"Acceptance Criteria","Givet at en en kunde vil slette sine oplysninger, når kunden ønsker det, så bliver de berørte oplysninger slettet, men uden at påvirke bl.a. butikkens regnskabspligt"
+"US 17 Gennemse Nye Ordrer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at gennemgå nye ordrer, *Med det formål* at kunne acceptere eller afvise dem.","3 (yellow)",,
+,,,"Tasks","Implementer en funktion, hvor medarbejdere kan gennemse og administrere nye ordrer."
+,,,"Acceptance Criteria","- Givet at en ny ordre er modtaget, *når* medarbejderen gennemgår ordren, *så* skal de kunne træffe en beslutning om at acceptere eller afvise ordren baseret på lagerbeholdning og andre faktorer."
+"US 16 Ordreoversigt (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se alle ordrer, *Med det formål* at få et overblik over arbejdsbyrden.","3 (yellow)",,
+,,,"Tasks","Udvikle et dashboard, hvor medarbejdere kan se en liste over alle aktuelle ordrer."
+,,,"Acceptance Criteria","- Givet at en medarbejder er logget ind, *når* de tilgår dashboardet, *så* skal de kunne se og sortere alle ordrer efter status, dato og andre relevante kriterier."
+"US 15 Opret Ordre","*Som* kunde, *Ønsker jeg* at skabe en ordre fra min kurv, *Med det formål* at købe de valgte produkter.","3 (yellow)",,
+,,,"Tasks","Udvikle en proces, hvor kunden kan omdanne indholdet af kurven til en ordre."
+,,,"Acceptance Criteria","- Givet at en kunde har valgt produkter i kurven, *når* de klikker på "bestil", *så* skal de kunne gennemføre købet og se en ordrebekræftelse."
+"US 14 Adgang til Kurv","*Som* ejer, *Ønsker jeg* at kunden skal være logget ind for at få adgang til kurven, *Med det formål* at undgå anonyme køb.","3 (yellow)",,
+,,,"Tasks","Kræv at brugere logger ind før de kan tilføje produkter til kurven."
+,,,"Acceptance Criteria","- Givet at en kunde ønsker at tilføje produkter til en kurv, *når* de forsøger at gøre dette, *så* skal de blive bedt om at logge ind eller oprette en konto."
+"US 13 Tilføj til Kurv","*Som* bruger, *Ønsker jeg* at tilføje et produkt til min kurv, *Med det formål* at samle min bestilling.","3 (yellow)",,
+,,,"Tasks","Implementer en funktion til at tilføje produkter til en indkøbskurv."
+,,,"Acceptance Criteria","- Givet at en bruger vælger et produkt, *når* de klikker på "tilføj til kurv"-knappen, *så* skal produktet blive tilføjet til deres kurv."
+"US 12 Se Produkter","*Som* kunde, *Ønsker jeg* at se alle tilgængelige produkter, *Med det formål* at vælge et produkt.","3 (yellow)",,
+,,,"Tasks","Implementer en produktoversigtsside med alle tilgængelige produkter."
+,,,"Acceptance Criteria","- Givet at en kunde besøger produktoversigtssiden, *når* de kigger igennem siden, *så* skal de kunne se alle produkter, der er til salg."
+"US 11 Kunde Feedback og anmeldelser","*Som* kunde, *Ønsker jeg* at kunne afgive feedback og anmelde produkter, *Med det formål* at dele min oplevelse med andre kunder og hjælpe dem med at træffe informerede købsbeslutninger.","3 (yellow)",,
+,,,"Tasks","Implementer en feedbackog anmeldelsesfunktion på produkt siderne."
+,,,"Acceptance Criteria","- Givet at en kunde har købt et produkt, *når* de besøger produktets side efter købet, *så* skal de kunne skrive og indsende en anmeldelse."
+"US 10 Medarbejder Automatiske notifikationer","*Som* medarbejder, *Ønsker jeg* at modtage automatiske notifikationer om nye ordrer, *Med det formål* at kunne påbegynde ordrebehandling så hurtigt som muligt.","3 (yellow)",,
+,,,"Tasks","Implementer en notifikationsfunktion, der alarmerer medarbejdere om nye ordrer via e-mail eller systempopup."
+,,,"Acceptance Criteria","- Givet at en ny ordre er afgivet, *når* ordren registreres i systemet, *så* modtager relevante medarbejdere en notifikation."
+"US 9 Kunde Gavekort og rabatkoder","*Som* kunde, *Ønsker jeg* at kunne anvende gavekort og rabatkoder ved checkout, *Med det formål* at udnytte tilbud og spare penge på køb.","3 (yellow)",,
+,,,"Tasks","Udvikle en funktion, der tillader kunder at indløse gavekort og anvende rabatkoder ved betaling."
+,,,"Acceptance Criteria","- Givet at en kunde har et gyldigt gavekort eller rabatkode, *når* de indtaster koden ved checkout, *så* skal den pågældende rabat eller gavekortets værdi fratrækkes fra den samlede ordre."
+"US 8 Bestyrer Salgsrapporter","*Som* bestyrer, *Ønsker jeg* at kunne generere detaljerede salgsrapporter, *Med det formål* at analysere salgstendenser og foretage datadrevne beslutninger.","3 (yellow)",,
+,,,"Tasks","Udvikle en funktion til at generere og eksportere salgsrapporter i administrationspanelet."
+,,,"Acceptance Criteria","- Givet at en bestyrer ønsker at se salgsdata, *når* de vælger rapporteringsperioden og genererer rapporten, *så* præsenteres de for en detaljeret rapport over salg fordelt på produkter, kategorier og tidspunkter."
+"US 7 Medarbejder Lagerstyring","*Som* medarbejder, *Ønsker jeg* et dashboard til at monitorere lagerstatus, *Med det formål* at forebygge mangler og optimere lagerbeholdningen.","3 (yellow)",,
+,,,"Tasks","Implementer et lagerstyringsmodul i medarbejderens administrationspanel."
+,,,"Acceptance Criteria","- Givet at en medarbejder ønsker at tjekke lagerstatus, *når* de logger ind på dashboardet, *så* skal de kunne se aktuelle lagerantal for alle produkter."
+"US 6 Bedemand Automatisk Fakturering","*Som* bedemand, *Ønsker jeg* automatisk at modtage en faktura ved bestilling, *Med det formål* at forenkle regnskabsprocessen.","3 (yellow)",,
+,,,"Tasks","Udvikle en automatisk faktureringsproces, der sender fakturaer direkte til bedemandens e-mail efter ordreafgivelse."
+,,,"Acceptance Criteria","- Givet at en bedemand afgiver en bestilling, *når* ordren er bekræftet, *så* modtager de en faktura via e-mail."
+"US 5 Kunde Ordreopfølgning","*Som* kunde, *Ønsker jeg* at kunne spore status for min ordre, *Med det formål* at holde mig opdateret om leveringstidspunktet.","3 (yellow)",,
+,,,"Tasks","Implementer en funktion til ordreopfølgning på kundens profilside."
+,,,"Acceptance Criteria","- Givet at kunden har afgivet en ordre, *når* de logger ind og tjekker deres ordrestatus, *så* skal de kunne se den aktuelle status og forventet leveringstidspunkt."
+"US 1 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","3 (yellow)",,
+,,,"Tasks","Opgave 1"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 4 Bestyrer Produktadministration","*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.","3 (yellow)",,
+,,,"Tasks","Udvikle en brugergrænseflade for produktadministration i administrationspanelet."
+,,,"Acceptance Criteria","- Givet at en bestyrer er logget ind, *når* de tilgår produktadministrationsmodulet, *så* skal de kunne tilføje nye produkter, redigere eksisterende produkter og arkivere forældede produkter."
+"US 2 - Kunde, Produktgennemsyn","Som, ønsker jeg, med det formål","5 (orange)",,
+,,,"Tasks","Opgave 1"
+,,,,"Opgave 2"
+,,,"Acceptance Criteria","Opgave 3"
+,,,,"Opgave 4"
+"US 3 Medarbejder Ordrehåndtering","*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.","3 (yellow)",,
+,,,"Tasks","Implementer en administrationsside for medarbejdere til håndtering af ordrer."
+,,,"Acceptance Criteria","- Givet at en medarbejder er logget ind, *når* de tilgår administrationspanelet, *så* skal de kunne se en liste over aktive ordrer og opdatere deres status."
+"1. User Story: Kunde - Produktgennemsyn","- **Som** kunde,- **Ønsker jeg** at kunne se butikkens portefølje i kategorier,- **Med det formål** bedst at kunne vælge det produkt, der opfylder mit behov.Som kunde,Ønsker jeg at kunne se butikkens portefølje i kategorier,Med det formål bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+,,,"Acceptance Criteria","Givet at en kunde vil se en bestemt produktkategori, når de leder efter et produkt der opfylder deres behov, så får de en tilsvarende afgrænset visning af produktkataloget."
+,,,"Tasks ","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+"US 37 - Navigation i Profil (Kunde)","*Som* kunde, *Ønsker jeg* at kunne navigere nemt på mine profilsider, *Med det formål* at brugeroplevelsen føles glidende og uforstyrret.","3 (yellow)",,
+,,,"Tasks","- Design en brugervenlig og intuitiv grænseflade for kundens profilområde."
+,,,"Acceptance Criteria","- *Givet* at en kunde ønsker at administrere sin profil, *når* de navigerer på deres profil, *så* skal de kunne gøre det uden forvirring eller forstyrrelser."
+"US 2 Bedemand Speciel Ordre Funktion","*Som* bedemand, *Ønsker jeg* at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side, *Med det formål* at effektivisere bestillingsprocessen for begravelsesarrangementer.","3 (yellow)",,
+,,,"Tasks","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,"Acceptance Criteria","- Givet at en bedemand er logget ind, *når* de tilgår den dedikerede side, *så* skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+"2. User Story: Bedemand - Speciel Ordre Funktion","- **Som** bedemand,- **Ønsker jeg** at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret side,- **Med det formål** at effektivisere bestillingsprocessen for begravelsesarrangementer.Som bedemandønsker jeg at kunne bestille specialdesignet blomsterarrangement direkte via en dedikeret sidemed det formål at effektivisere bestillingsprocessen for begravelsesarrangementer.","5 (orange)",,
+,,,"Tasks ","Opret en dedikeret side for bedemænd med tilpassede bestillingsmuligheder."
+,,,"Acceptance Criteria","Givet at en bedemand er logget ind, når de tilgår den dedikerede side, så skal de kunne vælge og tilpasse blomsterarrangementer specielt designet til begravelser."
+"US 36 - Visning af Søgeresultater (Bruger)","*Som* bruger, *Ønsker jeg* at kunne se mine søgeresultater, *Med det formål* at kunne vælge et produkt fra resultaterne.","3 (yellow)",,
+,,,"Tasks","- Skabe en visning, der effektivt præsenterer resultaterne af en produktsøgning."
+,,,"Acceptance Criteria","- *Givet* at en bruger har foretaget en søgning, *når* søgeresultaterne vises, *så* skal de være klare og lette at navigere i."
+"US 1 Kunde Produktgennemsyn","*Som* kunde, *Ønsker jeg* at kunne se butikkens portfølje i kategorier, *Med det formål* bedst at kunne vælge det produkt, der opfylder mit behov.","3 (yellow)",,
+,,,"Tasks","Implementer Razor Page, der kan fremvise alle produkter i en udvalgt kategori."
+,,,"Acceptance Criteria","- Givet at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget."
+"US 35 - Opdatere Ordrestatus (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne opdatere ordrestatus, *Med det formål* at tydeliggøre for alle brugere, hvor langt ordren er i processen.","3 (yellow)",,
+,,,"Tasks","- Skabe en funktion, der tillader medarbejdere at opdatere status for en ordre i realtid."
+,,,"Acceptance Criteria","- *Givet* at en ordre er i gang med at blive ekspederet, *når* medarbejderen opdaterer ordrens status, *så* skal denne opdatering være synlig for alle relevante parter, herunder andre medarbejdere og kunden, hvis de tjekker status online."
+"US 34 - Se Ordredetaljer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se ordredetaljer om blomsterarrangementet, *Med det formål* at kunne ekspedere ordrer korrekt og effektivt.","3 (yellow)",,
+,,,"Tasks","- Udvikle en funktion, der viser fulde detaljer for hver ordre, inklusive specifikationer for blomsterarrangementet."
+,,,"Acceptance Criteria","- *Givet* at en medarbejder behandler en ordre, *når* de tilgår ordren på systemet, *så* skal de kunne se alle relevante detaljer om blomsterarrangementet, som er nødvendige for at færdiggøre ordren korrekt."
+"US 33 - Log Ind på Ordreportal (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne logge ind på ordreportalen, *Med det formål* at kunne ekspedere ordrer.","3 (yellow)",,
+,,,"Tasks","- Implementer en sikker log ind-funktion specifikt for medarbejdere på ordreportalen."
+,,,"Acceptance Criteria","- *Givet* at en medarbejder står foran sin arbejdsstation, *når* de indtaster deres legitimationsoplysninger, *så* skal de have adgang til ordreportalen, hvor de kan administrere ordrer."
+"US 32 - Sortering og Filtrering af Søgeresultater (Bruger)","*Som* bruger, *Ønsker jeg* at kunne sortere og filtrere søgeresultaterne efter en produktsøgning, *Med det formål* bedre at finde det, jeg leder efter.","3 (yellow)",,
+,,,"Tasks","- Tilføj sortering og filtreringsmuligheder til søgeresultatsiden."
+,,,"Acceptance Criteria","- *Givet* at en bruger har udført en søgning og ser på resultaterne, *når* de anvender filtrerings- og sorteringsfunktionerne, *så* skal listen over produkter opdatere sig i henhold til de valgte kriterier."
+"US 31 - Tekstsøgning efter Produkter (Kunde)","*Som* kunde, *Ønsker jeg* at søge efter produkter med tekst, *Med det formål* at hurtigt finde, hvad jeg har i tankerne.","3 (yellow)",,
+,,,"Tasks","- Integrer en søgefunktion i webshoppen, som tillader tekstbaseret søgning."
+,,,"Acceptance Criteria","- *Givet* at en kunde ved, hvad de leder efter, *når* de indtaster søgekriterier, *så* skal de præsenteres for relevante produktresultater."
+"US 30 - Kurvindikator (Kunde)","*Som* kunde, *Ønsker jeg* at se antallet af produkter i min kurv uden at være på kurvsiden, *Med det formål* at kunne holde styr på mine valgte varer med lethed.","3 (yellow)",,
+,,,"Tasks","- Tilføj en indikator på hjemmesiden, der viser antal produkter i kurven."
+,,,"Acceptance Criteria","- *Givet* at en kunde har tilføjet produkter til deres kurv, *når* de navigerer væk fra kurvsiden, *så* skal de stadig kunne se en indikator med antal produkter i kurven."
+"US 29 - Genskabe Produkt (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at kunne se deaktiverede produkter og genaktivere dem, *Med det formål* at administrere produktkataloget.","3 (yellow)",,
+,,,"Tasks","- Tilføje en funktion til at se og reaktivere deaktiverede produkter."
+,,,"Acceptance Criteria","- *Givet* at et produkt tidligere er blevet deaktiveret, *når* medarbejderen ønsker at genaktivere det, *så* skal produktet igen kunne vises og sælges på hjemmesiden."
+"US 28 - Leveringsvalg (Bedemand)","*Som* bedemand, *Ønsker jeg* at kunne vælge leveringssted og -tid, *Med det formål* at kunne drive min forretning.","3 (yellow)",,
+,,,"Tasks","- Skabe et brugerinterface, hvor bedemænd kan vælge leveringsdetaljer ved bestilling."
+,,,"Acceptance Criteria","- *Givet* at en bedemand laver en bestilling, *når* de indtaster leveringsoplysninger, *så* skal disse oplysninger anvendes til ordren."
+"US 27 - Ordrenotifikationer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at modtage en notifikation fra systemet, når en ny ordre indsendes, *Med det formål* at kunne ekspedere ordren hurtigt.","3 (yellow)",,
+,,,"Tasks","- Implementere et system til at sende automatisk notifikation til medarbejderne om nye ordrer."
+,,,"Acceptance Criteria","- *Givet* at en ny ordre er indsendt, *når* systemet registrerer ordren, *så* skal medarbejderne modtage en notifikation."
+"US 26 - Produktfiltrering (Kunde)","*Som* kunde, *Ønsker jeg* at kunne filtrere produkter på produktsiden, *Med det formål* nemt at finde det rigtige produkt.","3 (yellow)",,
+,,,"Tasks","- Oprette filter- og sorteringsfunktioner i ordreoversigten."
+,,,"Acceptance Criteria","- *Givet* at en kunde søger efter et specifikt produkt, *når* de bruger filterfunktionerne, *så* skal de kunne se en filtreret liste af produkter, der matcher deres kriterier."
+"","","",,
+,,,"Acceptance Criteria","- *Givet* at der er behov for at organisere ordrer, *når* medarbejderen anvender filter- og sorteringsfunktionerne, *så* skal de kunne se en organiseret liste over ordrer."
+"US 25 - Ordrefilter og -sortering (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at filtrere og sortere ordrer, *Med det formål* at få et overblik over ordrer, der er forfaldne eller som jeg er ansvarlig for.","3 (yellow)",,
+"US 24 - Deaktiver Produkt (Medarbejder/Administrator)","*Som* medarbejder/administrator, *Ønsker jeg* at kunne deaktivere et produkt, *Med det formål* at fjerne gamle produkter fra produktkataloget.","3 (yellow)",,
+,,,"Tasks","- Implementer en funktion til at deaktivere produkter i produktoversigten."
+,,,"Acceptance Criteria","- *Givet* at et produkt ikke længere skal sælges, *når* medarbejder/administrator deaktiverer produktet i systemet, *så* skal produktet ikke længere være synligt for kunder."
+"US 23 - Opret Nyt Produkt (Medarbejder/Administrator)","*Som* medarbejder/administrator, *Ønsker jeg* at kunne oprette et nyt produkt, *Med det formål* at holde produktkataloget opdateret med nye varer.","3 (yellow)",,
+,,,"Tasks","- Skabe en tilføj produkt-funktion på webshoppen for medarbejdere og administratorer."
+,,,"Acceptance Criteria","- *Givet* at webshoppen skal have nye produkter tilføjet, *når* medarbejder/administrator indtaster produktdetaljerne og uploader billeder, *så* skal det nye produkt være tilgængeligt i webshoppen."
+"US 22 - Produktopdatering (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at opdatere produkter, *Med det formål* at styre lagerbeholdningen.","3 (yellow)",,
+,,,"Tasks","- Udvikle et interface til opdatering af produktinformationer og lagerstatus."
+,,,"Acceptance Criteria","- *Givet* at et produkt behøver en opdatering, *når* medarbejderen ændrer informationen i systemet, *så* skal disse ændringer være synlige på webshoppen."
+"US X Template ()","","5 (orange)",,
+"US 11 Feedback og anmeldelser (Kunde)","*Som* kunde, *Ønsker jeg* at kunne afgive feedback og anmelde produkter, *Med det formål* at dele min oplevelse med andre kunder og hjælpe dem med at træffe informerede købsbeslutninger.","3 (yellow)",,
+,,,"Tasks","Implementer en feedback og anmeldelsesfunktion på produkt siderne."
+,,,"Acceptance Criteria","Givet at en kunde har købt et produkt, *når* de besøger produktets side efter købet, *så* skal de kunne skrive og indsende en anmeldelse."
+"US 9 Gavekort og rabatkoder (Kunde)","*Som* kunde, *Ønsker jeg* at kunne anvende gavekort og rabatkoder ved checkout, *Med det formål* at udnytte tilbud og spare penge på køb.","5 (orange)",,
+,,,"Tasks","Udvikle en funktion, der tillader kunder at indløse gavekort og anvende rabatkoder ved betaling."
+,,,"Acceptance Criteria","Givet at en kunde har et gyldigt gavekort eller rabatkode, *når* de indtaster koden ved checkout, *så* skal den pågældende rabat eller gavekortets værdi fratrækkes fra den samlede ordre."
+"US 7 Medarbejder Lagerstyring","*Som* medarbejder, *Ønsker jeg* et dashboard til at monitorere lagerstatus, *Med det formål* at forebygge mangler og optimere lagerbeholdningen.","3 (yellow)",,
+,,,"Tasks","Implementer et lagerstyringsmodul i medarbejderens administrationspanel."
+,,,"Acceptance Criteria","Givet at en medarbejder ønsker at tjekke lagerstatus, *når* de logger ind på dashboardet, *så* skal de kunne se aktuelle lagerantal for alle produkter."
+"US 27 Ordrenotifikationer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at modtage en notifikation fra systemet, når en ny ordre indsendes, *Med det formål* at kunne ekspedere ordren hurtigt.","5 (orange)",,
+,,,"Tasks","Implementere et system til at sende automatisk notifikation til medarbejderne om nye ordrer."
+,,,"Acceptance Criteria","Givet at en ny ordre er indsendt, *når* systemet registrerer ordren, *så* skal medarbejderne modtage en notifikation."
+"US 17 Gennemse Nye Ordrer (Medarbejder)","*Som* medarbejder, *Ønsker jeg* at gennemgå nye ordrer, *Med det formål* at kunne acceptere eller afvise dem.","3 (yellow)",,
+,,,"Tasks","Implementer en funktion, hvor medarbejdere kan gennemse og administrere nye ordrer."
+,,,"Acceptance Criteria","Givet at en ny ordre er modtaget, *når* medarbejderen gennemgår ordren, *så* skal de kunne træffe en beslutning om at acceptere eller afvise ordren baseret på lagerbeholdning og andre faktorer."
