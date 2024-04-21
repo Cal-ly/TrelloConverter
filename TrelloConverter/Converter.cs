@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json.Linq;
-using System.IO;
+﻿using Newtonsoft.Json;
 using System.Text;
 using System.Text.RegularExpressions;
+using TrelloConverter.Models;
 
 namespace TrelloConverter
 {
@@ -58,13 +58,14 @@ namespace TrelloConverter
         }
         private static List<string> ConvertJsonToList(string filePathJson)
         {
+            var methodList = LoadJsonToObject(filePathJson);
             var json = File.ReadAllText(filePathJson);
-            var data = JObject.Parse(json);
+            var data = Newtonsoft.Json.Linq.JObject.Parse(json);
 
             // Extract the required information
-            var cards = data["cards"]?.ToObject<JArray>();
-            var checklists = data["checklists"]?.ToObject<JArray>();
-            var lists = data["lists"]?.ToObject<JArray>();
+            var cards = data["cards"]?.ToObject<Newtonsoft.Json.Linq.JArray>();
+            var checklists = data["checklists"]?.ToObject<Newtonsoft.Json.Linq.JArray>();
+            var lists = data["lists"]?.ToObject<Newtonsoft.Json.Linq.JArray>();
 
             List<string> result = [];
             if (cards != null)
@@ -90,7 +91,7 @@ namespace TrelloConverter
                     string cardLabels = labelBuilder.ToString();
 
                     string listName = ",";
-                    string ifListName = lists.FirstOrDefault(x => x["id"].ToString() == card["idList"].ToString())["name"].ToString();
+                    string ifListName = lists!.FirstOrDefault(x => x["id"].ToString() == card["idList"].ToString())["name"].ToString();
                     if (ifListName != null)
                     {
                         listName = ifListName;
@@ -218,81 +219,102 @@ namespace TrelloConverter
         {
             mustGenerateMarkdown = generateMarkdown.Checked;
         }
+
+        private static List<Card> LoadJsonToObject(string filePathJson)
+        {
+            List<Card> cards = new List<Card>();
+            var trelloData = new TrelloData();
+            using (StreamReader file = File.OpenText(filePathJson))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                trelloData = (TrelloData?)serializer.Deserialize(file, typeof(TrelloData));
+            }
+
+            foreach (var card in trelloData.Cards)
+            {
+                Card newCard = new();
+
+                newCard.Name = card.Name;
+                newCard.Desc = card.Desc;
+                newCard.Labels = new List<Models.Label>();
+                foreach (var label in card.Labels)
+                {
+                    Models.Label newLabel = new();
+                    newLabel.Name = label.Name;
+                    newLabel.Color = label.Color;
+                    newCard.Labels.Add(newLabel);
+                }
+
+                foreach (var checklist in trelloData.Checklists)
+                {
+                    if (checklist.IdCard == card.Id)
+                    {
+                        if (newCard.Checklists == null)
+                        {
+                            newCard.Checklists = new List<Checklist>();
+                            Checklist tempChecklist = new();
+                            tempChecklist.Name = checklist.Name;
+                            tempChecklist.CheckItems = new List<CheckItem>();
+                            foreach (var checkItem in checklist.CheckItems)
+                            {
+                                CheckItem newCheckItem = new();
+                                newCheckItem.Name = checkItem.Name;
+                                tempChecklist.CheckItems.Add(newCheckItem);
+                            }
+                            newCard.Checklists.Add(tempChecklist);
+                        }
+                        else if (newCard.Checklists.Any(x => x.Name == checklist.Name))
+                        {
+                            foreach (var cardChecklist in newCard.Checklists)
+                            {
+                                if (cardChecklist.Name == checklist.Name)
+                                {
+                                    foreach (var checkItem in checklist.CheckItems)
+                                    {
+                                        CheckItem newCheckItem = new();
+                                        newCheckItem.Name = checkItem.Name;
+                                        cardChecklist.CheckItems.Add(newCheckItem);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Checklist newChecklist = new();
+                            newChecklist.Name = checklist.Name;
+                            newChecklist.CheckItems = new List<CheckItem>();
+                            foreach (var checkItem in checklist.CheckItems)
+                            {
+                                CheckItem newCheckItem = new();
+                                newCheckItem.Name = checkItem.Name;
+                                newChecklist.CheckItems.Add(newCheckItem);
+                            }
+                            newCard.Checklists.Add(newChecklist);
+                        }
+                    }
+                }
+                cards.Add(newCard);
+                string newfilepath = Path.Combine(Path.GetDirectoryName(filePathJson) ?? string.Empty, "output.txt");
+                using StreamWriter file = new StreamWriter(newfilepath, append: true);
+
+                file.WriteLine(newCard.Name);
+                file.WriteLine(newCard.Desc);
+                foreach (var label in newCard.Labels)
+                {
+                    string labelJoin = $"{label.Name} ({label.Color})";
+                    file.WriteLine(labelJoin);
+                }
+                foreach (var checklist in newCard.Checklists)
+                {
+                    file.WriteLine(checklist.Name);
+                    foreach (var checkItem in checklist.CheckItems)
+                    {
+                        file.WriteLine(checkItem.Name);
+                    }
+                }
+                file.WriteLine("------------------------------------------");
+            }
+            return cards;
+        }
     }
 }
-        //private static string ConvertJsonToCSV(string filePathJson)
-        //{
-        //    var json = File.ReadAllText(filePathJson);
-        //    var data = JObject.Parse(json);
-
-        //    // Extract the required information
-        //    var cards = data["cards"]?.ToObject<JArray>();
-        //    var checklists = data["checklists"]?.ToObject<JArray>();
-        //    var lists = data["lists"]?.ToObject<JArray>();
-
-        //    StringBuilder sb = new StringBuilder();
-        //    if (cards != null)
-        //    {
-        //        StringBuilder cardBuilder = new StringBuilder();
-        //        cardBuilder.AppendLine("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
-        //        foreach (var card in cards)
-        //        {
-        //            StringBuilder headerBuilder = new StringBuilder();
-        //            StringBuilder labelBuilder = new StringBuilder();
-        //            foreach (var label in card["labels"])
-        //            {
-        //                labelBuilder.AppendFormat("{0} ({1})", label["name"], label["color"]);
-        //                if (label != card["labels"].Last)
-        //                {
-        //                    labelBuilder.Append(' ');
-        //                }
-        //            }
-        //            string cardName = card["name"].ToString();
-        //            cardName = cardName.Replace("\n", "");
-        //            string cardDesc = card["desc"].ToString();
-        //            cardDesc = cardDesc.Replace("\n", "");
-        //            string cardLabels = labelBuilder.ToString();
-
-        //            string listName = ",";
-        //            string ifListName = lists.FirstOrDefault(x => x["id"].ToString() == card["idList"].ToString())["name"].ToString();
-        //            if (ifListName != null)
-        //            {
-        //                listName = ifListName;
-        //            }
-
-        //            headerBuilder.AppendFormat("\"{0}\",\"{1}\",\"{2}\",\"{3}\",,,", cardName, cardDesc, cardLabels, listName);
-        //            cardBuilder.AppendLine(headerBuilder.ToString());
-
-        //            foreach (var checklist in checklists)
-        //            {
-        //                if (checklist["idCard"].ToString() == card["id"].ToString())
-        //                {
-        //                    foreach (var checkItem in checklist["checkItems"])
-        //                    {
-        //                        StringBuilder checklistBuilder = new StringBuilder();
-        //                        if (checkItem == checklist["checkItems"].First)
-        //                        {
-        //                            string checklistName = checklist["name"].ToString();
-        //                            checklistName = checklistName.Replace("\n", "");
-        //                            checklistName = checklistName.Replace("\"", "\'");
-        //                            string checkItemName = checkItem["name"].ToString();
-        //                            checkItemName = checkItemName.Replace("\n", "");
-        //                            checkItemName = checkItemName.Replace("\"", "\'");
-        //                            checklistBuilder.AppendFormat(",,,,\"{0}\",\"{1}\"", checklistName, checkItemName);
-        //                        }
-        //                        else
-        //                        {
-        //                            string checkItemName = checkItem["name"].ToString();
-        //                            checkItemName = checkItemName.Replace("\n", "");
-        //                            checkItemName = checkItemName.Replace("\"", "\'");
-        //                            checklistBuilder.AppendFormat(",,,,,\"{0}\"", checkItemName);
-        //                        }
-        //                        cardBuilder.AppendLine(checklistBuilder.ToString());
-        //                    }
-        //                }
-        //            }
-        //        }
-        //        sb.Append(cardBuilder);
-        //    }
-        //    return sb.ToString();
-        //}
