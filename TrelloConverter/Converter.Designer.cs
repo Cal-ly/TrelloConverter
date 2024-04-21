@@ -95,6 +95,8 @@
             // generateMarkdown
             // 
             generateMarkdown.AutoSize = true;
+            generateMarkdown.Checked = true;
+            generateMarkdown.CheckState = CheckState.Checked;
             generateMarkdown.Location = new Point(140, 267);
             generateMarkdown.Name = "generateMarkdown";
             generateMarkdown.Size = new Size(144, 29);

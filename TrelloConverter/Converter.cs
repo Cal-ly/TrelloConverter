@@ -56,7 +56,6 @@ namespace TrelloConverter
 
             ConversionOutputCheck();
         }
-
         private static List<string> ConvertJsonToList(string filePathJson)
         {
             var json = File.ReadAllText(filePathJson);
@@ -71,9 +70,9 @@ namespace TrelloConverter
             if (cards != null)
             {
                 result.Add("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
-                StringBuilder cardBuilder = new StringBuilder();
                 foreach (var card in cards)
                 {
+                    StringBuilder cardBuilder = new StringBuilder();
                     StringBuilder headerBuilder = new StringBuilder();
                     StringBuilder labelBuilder = new StringBuilder();
                     foreach (var label in card["labels"])
@@ -107,29 +106,19 @@ namespace TrelloConverter
                             foreach (var checkItem in checklist["checkItems"])
                             {
                                 StringBuilder checklistBuilder = new StringBuilder();
-                                if (checkItem == checklist["checkItems"].First)
-                                {
-                                    string checklistName = checklist["name"].ToString();
-                                    checklistName = checklistName.Replace("\n", "");
-                                    checklistName = checklistName.Replace("\"", "\'");
-                                    string checkItemName = checkItem["name"].ToString();
-                                    checkItemName = checkItemName.Replace("\n", "");
-                                    checkItemName = checkItemName.Replace("\"", "\'");
-                                    checklistBuilder.AppendFormat(",,,,\"{0}\",\"{1}\"", checklistName, checkItemName);
-                                }
-                                else
-                                {
-                                    string checkItemName = checkItem["name"].ToString();
-                                    checkItemName = checkItemName.Replace("\n", "");
-                                    checkItemName = checkItemName.Replace("\"", "\'");
-                                    checklistBuilder.AppendFormat(",,,,,\"{0}\"", checkItemName);
-                                }
+                                string checklistName = checklist["name"].ToString();
+                                checklistName = checklistName.Replace("\n", "");
+                                checklistName = checklistName.Replace("\"", "\'");
+                                string checkItemName = checkItem["name"].ToString();
+                                checkItemName = checkItemName.Replace("\n", "");
+                                checkItemName = checkItemName.Replace("\"", "\'");
+                                checklistBuilder.AppendFormat(",,,,\"{0}\",\"{1}\"", checklistName, checkItemName);
                                 cardBuilder.AppendLine(checklistBuilder.ToString());
                             }
                         }
                     }
+                    result.Add(cardBuilder.ToString());
                 }
-                result.Add(cardBuilder.ToString());
             }
             if (result.Count < 1)
             {
@@ -137,24 +126,23 @@ namespace TrelloConverter
             }
             return result;
         }
-
         public static List<string> FormatListToMarkdown(List<string> listInput)
         {
-            List<string> csvList = new(listInput);
-            if (csvList[0] == "Card Name,Card Description,Labels,List Name,Checklist,Checklist item")
+            List<string> csvList = [];
+            if (listInput[0] == "Card Name,Card Description,Labels,List Name,Checklist,Checklist item")
             {
-                csvList.RemoveAt(0);
+                listInput.RemoveAt(0);
             }
-            foreach (var line in csvList)
+            foreach (var line in listInput)
             {
                 // Regex to extract parts of the input
                 var regex = new Regex("\"([^\"]+)\",\"([^\"]+)\",\"([^\"]+)\",\"([^\"]+)\",\"Tasks\",\"([^\"]+)\",\"Acceptance Criteria\",\"([^\"]+)\"");
                 var match = regex.Match(line);
 
-                //if (!match.Success)
-                //{
-                //    break;
-                //}
+                if (!match.Success)
+                {
+                    break;
+                }
 
                 // Extracting data
                 string titleSection = match.Groups[1].Value;
@@ -183,7 +171,6 @@ namespace TrelloConverter
             }
             return csvList;
         }
-
         private void ConversionInputCheck()
         {
             if (string.IsNullOrEmpty(filePathJSON.Text))
@@ -223,91 +210,89 @@ namespace TrelloConverter
                 MessageBox.Show("Conversion failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void Enumerate_CheckedChanged(object sender, EventArgs e)
         {
             mustEnumerate = enumerate.Checked;
         }
-        private static string ConvertJsonToCSV(string filePathJson)
-        {
-            var json = File.ReadAllText(filePathJson);
-            var data = JObject.Parse(json);
-
-            // Extract the required information
-            var cards = data["cards"]?.ToObject<JArray>();
-            var checklists = data["checklists"]?.ToObject<JArray>();
-            var lists = data["lists"]?.ToObject<JArray>();
-
-            StringBuilder sb = new StringBuilder();
-            if (cards != null)
-            {
-                StringBuilder cardBuilder = new StringBuilder();
-                cardBuilder.AppendLine("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
-                foreach (var card in cards)
-                {
-                    StringBuilder headerBuilder = new StringBuilder();
-                    StringBuilder labelBuilder = new StringBuilder();
-                    foreach (var label in card["labels"])
-                    {
-                        labelBuilder.AppendFormat("{0} ({1})", label["name"], label["color"]);
-                        if (label != card["labels"].Last)
-                        {
-                            labelBuilder.Append(' ');
-                        }
-                    }
-                    string cardName = card["name"].ToString();
-                    cardName = cardName.Replace("\n", "");
-                    string cardDesc = card["desc"].ToString();
-                    cardDesc = cardDesc.Replace("\n", "");
-                    string cardLabels = labelBuilder.ToString();
-
-                    string listName = ",";
-                    string ifListName = lists.FirstOrDefault(x => x["id"].ToString() == card["idList"].ToString())["name"].ToString();
-                    if (ifListName != null)
-                    {
-                        listName = ifListName;
-                    }
-
-                    headerBuilder.AppendFormat("\"{0}\",\"{1}\",\"{2}\",\"{3}\",,,", cardName, cardDesc, cardLabels, listName);
-                    cardBuilder.AppendLine(headerBuilder.ToString());
-
-                    foreach (var checklist in checklists)
-                    {
-                        if (checklist["idCard"].ToString() == card["id"].ToString())
-                        {
-                            foreach (var checkItem in checklist["checkItems"])
-                            {
-                                StringBuilder checklistBuilder = new StringBuilder();
-                                if (checkItem == checklist["checkItems"].First)
-                                {
-                                    string checklistName = checklist["name"].ToString();
-                                    checklistName = checklistName.Replace("\n", "");
-                                    checklistName = checklistName.Replace("\"", "\'");
-                                    string checkItemName = checkItem["name"].ToString();
-                                    checkItemName = checkItemName.Replace("\n", "");
-                                    checkItemName = checkItemName.Replace("\"", "\'");
-                                    checklistBuilder.AppendFormat(",,,,\"{0}\",\"{1}\"", checklistName, checkItemName);
-                                }
-                                else
-                                {
-                                    string checkItemName = checkItem["name"].ToString();
-                                    checkItemName = checkItemName.Replace("\n", "");
-                                    checkItemName = checkItemName.Replace("\"", "\'");
-                                    checklistBuilder.AppendFormat(",,,,,\"{0}\"", checkItemName);
-                                }
-                                cardBuilder.AppendLine(checklistBuilder.ToString());
-                            }
-                        }
-                    }
-                }
-                sb.Append(cardBuilder);
-            }
-            return sb.ToString();
-        }
-
         private void generateMarkdown_CheckedChanged(object sender, EventArgs e)
         {
             mustGenerateMarkdown = generateMarkdown.Checked;
         }
     }
 }
+        //private static string ConvertJsonToCSV(string filePathJson)
+        //{
+        //    var json = File.ReadAllText(filePathJson);
+        //    var data = JObject.Parse(json);
+
+        //    // Extract the required information
+        //    var cards = data["cards"]?.ToObject<JArray>();
+        //    var checklists = data["checklists"]?.ToObject<JArray>();
+        //    var lists = data["lists"]?.ToObject<JArray>();
+
+        //    StringBuilder sb = new StringBuilder();
+        //    if (cards != null)
+        //    {
+        //        StringBuilder cardBuilder = new StringBuilder();
+        //        cardBuilder.AppendLine("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
+        //        foreach (var card in cards)
+        //        {
+        //            StringBuilder headerBuilder = new StringBuilder();
+        //            StringBuilder labelBuilder = new StringBuilder();
+        //            foreach (var label in card["labels"])
+        //            {
+        //                labelBuilder.AppendFormat("{0} ({1})", label["name"], label["color"]);
+        //                if (label != card["labels"].Last)
+        //                {
+        //                    labelBuilder.Append(' ');
+        //                }
+        //            }
+        //            string cardName = card["name"].ToString();
+        //            cardName = cardName.Replace("\n", "");
+        //            string cardDesc = card["desc"].ToString();
+        //            cardDesc = cardDesc.Replace("\n", "");
+        //            string cardLabels = labelBuilder.ToString();
+
+        //            string listName = ",";
+        //            string ifListName = lists.FirstOrDefault(x => x["id"].ToString() == card["idList"].ToString())["name"].ToString();
+        //            if (ifListName != null)
+        //            {
+        //                listName = ifListName;
+        //            }
+
+        //            headerBuilder.AppendFormat("\"{0}\",\"{1}\",\"{2}\",\"{3}\",,,", cardName, cardDesc, cardLabels, listName);
+        //            cardBuilder.AppendLine(headerBuilder.ToString());
+
+        //            foreach (var checklist in checklists)
+        //            {
+        //                if (checklist["idCard"].ToString() == card["id"].ToString())
+        //                {
+        //                    foreach (var checkItem in checklist["checkItems"])
+        //                    {
+        //                        StringBuilder checklistBuilder = new StringBuilder();
+        //                        if (checkItem == checklist["checkItems"].First)
+        //                        {
+        //                            string checklistName = checklist["name"].ToString();
+        //                            checklistName = checklistName.Replace("\n", "");
+        //                            checklistName = checklistName.Replace("\"", "\'");
+        //                            string checkItemName = checkItem["name"].ToString();
+        //                            checkItemName = checkItemName.Replace("\n", "");
+        //                            checkItemName = checkItemName.Replace("\"", "\'");
+        //                            checklistBuilder.AppendFormat(",,,,\"{0}\",\"{1}\"", checklistName, checkItemName);
+        //                        }
+        //                        else
+        //                        {
+        //                            string checkItemName = checkItem["name"].ToString();
+        //                            checkItemName = checkItemName.Replace("\n", "");
+        //                            checkItemName = checkItemName.Replace("\"", "\'");
+        //                            checklistBuilder.AppendFormat(",,,,,\"{0}\"", checkItemName);
+        //                        }
+        //                        cardBuilder.AppendLine(checklistBuilder.ToString());
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        sb.Append(cardBuilder);
+        //    }
+        //    return sb.ToString();
+        //}
