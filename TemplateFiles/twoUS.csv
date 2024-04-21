@@ -1,0 +1,9 @@
+Card Name,Card Description,Labels,List Name,Checklist,Checklist item
+"US 12 Se Alle Produkter (Kunde)","*Som* kunde, *Ønsker jeg* at se alle tilgængelige produkter, *Med det formål* at vælge et produkt.","1 (green_light)","Sprint 1 Backlog",,,
+,,,,"Tasks","Implementer en produktoversigtsside med alle tilgængelige produkter."
+,,,,"Tasks","Implementer en søgefunktion, så kunden kan søge efter specifikke produkter."
+,,,,"Acceptance Criteria","*Givet* at en kunde besøger produktoversigtssiden, *når* de kigger igennem siden, *så* skal de kunne se alle produkter, der er til salg."
+,,,,"Acceptance Criteria","*Givet* at en kunde leder efter produkter, *når* de kigger søger på siden, *så* skal de kunne se alle produkter, der er relevant for deres søgning."
+"US 38 Oversigt over Produkter (Kunde)","Som kunde vil jeg kunne se en oversigt over blomsterarrangementer, så jeg kan vælge det, der passer til lejligheden.","3 (yellow)","Sprint 1 Backlog",,,
+,,,,"Tasks","Implementer kategorier, hvor produkter der har samme tema vises"
+,,,,"Acceptance Criteria","*Givet* at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget."
