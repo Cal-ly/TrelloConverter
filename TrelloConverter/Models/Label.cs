@@ -10,4 +10,6 @@ public class Label
 
     //[JsonPropertyName("color")]
     public string? Color { get; set; }
+
+    public string? CorrectedColor { get; set; }
 }

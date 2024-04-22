@@ -27,4 +27,7 @@ public class Card
 
     //[JsonPropertyName("idBoard")]
     public string? IdBoard { get; set; }
+    public bool Closed { get; set; } = false;
+    public int? ReorderPosition { get; set; }
+    public string? ListName { get; set; }
 }

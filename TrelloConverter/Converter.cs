@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json;
+using System;
+using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 using TrelloConverter.Models;
@@ -10,9 +12,17 @@ namespace TrelloConverter
         private string filePathInput = "";
         private string filePathDir = "";
         private string filePathOutputCSV = "";
+        private string filePathOutputCSVrev = "";
         private string filePathOutputMD = "";
-        private bool mustEnumerate = false;
-        private bool mustGenerateMarkdown = false;
+        private string filePathOutputLATEX = "";
+        private bool mustKeepFormat = false;
+        private bool mustDeEnumerate = false;
+        private bool mustEnumerate = true;
+        private bool mustGenerateMarkdown = true;
+        private bool mustGenerateLATEX = true;
+        private bool mustReverseOrder = true;
+        private bool mustCloseAfterConv = true;
+        private const string patternUS = @"^US(-\d{3}|\s+\d+)\s+";
         public Converter()
         {
             InitializeComponent();
@@ -32,194 +42,62 @@ namespace TrelloConverter
             filePathInput = Path.GetFullPath(filePathJSON.Text);
             filePathDir = Path.GetDirectoryName(filePathJSON.Text) ?? string.Empty;
             filePathOutputCSV = Path.Combine(filePathDir, Path.GetFileNameWithoutExtension(filePathJSON.Text) + "_converted.csv");
+            filePathOutputCSVrev = Path.Combine(filePathDir, Path.GetFileNameWithoutExtension(filePathJSON.Text) + "_converted_reversed.csv");
             filePathOutputMD = Path.Combine(filePathDir, Path.GetFileNameWithoutExtension(filePathJSON.Text) + "_converted.md");
+            filePathOutputLATEX = Path.Combine(filePathDir, Path.GetFileNameWithoutExtension(filePathJSON.Text) + "_converted.tex");
 
             ConversionInputCheck();
 
-            List<string> JsonAsList = ConvertJsonToList(filePathInput);
+            List<Card> jsonList = LoadJsonToObject(filePathInput);
 
-            if (mustEnumerate)
+            if (mustKeepFormat)
             {
-                File.WriteAllLines(filePathOutputCSV, JsonAsList);
+                WriteCSVtoFile(jsonList, filePathOutputCSV);
+                Process.Start("explorer.exe", $"/select,\"{filePathOutputCSV}\"");
+                return;
+            }
+
+            jsonList = PrepForConversion(jsonList);
+
+            jsonList = jsonList.OrderBy(x => x.ListName).ThenBy(x => x.ReorderPosition).ToList();
+
+            if (mustDeEnumerate && !mustEnumerate)
+            {
+                RemoveUsPrefix(jsonList);
+            }
+
+            if (mustEnumerate || (mustEnumerate && mustDeEnumerate))
+            {
+                RemoveUsPrefix(jsonList);
+                AddUsPrefix(jsonList);
+            }
+
+            if (mustReverseOrder)
+            {
+                WriteCSVtoFile(ReverseOrder(jsonList), filePathOutputCSVrev);
             }
 
             if (mustGenerateMarkdown)
             {
-                List<string> ListMarkdown = FormatListToMarkdown(JsonAsList);
-                File.WriteAllLines(filePathOutputMD, ListMarkdown);
+                WriteMarkdownToFile(jsonList, filePathOutputMD);
             }
 
-            if (!mustEnumerate && !mustGenerateMarkdown)
+            if (mustGenerateLATEX)
             {
-                File.WriteAllLines(filePathOutputCSV, JsonAsList);
+                WriteLATEXToFile(jsonList, filePathOutputLATEX);
             }
 
-            ConversionOutputCheck();
-        }
-        private static List<string> ConvertJsonToList(string filePathJson)
-        {
-            var methodList = LoadJsonToObject(filePathJson);
-            var json = File.ReadAllText(filePathJson);
-            var data = Newtonsoft.Json.Linq.JObject.Parse(json);
+            WriteCSVtoFile(jsonList, filePathOutputCSV);
 
-            // Extract the required information
-            var cards = data["cards"]?.ToObject<Newtonsoft.Json.Linq.JArray>();
-            var checklists = data["checklists"]?.ToObject<Newtonsoft.Json.Linq.JArray>();
-            var lists = data["lists"]?.ToObject<Newtonsoft.Json.Linq.JArray>();
-
-            List<string> result = [];
-            if (cards != null)
+            if (ConversionOutputCheck())
             {
-                result.Add("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
-                foreach (var card in cards)
+                Process.Start("explorer.exe", $"/select,\"{filePathOutputCSV}\"");
+                if (mustCloseAfterConv)
                 {
-                    StringBuilder cardBuilder = new StringBuilder();
-                    StringBuilder headerBuilder = new StringBuilder();
-                    StringBuilder labelBuilder = new StringBuilder();
-                    foreach (var label in card["labels"])
-                    {
-                        labelBuilder.AppendFormat("{0} ({1})", label["name"], label["color"]);
-                        if (label != card["labels"].Last)
-                        {
-                            labelBuilder.Append(' ');
-                        }
-                    }
-                    string cardName = card["name"].ToString();
-                    cardName = cardName.Replace("\n", "");
-                    string cardDesc = card["desc"].ToString();
-                    cardDesc = cardDesc.Replace("\n", "");
-                    string cardLabels = labelBuilder.ToString();
-
-                    string listName = ",";
-                    string ifListName = lists!.FirstOrDefault(x => x["id"].ToString() == card["idList"].ToString())["name"].ToString();
-                    if (ifListName != null)
-                    {
-                        listName = ifListName;
-                    }
-
-                    headerBuilder.AppendFormat("\"{0}\",\"{1}\",\"{2}\",\"{3}\",,,", cardName, cardDesc, cardLabels, listName);
-                    cardBuilder.AppendLine(headerBuilder.ToString());
-
-                    foreach (var checklist in checklists)
-                    {
-                        if (checklist["idCard"].ToString() == card["id"].ToString())
-                        {
-                            foreach (var checkItem in checklist["checkItems"])
-                            {
-                                StringBuilder checklistBuilder = new StringBuilder();
-                                string checklistName = checklist["name"].ToString();
-                                checklistName = checklistName.Replace("\n", "");
-                                checklistName = checklistName.Replace("\"", "\'");
-                                string checkItemName = checkItem["name"].ToString();
-                                checkItemName = checkItemName.Replace("\n", "");
-                                checkItemName = checkItemName.Replace("\"", "\'");
-                                checklistBuilder.AppendFormat(",,,,\"{0}\",\"{1}\"", checklistName, checkItemName);
-                                cardBuilder.AppendLine(checklistBuilder.ToString());
-                            }
-                        }
-                    }
-                    result.Add(cardBuilder.ToString());
+                    Application.Exit();
                 }
             }
-            if (result.Count < 1)
-            {
-                MessageBox.Show("No data found in the JSON file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return result;
         }
-        public static List<string> FormatListToMarkdown(List<string> listInput)
-        {
-            List<string> csvList = [];
-            if (listInput[0] == "Card Name,Card Description,Labels,List Name,Checklist,Checklist item")
-            {
-                listInput.RemoveAt(0);
-            }
-            foreach (var line in listInput)
-            {
-                // Regex to extract parts of the input
-                var regex = new Regex("\"([^\"]+)\",\"([^\"]+)\",\"([^\"]+)\",\"([^\"]+)\",\"Tasks\",\"([^\"]+)\",\"Acceptance Criteria\",\"([^\"]+)\"");
-                var match = regex.Match(line);
-
-                if (!match.Success)
-                {
-                    break;
-                }
-
-                // Extracting data
-                string titleSection = match.Groups[1].Value;
-                string userStory = match.Groups[2].Value;
-                string estimate = match.Groups[3].Value.Split(' ')[0].Trim();
-                string sprint = match.Groups[4].Value.Split(' ')[1].Trim();
-                string tasks = match.Groups[5].Value;
-                string acceptanceCriteria = match.Groups[6].Value;
-
-                // Format the title
-                var titleRegex = new Regex("US (\\d+) (.*) \\((.*)\\)");
-                var titleMatch = titleRegex.Match(titleSection);
-                string number = titleMatch.Groups[1].Value;
-                string function = titleMatch.Groups[2].Value;
-                string role = titleMatch.Groups[3].Value;
-
-                // Prepare output
-                string formattedTitle = $"### {number} - {function} ({role})\n";
-                string formattedUserStory = $"{userStory}\n\n";
-                string formattedTasks = $"**Tasks:**\n- {tasks}\n\n";
-                string formattedCriteria = $"**Acceptance Criteria:**\n- {acceptanceCriteria}\n\n";
-                string formattedEstimate = $"**Estimate:** {estimate}\n\n";
-                string formattedSprint = $"**Sprint:** Sprint {sprint}";
-
-                csvList.Add(formattedTitle + formattedUserStory + formattedTasks + formattedCriteria + formattedEstimate + formattedSprint);
-            }
-            return csvList;
-        }
-        private void ConversionInputCheck()
-        {
-            if (string.IsNullOrEmpty(filePathJSON.Text))
-            {
-                MessageBox.Show("Please select a file first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else if (Path.GetExtension(filePathJSON.Text) != ".json")
-            {
-                MessageBox.Show("Please select a JSON file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else if (!File.Exists(filePathJSON.Text))
-            {
-                MessageBox.Show("File does not exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else if (new FileInfo(filePathJSON.Text).Length == 0)
-            {
-                MessageBox.Show("File is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            else if (new FileInfo(filePathJSON.Text).Length > 1000000)
-            {
-                MessageBox.Show("File is too large", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-        }
-        private void ConversionOutputCheck()
-        {
-            if (File.Exists(filePathOutputCSV))
-            {
-                MessageBox.Show("Conversion completed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Conversion failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void Enumerate_CheckedChanged(object sender, EventArgs e)
-        {
-            mustEnumerate = enumerate.Checked;
-        }
-        private void generateMarkdown_CheckedChanged(object sender, EventArgs e)
-        {
-            mustGenerateMarkdown = generateMarkdown.Checked;
-        }
-
         private static List<Card> LoadJsonToObject(string filePathJson)
         {
             List<Card> cards = new List<Card>();
@@ -230,13 +108,18 @@ namespace TrelloConverter
                 trelloData = (TrelloData?)serializer.Deserialize(file, typeof(TrelloData));
             }
 
+            int cardIndexer = 1;
             foreach (var card in trelloData.Cards)
             {
+                if (card.Closed)
+                {
+                    continue;
+                }
                 Card newCard = new();
-
-                newCard.Name = card.Name;
-                newCard.Desc = card.Desc;
+                newCard.Name = card.Name ?? string.Empty;
+                newCard.Desc = card.Desc ?? string.Empty;
                 newCard.Labels = new List<Models.Label>();
+                newCard.ListName = trelloData.Lists.FirstOrDefault(x => x.Id == card.IdList)?.Name ?? string.Empty;
                 foreach (var label in card.Labels)
                 {
                     Models.Label newLabel = new();
@@ -244,7 +127,6 @@ namespace TrelloConverter
                     newLabel.Color = label.Color;
                     newCard.Labels.Add(newLabel);
                 }
-
                 foreach (var checklist in trelloData.Checklists)
                 {
                     if (checklist.IdCard == card.Id)
@@ -252,18 +134,18 @@ namespace TrelloConverter
                         if (newCard.Checklists == null)
                         {
                             newCard.Checklists = new List<Checklist>();
-                            Checklist tempChecklist = new();
-                            tempChecklist.Name = checklist.Name;
-                            tempChecklist.CheckItems = new List<CheckItem>();
+                            Checklist newChecklist = new();
+                            newChecklist.Name = checklist.Name;
+                            newChecklist.CheckItems = new List<CheckItem>();
                             foreach (var checkItem in checklist.CheckItems)
                             {
                                 CheckItem newCheckItem = new();
                                 newCheckItem.Name = checkItem.Name;
-                                tempChecklist.CheckItems.Add(newCheckItem);
+                                newChecklist.CheckItems.Add(newCheckItem);
                             }
-                            newCard.Checklists.Add(tempChecklist);
+                            newCard.Checklists.Add(newChecklist);
                         }
-                        else if (newCard.Checklists.Any(x => x.Name == checklist.Name))
+                        else if (newCard.Checklists.Any(x => x.Id == checklist.Id))
                         {
                             foreach (var cardChecklist in newCard.Checklists)
                             {
@@ -293,28 +175,273 @@ namespace TrelloConverter
                         }
                     }
                 }
+                newCard.ReorderPosition = cardIndexer++;
                 cards.Add(newCard);
-                string newfilepath = Path.Combine(Path.GetDirectoryName(filePathJson) ?? string.Empty, "output.txt");
-                using StreamWriter file = new StreamWriter(newfilepath, append: true);
-
-                file.WriteLine(newCard.Name);
-                file.WriteLine(newCard.Desc);
-                foreach (var label in newCard.Labels)
-                {
-                    string labelJoin = $"{label.Name} ({label.Color})";
-                    file.WriteLine(labelJoin);
-                }
-                foreach (var checklist in newCard.Checklists)
-                {
-                    file.WriteLine(checklist.Name);
-                    foreach (var checkItem in checklist.CheckItems)
-                    {
-                        file.WriteLine(checkItem.Name);
-                    }
-                }
-                file.WriteLine("------------------------------------------");
             }
             return cards;
+        }
+        private static void WriteCSVtoFile(List<Card> cards, string filePathOutput)
+        {
+            using StreamWriter file = new StreamWriter(filePathOutput, append: false);
+            file.WriteLine("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
+            foreach (var newCard in cards)
+            {
+                string labelJoin = string.Empty;
+                foreach (var label in newCard.Labels)
+                {
+                    labelJoin += $"{label.Name} ({label.Color})";
+                    if (newCard.Labels.Count > 1 && label != newCard.Labels.Last())
+                    {
+                        labelJoin += ",";
+                    }
+                }
+                if (string.IsNullOrEmpty(newCard.ListName))
+                {
+                    file.WriteLine("\"{0}\",\"{1}\",\"{2}\",,,,", newCard.Name, newCard.Desc, labelJoin);
+                }
+                else
+                {
+                    file.WriteLine("\"{0}\",\"{1}\",\"{2}\",\"{3}\",,,", newCard.Name, newCard.Desc, labelJoin, newCard.ListName);
+                }
+
+                foreach (var checklist in newCard.Checklists)
+                {
+                    foreach (var checkItem in checklist.CheckItems)
+                    {
+                        file.WriteLine(",,,,\"{0}\",\"{1}\"", checklist.Name, checkItem.Name);
+                    }
+                }
+            }
+            file.Close();
+        }
+        private static void WriteMarkdownToFile(List<Card> cards, string filePathOutput)
+        {
+            using StreamWriter file = new StreamWriter(filePathOutput, append: false);
+
+            foreach (var card in cards)
+            {
+                file.WriteLine($"### {card.Name}");
+                file.WriteLine($"{card.Desc}\n");
+
+                foreach (var checklist in card.Checklists)
+                {
+                    int indexer = 1;
+                    file.WriteLine($"**{checklist.Name}:**");
+                    foreach (var checkItem in checklist.CheckItems)
+                    {
+                        file.WriteLine($"{indexer}. {checkItem.Name}");
+                        indexer++;
+                    }
+                    file.WriteLine("");
+                }
+
+                string labelDescriptions = string.Join(", ", card.Labels.Select(label => $"{label.Name} ({label.Color})"));
+                file.WriteLine($"**Estimate:** {labelDescriptions}");
+                file.WriteLine();
+                file.WriteLine($"**Sprint:** {card.ListName}\n");
+                file.WriteLine();
+                file.WriteLine("---");
+                file.WriteLine();
+            }
+
+            file.Close();
+        }
+        private static void WriteLATEXToFile(List<Card> cards, string filePathOutput)
+        {
+            List<Card> latexList = new(cards);
+            RemoveUsPrefix(latexList);
+            AddUsPrefix(latexList);
+            using StreamWriter file = new StreamWriter(filePathOutput, append: false);
+            file.WriteLine(@"\section{Alle User Stories}");
+            file.WriteLine(@"\label{sec:all-user-stories}");
+
+            foreach (var card in latexList)
+            {
+                file.WriteLine("");
+                file.WriteLine($@"\subsection{{{card.Name}}}");
+                string userStoryLabel = card.Name ?? string.Empty;
+                userStoryLabel = userStoryLabel.Split(" ")[0] ?? string.Empty;
+                if (!string.IsNullOrEmpty(userStoryLabel))
+                {
+                    userStoryLabel = userStoryLabel.Trim();
+                    file.WriteLine($@"\label{{sec:{userStoryLabel}}}");
+                }
+                file.WriteLine($@"\textit{{{card.Desc}}}");
+
+                if (card.Checklists != null && card.Checklists.Count > 0)
+                {
+                    foreach (var checklist in card.Checklists)
+                    {
+                        file.WriteLine($@"\subsubsection*{{\textbf{{{checklist.Name}}}}}");
+                        file.WriteLine(@"\begin{enumerate}");
+                        foreach (var item in checklist.CheckItems)
+                        {
+                            file.WriteLine($@"  \item {item.Name}");
+                        }
+                        file.WriteLine(@"\end{enumerate}");
+                    }
+                }
+
+                if (card.Labels != null && card.Labels.Count > 0)
+                {
+                    string stringLabels = string.Empty;
+                    foreach (var label in card.Labels)
+                    {
+                        stringLabels += $@" \colorbox{{{label.CorrectedColor}}}{{{label.Name} ({label.Color})}}";
+                        if (card.Labels.Count > 1 && label != card.Labels.Last())
+                        {
+                            stringLabels += ",";
+                        }
+                    }
+                    file.Write($@"\textbf{{Estimate:}}");
+                    file.WriteLine(stringLabels);
+                }
+                file.WriteLine($@"\textbf{{Placed: {card.ListName}}}");
+                file.WriteLine(@"\par\noindent\dotfill");
+            }
+            file.Close();
+        }
+        private static List<Card> PrepForConversion(List<Card> cards)
+        {
+            List<Card> prepList = new(cards);
+            foreach (var card in prepList)
+            {
+                card.Name = ScourString(card.Name);
+                card.Desc = ScourString(card.Desc);
+                foreach (var label in card.Labels)
+                {
+                    switch (label.Name)
+                    {
+                        case "":
+                            label.CorrectedColor = "white";
+                            break;
+                        case "1":
+                            label.CorrectedColor = "green";
+                            label.Color = "green";
+                            break;
+                        case "2":
+                            label.CorrectedColor = "olive";
+                            label.Color = "lime";
+                            break;
+                        case "3":
+                            label.CorrectedColor = "yellow";
+                            label.Color = "yellow";
+                            break;
+                        case "5":
+                            label.CorrectedColor = "orange";
+                            label.Color = "orange";
+                            break;
+                        case "8":
+                            label.CorrectedColor = "red";
+                            label.Color = "red";
+                            break;
+                    }
+                }
+                foreach (var checklist in card.Checklists)
+                {
+                    checklist.Name = ScourString(checklist.Name);
+                    foreach (var checkItem in checklist.CheckItems)
+                    {
+                        checkItem.Name = ScourString(checkItem.Name);
+                    }
+                }
+            }
+            return prepList;
+        }
+        private static List<Card> ReverseOrder(List<Card> cards)
+        {
+            List<Card> reverseList = new(cards);
+            return reverseList.OrderBy(x => x.ListName).ThenByDescending(x => x.ReorderPosition).ToList();
+        }
+        public static void RemoveUsPrefix(List<Card> cards)
+        {
+            foreach (var card in cards)
+            {
+                card.Name = Regex.Replace(card.Name, patternUS, "");
+            }
+        }
+        public static void AddUsPrefix(List<Card> jsonList)
+        {
+            int cardIndexer = 1;
+            foreach (var card in jsonList)
+            {
+                cardIndexer = card.ReorderPosition ?? cardIndexer;
+                string formattedIndex = $"US-{cardIndexer:000}";
+                card.Name = $"{formattedIndex} {card.Name}";
+                cardIndexer++;
+            }
+        }
+        private static string ScourString(string input)
+        {
+            input = input.Replace("*", "");
+            input = input.Replace("_", "");
+            input = input.Replace("\"", "'");
+            input = input.Replace("\n", "");
+            return input;
+        }
+        private void ConversionInputCheck()
+        {
+            if (string.IsNullOrEmpty(filePathJSON.Text))
+            {
+                MessageBox.Show("Please select a file first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (Path.GetExtension(filePathJSON.Text) != ".json")
+            {
+                MessageBox.Show("Please select a JSON file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (!File.Exists(filePathJSON.Text))
+            {
+                MessageBox.Show("File does not exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (new FileInfo(filePathJSON.Text).Length == 0)
+            {
+                MessageBox.Show("File is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+        private bool ConversionOutputCheck()
+        {
+            if (File.Exists(filePathOutputCSV))
+            {
+                MessageBox.Show("Conversion completed", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Conversion failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+        private void Enumerate_CheckedChanged(object sender, EventArgs e)
+        {
+            mustEnumerate = enumerate.Checked;
+        }
+        private void generateMarkdown_CheckedChanged(object sender, EventArgs e)
+        {
+            mustGenerateMarkdown = generateMarkdown.Checked;
+        }
+        private void deEnumerate_CheckedChanged(object sender, EventArgs e)
+        {
+            mustDeEnumerate = deEnumerate.Checked;
+        }
+        private void reverseOrder_CheckedChanged(object sender, EventArgs e)
+        {
+            mustReverseOrder = reverseOrder.Checked;
+        }
+        private void closeOnSucces_CheckedChanged(object sender, EventArgs e)
+        {
+            mustCloseAfterConv = closeOnSucces.Checked;
+        }
+        private void generateLATEX_CheckedChanged(object sender, EventArgs e)
+        {
+            mustGenerateLATEX = generateLATEX.Checked;
+        }
+        private void originalFormat_CheckedChanged(object sender, EventArgs e)
+        {
+            mustKeepFormat = originalFormat.Checked;
         }
     }
 }

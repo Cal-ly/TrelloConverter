@@ -27,3 +27,21 @@
 **Estimate:** 5
 
 **Sprint:** Sprint 1
+
+
+
+
+### {card.Name}
+{card.Desc}
+
+**{card.Checklist[0].Name}:**
+- {card.Checklist[0].checkItem[0]}
+- {card.Checklist[0].checkItem[1]}
+
+**{card.Checklist[1].Name}:**
+- {card.Checklist[1].checkItem[0]}
+- {card.Checklist[1].checkItem[1]}
+
+**Estimate:** {card.Labels.Name} ({card.Labels.Color})
+
+**Sprint:** {card.ListName}

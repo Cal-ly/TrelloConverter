@@ -1,6 +1,6 @@
 ﻿namespace TrelloConverter.Models
 {
-    public class BoardList
+    public class List
     {
         //[JsonPropertyName("id")]
         public string? Id { get; set; }

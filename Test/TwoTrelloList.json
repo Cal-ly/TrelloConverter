@@ -1,0 +1,4177 @@
+{
+  "id": "662586fa057c62f10ece1bec",
+  "nodeId": "ari:cloud:trello::board/workspace/65f2efc72f599dc8ad6d6423/662586fa057c62f10ece1bec",
+  "name": "TestBoarder",
+  "desc": "",
+  "descData": null,
+  "closed": false,
+  "dateClosed": null,
+  "idOrganization": "65f2efc72f599dc8ad6d6423",
+  "idEnterprise": null,
+  "limits": {
+    "attachments": {
+      "perBoard": {
+        "status": "ok",
+        "disableAt": 36000,
+        "warnAt": 28800
+      },
+      "perCard": {
+        "status": "ok",
+        "disableAt": 1000,
+        "warnAt": 800
+      }
+    },
+    "boards": {
+      "totalMembersPerBoard": {
+        "status": "ok",
+        "disableAt": 1600,
+        "warnAt": 1280
+      },
+      "totalAccessRequestsPerBoard": {
+        "status": "ok",
+        "disableAt": 4000,
+        "warnAt": 3200
+      }
+    },
+    "cards": {
+      "openPerBoard": {
+        "status": "ok",
+        "disableAt": 5000,
+        "warnAt": 4000
+      },
+      "openPerList": {
+        "status": "ok",
+        "disableAt": 5000,
+        "warnAt": 4000
+      },
+      "totalPerBoard": {
+        "status": "ok",
+        "disableAt": 2000000,
+        "warnAt": 1600000
+      },
+      "totalPerList": {
+        "status": "ok",
+        "disableAt": 1000000,
+        "warnAt": 800000
+      }
+    },
+    "checklists": {
+      "perBoard": {
+        "status": "ok",
+        "disableAt": 1800000,
+        "warnAt": 1440000
+      },
+      "perCard": {
+        "status": "ok",
+        "disableAt": 500,
+        "warnAt": 400
+      }
+    },
+    "checkItems": {
+      "perChecklist": {
+        "status": "ok",
+        "disableAt": 200,
+        "warnAt": 160
+      }
+    },
+    "customFields": {
+      "perBoard": {
+        "status": "ok",
+        "disableAt": 50,
+        "warnAt": 40
+      }
+    },
+    "customFieldOptions": {
+      "perField": {
+        "status": "ok",
+        "disableAt": 50,
+        "warnAt": 40
+      }
+    },
+    "labels": {
+      "perBoard": {
+        "status": "ok",
+        "disableAt": 1000,
+        "warnAt": 800
+      }
+    },
+    "lists": {
+      "openPerBoard": {
+        "status": "ok",
+        "disableAt": 500,
+        "warnAt": 400
+      },
+      "totalPerBoard": {
+        "status": "ok",
+        "disableAt": 3000,
+        "warnAt": 2400
+      }
+    },
+    "stickers": {
+      "perCard": {
+        "status": "ok",
+        "disableAt": 70,
+        "warnAt": 56
+      }
+    },
+    "reactions": {
+      "perAction": {
+        "status": "ok",
+        "disableAt": 900,
+        "warnAt": 720
+      },
+      "uniquePerAction": {
+        "status": "ok",
+        "disableAt": 17,
+        "warnAt": 14
+      }
+    }
+  },
+  "pinned": false,
+  "starred": false,
+  "url": "https://trello.com/b/SrtyluWm/testboarder",
+  "prefs": {
+    "permissionLevel": "org",
+    "hideVotes": false,
+    "voting": "disabled",
+    "comments": "members",
+    "invitations": "members",
+    "selfJoin": true,
+    "cardCovers": true,
+    "cardCounts": false,
+    "isTemplate": false,
+    "cardAging": "regular",
+    "calendarFeedEnabled": false,
+    "hiddenPluginBoardButtons": [],
+    "switcherViews": [
+      {
+        "viewType": "Board",
+        "enabled": true
+      },
+      {
+        "viewType": "Table",
+        "enabled": true
+      },
+      {
+        "viewType": "Calendar",
+        "enabled": false
+      },
+      {
+        "viewType": "Dashboard",
+        "enabled": false
+      },
+      {
+        "viewType": "Timeline",
+        "enabled": false
+      },
+      {
+        "viewType": "Map",
+        "enabled": false
+      }
+    ],
+    "background": "gradient-rainbow",
+    "backgroundColor": "#A869C1",
+    "backgroundImage": "https://d2k1ftgv7pobq7.cloudfront.net/images/backgrounds/gradients/rainbow.svg",
+    "backgroundTile": false,
+    "backgroundBrightness": "dark",
+    "sharedSourceUrl": null,
+    "backgroundImageScaled": null,
+    "backgroundBottomColor": "#E774BB",
+    "backgroundTopColor": "#6E5DC6",
+    "canBePublic": false,
+    "canBeEnterprise": false,
+    "canBeOrg": false,
+    "canBePrivate": false,
+    "canInvite": true
+  },
+  "shortLink": "SrtyluWm",
+  "subscribed": false,
+  "labelNames": {
+    "green": "2",
+    "yellow": "3",
+    "orange": "5",
+    "red": "",
+    "purple": "",
+    "blue": "",
+    "sky": "",
+    "lime": "",
+    "pink": "",
+    "black": "",
+    "green_dark": "",
+    "yellow_dark": "",
+    "orange_dark": "",
+    "red_dark": "",
+    "purple_dark": "",
+    "blue_dark": "",
+    "sky_dark": "",
+    "lime_dark": "",
+    "pink_dark": "",
+    "black_dark": "",
+    "green_light": "1",
+    "yellow_light": "",
+    "orange_light": "",
+    "red_light": "",
+    "purple_light": "",
+    "blue_light": "",
+    "sky_light": "",
+    "lime_light": "",
+    "pink_light": "",
+    "black_light": ""
+  },
+  "powerUps": [],
+  "dateLastActivity": "2024-04-21T21:38:21.318Z",
+  "dateLastView": "2024-04-21T21:38:54.475Z",
+  "shortUrl": "https://trello.com/b/SrtyluWm",
+  "idTags": [],
+  "datePluginDisable": null,
+  "creationMethod": null,
+  "ixUpdate": "75",
+  "templateGallery": null,
+  "enterpriseOwned": false,
+  "idBoardSource": null,
+  "premiumFeatures": [
+    "activity",
+    "additionalBoardBackgrounds",
+    "additionalStickers",
+    "advancedChecklists",
+    "atlassianIntelligence",
+    "boardExport",
+    "butlerBC",
+    "butlerPremium",
+    "collapsibleLists",
+    "csvExport",
+    "customBoardBackgrounds",
+    "customEmoji",
+    "customStickers",
+    "deactivated",
+    "export",
+    "goldMembers",
+    "inviteBoard",
+    "inviteOrg",
+    "isBc",
+    "isPremium",
+    "largeAttachments",
+    "listColors",
+    "multiBoardGuests",
+    "observers",
+    "paidCorePlugins",
+    "plugins",
+    "privateTemplates",
+    "readSecrets",
+    "removal",
+    "restrictVis",
+    "savedSearches",
+    "shortExportHistory",
+    "starCounts",
+    "superAdmins",
+    "tags",
+    "views",
+    "workspaceViews"
+  ],
+  "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+  "actions": [
+    {
+      "id": "6625874da58ab1f097d3087c",
+      "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+      "data": {
+        "plugin": {
+          "id": "61fa6cd2cc14647c2c9ee821",
+          "idOrganizationOwner": "61fa53c295a7b4888b1ad1b0",
+          "author": "Blue Cat",
+          "capabilities": [
+            "board-buttons",
+            "on-enable"
+          ],
+          "capabilitiesOptions": [],
+          "categories": [
+            "board-utilities",
+            "file-management"
+          ],
+          "iframeConnectorUrl": "https://imports.bluecatreports.com/powerup.html",
+          "name": "Import to Trello by Blue Cat (CSV, Excel)",
+          "privacyUrl": "https://bluecatreports.com/privacy/",
+          "public": true,
+          "moderatedState": null,
+          "supportEmail": "imports@bluecatreports.com",
+          "tags": [],
+          "heroImageUrl": {
+            "@1x": "https://plugin.trello.services/images/import-to-trello-bluecat.png",
+            "@2x": "https://plugin.trello.services/images/import-to-trello-bluecat@2x.png",
+            "_id": "62a3bb85e8fc6d00396af04d"
+          },
+          "claimedDomains": [],
+          "icon": {
+            "url": "https://imports.bluecatreports.com/logos/ColorTransparent.png"
+          },
+          "listing": {
+            "name": "Import to Trello by Blue Cat (CSV, Excel)",
+            "locale": "en-GB",
+            "description": "Trello Import by [Blue Cat](https://www.bluecatreports.com/) lets you import cards from CSV or Excel spreadsheets directly into your Trello boards.\n\n*Hey! we're one of the [fastest growing power-ups of 2022](https://www.bluecatreports.com/blog/power-up-stats-2022/) and [2023](https://www.bluecatreports.com/blog/power-up-stats-2023/)!*\n\n## Watch the video!\n\nWe're very happy that Brittany from [How I Trello](https://trello.substack.com/) created this short video showing how to use the power-up. Check it out, or read on below if you prefer. \n\n[![](https://imports.bluecatreports.com/listing/imports_youtube.png)](https://www.youtube.com/watch?v=ZkPKD9TNy1M)\n\n## How to import into Trello\n\n![Select Excel, XLSX or CSV file to Import into Trello](https://imports.bluecatreports.com/listing/select-file.png)\n\n1. Add the Trello Import Power-Up to your board\n1. Open the CSV or Excel file you want to import\n1. Select how to map your data into Trello\n1. Click the import button and wait as we create all your cards for you\n\n## Select how we map your data into Trello\n![Field mapping for your Trello Import](https://imports.bluecatreports.com/listing/mappings.png)\n\nFor each column in your spreadsheet, you can select how we will import it into your Trello board. For data you don't want to match to a specific field in Trello you can simply add it to the card description.\n\nIf there is data we cannot import we will show that here so you can see what the issue is. You can expand sections to get additional information. To correct these errors you will either need to create the matching List/Label/Custom Field/etc on your Trello board or update your spreadsheet to change those values to match Trello. Or, you can ignore those issues and import the spreadsheet without that data.\n\n## Importing CSV, Excel and Google Sheets data to Trello\n\nExcel files saved as XLSX can be opened and imported. To import from Google Sheets you will need to save your file as a CSV file from google sheets, which can then be opened and imported.\n\nThe first row of the spreadsheet is used as headings so we know how to map the data into Trello. \n\nYou can take a look at a [simple example spreadsheet here](https://imports.bluecatreports.com/listing/Example%20Import%20Spreadsheet.csv) or any export created from in Trello can be imported using this power-up\n\nWe can handle all of these field names, they will be mapped into Trello as described below. \n\n- name, title or card name: Any of these will be mapped to the **card name**\n- description, card description or desc: Any of these will map to the **card description**\n- list: the **name of the list** we should import this card into. If we cannot find that list the card is created in the first list on the board\n- members: the names of the members to assign this card to\n- labels: the names and/or colours of the labels to add to this card\n- due or due date: maps to the card due date\n- **Checklists**\n - Checklist: The **Checklist name** to import this checklist item into \n - Checklist item: The **Checklist item name**\n - Checklist item due: The **due date** for this checklist item\n - Checklist item member: The **assigned member** for this checklist item\n\n### Errors in your spreadsheets\n\nWe will let you know if any of the data cannot be mapped into Trello, if you are happy with that then you can ignore the warnings and import. If there are issues during the import those will be reported once the import is complete.\n\n\n## Import a backup file to Trello\n\nIf you take a backup of your Boards using [Trello's export feature](https://www.bluecatreports.com/trello-reporting/exporting-trello-data/#trelloBoardExport) you can then use our free import tool to recreate any lost or changed data. Either import the entire spreadsheet to recreate everything, or edit it beforehand to select just the cards you want to recreate.\n\n## Pricing\n\nImports by Blue Cat is **free for your first 10 imports**, after that it costs $19/month (or $190/year) for unlimited imports.\n\n## Once you're done importing check out our other great tools\n\n### [Blue Cat Reports](https://trello.com/power-ups/5d9c90aa18965066fcd44730/reports-by-blue-cat)\n\nOur Reporting Power-Up is the number one reporting tool for Trello. There is a fully-featured 7-day free trial so give it a go and see the sort of reports you can create now all your data is in Trello. You can [check it out here](https://trello.com/power-ups/5d9c90aa18965066fcd44730/reports-by-blue-cat).\n\n### [Forms by Blue Cat](https://trello.com/power-ups/6139de588901011c01baf52f/forms-by-blue-cat)\n\nDo you need a way for people to fill out forms and get cards created in Trello? Then look no further. Our [Forms Power-Up](https://trello.com/power-ups/6139de588901011c01baf52f/forms-by-blue-cat) does just that, integrates with all the standard and custom Trello fields as well as attachments. \n\n### [Exports for Trello](https://trello.com/power-ups/646c9004a20404e02facd050/exports-for-trello-by-blue-cat-csv-excel)\n\nExport your data from Trello, manually for free or pay to get scheduled exports direct to your inbox. Our [Exports Power-Up](https://trello.com/power-ups/646c9004a20404e02facd050/exports-for-trello-by-blue-cat-csv-excel) does just that.\n\n## Our Trello guides\n\nSee our guide to [every free Trello power-up](https://www.bluecatreports.com/free-trello-powerups/)\n\nCheck out our reviews of [every Trello reporting power-up](https://www.bluecatreports.com/trello-reporting/)",
+            "overview": "Import CSV and Excel files into Trello (First 10 imports FREE 😻)"
+          },
+          "isCompliantWithPrivacyStandards": null,
+          "usageBrackets": {
+            "boards": 50000
+          }
+        },
+        "board": {
+          "id": "662586fa057c62f10ece1bec",
+          "name": "TestBoarder",
+          "shortLink": "SrtyluWm"
+        }
+      },
+      "appCreator": null,
+      "type": "enablePlugin",
+      "date": "2024-04-21T21:38:21.322Z",
+      "limits": null,
+      "memberCreator": {
+        "id": "65f2e3e80c300d80a06e3c35",
+        "activityBlocked": false,
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "fullName": "Cal Lydeking",
+        "idMemberReferrer": null,
+        "initials": "CL",
+        "nonPublic": {
+          "fullName": "Carsten Haislund Lydeking",
+          "initials": "CL",
+          "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+          "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+        },
+        "nonPublicAvailable": true,
+        "username": "carstenhaislundlydeking"
+      }
+    },
+    {
+      "id": "6625873f61369abea62768c9",
+      "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+      "data": {
+        "list": {
+          "pos": 75488,
+          "id": "6625871c199417cec93b2131",
+          "name": "Sprint 1"
+        },
+        "old": {
+          "pos": 301953
+        },
+        "board": {
+          "id": "662586fa057c62f10ece1bec",
+          "name": "TestBoarder",
+          "shortLink": "SrtyluWm"
+        }
+      },
+      "appCreator": null,
+      "type": "updateList",
+      "date": "2024-04-21T21:38:07.541Z",
+      "limits": null,
+      "memberCreator": {
+        "id": "65f2e3e80c300d80a06e3c35",
+        "activityBlocked": false,
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "fullName": "Cal Lydeking",
+        "idMemberReferrer": null,
+        "initials": "CL",
+        "nonPublic": {
+          "fullName": "Carsten Haislund Lydeking",
+          "initials": "CL",
+          "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+          "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+        },
+        "nonPublicAvailable": true,
+        "username": "carstenhaislundlydeking"
+      }
+    },
+    {
+      "id": "6625873ba1c6fc09603a09d3",
+      "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+      "data": {
+        "list": {
+          "id": "6625872709c8d6e55169b284",
+          "name": "Sprint 2"
+        },
+        "boardSource": {
+          "id": "660fd90ccfff677594ba2d6e"
+        },
+        "board": {
+          "id": "662586fa057c62f10ece1bec",
+          "name": "TestBoarder",
+          "shortLink": "SrtyluWm"
+        },
+        "member": {
+          "id": "65f2e3e80c300d80a06e3c35",
+          "name": "Carsten Haislund Lydeking"
+        }
+      },
+      "appCreator": null,
+      "type": "moveListToBoard",
+      "date": "2024-04-21T21:38:03.762Z",
+      "limits": null,
+      "memberCreator": {
+        "id": "65f2e3e80c300d80a06e3c35",
+        "activityBlocked": false,
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "fullName": "Cal Lydeking",
+        "idMemberReferrer": null,
+        "initials": "CL",
+        "nonPublic": {
+          "fullName": "Carsten Haislund Lydeking",
+          "initials": "CL",
+          "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+          "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+        },
+        "nonPublicAvailable": true,
+        "username": "carstenhaislundlydeking"
+      }
+    },
+    {
+      "id": "66258732f3e7e3fde9e7a0e5",
+      "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+      "data": {
+        "list": {
+          "id": "6625871c199417cec93b2131",
+          "name": "Sprint 1"
+        },
+        "boardSource": {
+          "id": "660fd90ccfff677594ba2d6e"
+        },
+        "board": {
+          "id": "662586fa057c62f10ece1bec",
+          "name": "TestBoarder",
+          "shortLink": "SrtyluWm"
+        },
+        "member": {
+          "id": "65f2e3e80c300d80a06e3c35",
+          "name": "Carsten Haislund Lydeking"
+        }
+      },
+      "appCreator": null,
+      "type": "moveListToBoard",
+      "date": "2024-04-21T21:37:54.784Z",
+      "limits": null,
+      "memberCreator": {
+        "id": "65f2e3e80c300d80a06e3c35",
+        "activityBlocked": false,
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "fullName": "Cal Lydeking",
+        "idMemberReferrer": null,
+        "initials": "CL",
+        "nonPublic": {
+          "fullName": "Carsten Haislund Lydeking",
+          "initials": "CL",
+          "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+          "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+        },
+        "nonPublicAvailable": true,
+        "username": "carstenhaislundlydeking"
+      }
+    },
+    {
+      "id": "662586fa057c62f10ece1c1c",
+      "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+      "data": {
+        "board": {
+          "id": "662586fa057c62f10ece1bec",
+          "name": "TestBoarder",
+          "shortLink": "SrtyluWm"
+        },
+        "organization": {
+          "id": "65f2efc72f599dc8ad6d6423",
+          "name": "2.Semester - Projekt"
+        }
+      },
+      "appCreator": null,
+      "type": "addToOrganizationBoard",
+      "date": "2024-04-21T21:36:58.911Z",
+      "limits": null,
+      "memberCreator": {
+        "id": "65f2e3e80c300d80a06e3c35",
+        "activityBlocked": false,
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "fullName": "Cal Lydeking",
+        "idMemberReferrer": null,
+        "initials": "CL",
+        "nonPublic": {
+          "fullName": "Carsten Haislund Lydeking",
+          "initials": "CL",
+          "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+          "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+        },
+        "nonPublicAvailable": true,
+        "username": "carstenhaislundlydeking"
+      }
+    },
+    {
+      "id": "662586fa057c62f10ece1c19",
+      "idMemberCreator": "65f2e3e80c300d80a06e3c35",
+      "data": {
+        "board": {
+          "id": "662586fa057c62f10ece1bec",
+          "name": "TestBoarder",
+          "shortLink": "SrtyluWm"
+        }
+      },
+      "appCreator": null,
+      "type": "createBoard",
+      "date": "2024-04-21T21:36:58.906Z",
+      "limits": null,
+      "memberCreator": {
+        "id": "65f2e3e80c300d80a06e3c35",
+        "activityBlocked": false,
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "fullName": "Cal Lydeking",
+        "idMemberReferrer": null,
+        "initials": "CL",
+        "nonPublic": {
+          "fullName": "Carsten Haislund Lydeking",
+          "initials": "CL",
+          "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+          "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+        },
+        "nonPublicAvailable": true,
+        "username": "carstenhaislundlydeking"
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "6625871c199417cec93b22cd",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.007Z",
+      "desc": "*Som* kunde, *Ønsker jeg* at se alle tilgængelige produkter, *Med det formål* at vælge et produkt.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixfx+196o92cupn@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b23e3",
+        "6625871d199417cec93b23e7"
+      ],
+      "idLabels": [
+        "66258730f3e7e3fde9e799b4"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 1,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258730f3e7e3fde9e799b4",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "1",
+          "color": "green_light",
+          "uses": 2
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 12 Se Alle Produkter (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b22cd",
+      "pos": 425984,
+      "shortLink": "EzZ0yxIT",
+      "shortUrl": "https://trello.com/c/EzZ0yxIT",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/EzZ0yxIT/1-us-12-se-alle-produkter-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b236c",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b22cd",
+          "value": "{\"storyPoints\":1}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.030Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b230a",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.090Z",
+      "desc": "Som kunde vil jeg kunne se en oversigt over blomsterarrangementer, så jeg kan vælge det, der passer til lejligheden.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixhm+2o3l10ya31@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b2493",
+        "6625871d199417cec93b248f"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 3,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 38 Oversigt over Produkter (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b230a",
+      "pos": 454144,
+      "shortLink": "gJdgQTG8",
+      "shortUrl": "https://trello.com/c/gJdgQTG8",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/gJdgQTG8/3-us-38-oversigt-over-produkter-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23cd",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b230a",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b230f",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.607Z",
+      "desc": "_Som_ kunde, _Ønsker jeg_ at tilføje et produkt til min kurv, _Med det formål_ at samle min bestilling.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixhr+1ikhsh0v3u@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b2470",
+        "6625871d199417cec93b246c"
+      ],
+      "idLabels": [
+        "66258730f3e7e3fde9e799b2"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 7,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258730f3e7e3fde9e799b2",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "5",
+          "color": "orange",
+          "uses": 4
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 13 Tilføj til Kurv (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b230f",
+      "pos": 482304,
+      "shortLink": "y0qNfL31",
+      "shortUrl": "https://trello.com/c/y0qNfL31",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/y0qNfL31/7-us-13-tilf%C3%B8j-til-kurv-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23c8",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b230f",
+          "value": "{\"storyPoints\":5}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b230e",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.706Z",
+      "desc": "*Som* bruger, *Ønsker jeg* at ændre mængden af produkter i min kurv, *Med det formål* at justere min bestilling før køb.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixhq+1i96vlgozg@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b2479",
+        "6625871d199417cec93b2475"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a5a"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 4,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a5a",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "2",
+          "color": "green",
+          "uses": 3
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 20 Ændre Produkter i Kurv (Bruger)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b230e",
+      "pos": 487936,
+      "shortLink": "M0pFy6QN",
+      "shortUrl": "https://trello.com/c/M0pFy6QN",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/M0pFy6QN/4-us-20-%C3%A6ndre-produkter-i-kurv-bruger",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23ca",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b230e",
+          "value": "{\"storyPoints\":2}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b2311",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.503Z",
+      "desc": "*Som* kunde, *Ønsker jeg* at skabe en ordre fra min kurv, *Med det formål* at købe de valgte produkter.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixht+0za9jvmpga@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b247d",
+        "6625871d199417cec93b2481"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a5a"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 5,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a5a",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "2",
+          "color": "green",
+          "uses": 3
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 15 Opret Ordre (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b2311",
+      "pos": 493568,
+      "shortLink": "LG1rxc3F",
+      "shortUrl": "https://trello.com/c/LG1rxc3F",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/LG1rxc3F/5-us-15-opret-ordre-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23cc",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b2311",
+          "value": "{\"storyPoints\":2}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b230c",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.398Z",
+      "desc": "_Som_ ejer, _Ønsker jeg_ at kunden skal give relevant kontaktinformation for at kunne købe en ordre fra kurven, _Med det formål_ at undgå anonyme køb.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixho+1vcnfvwv47@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b2498",
+        "6625871d199417cec93b249c"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 8,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 14 Kurv til Ordre",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b230c",
+      "pos": 504832,
+      "shortLink": "pPH95YOD",
+      "shortUrl": "https://trello.com/c/pPH95YOD",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/pPH95YOD/8-us-14-kurv-til-ordre",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23c9",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b230c",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b230d",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 3,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.081Z",
+      "desc": "Som kunde, ønsker jeg selv at kunne registrer mig til webshoppen, så jeg hurtigst muligt kan udnytte fordele ved at være registreret bruger",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixhp+246g9gxqiw@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b2455",
+        "6625871d199417cec93b245b"
+      ],
+      "idLabels": [
+        "66258730f3e7e3fde9e799b2"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 2,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258730f3e7e3fde9e799b2",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "5",
+          "color": "orange",
+          "uses": 4
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 44 Registrerer sig (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b230d",
+      "pos": 507648,
+      "shortLink": "9Uj44y1w",
+      "shortUrl": "https://trello.com/c/9Uj44y1w",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/9Uj44y1w/2-us-44-registrerer-sig-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23c5",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b230d",
+          "value": "{\"storyPoints\":5}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.142Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b2310",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 3,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.291Z",
+      "desc": "Som kunde vil jeg kunne logge ind, så jeg kan se mine ordrer og betalinger.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixhs+14b5h325vs@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b248b",
+        "6625871d199417cec93b2485"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 9,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 42 Log ind (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b2310",
+      "pos": 573184,
+      "shortLink": "veBNCmQS",
+      "shortUrl": "https://trello.com/c/veBNCmQS",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/veBNCmQS/9-us-42-log-ind-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23cb",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b2310",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625871c199417cec93b230b",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 3,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:37:54.189Z",
+      "desc": "Som kunde vil jeg kunne logge ud, så jeg kan sikre, at mine oplysninger ikke er tilgængelige for andre.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oxce8dowzd5ixhn+07rrtjp402@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625871d199417cec93b2462",
+        "6625871d199417cec93b2468"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625871c199417cec93b2131",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 6,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 43 Log ud (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b230b",
+      "pos": 638720,
+      "shortLink": "7iJRwtoF",
+      "shortUrl": "https://trello.com/c/7iJRwtoF",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/7iJRwtoF/6-us-43-log-ud-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625871d199417cec93b23c7",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625871c199417cec93b230b",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:33.146Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b48c",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.655Z",
+      "desc": "Som kunde vil jeg kunne se en oversigt over mine personlige oplysninger, så jeg kan se, hvad I har registreret om mig.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7g+2doz3hvmp8@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b628",
+        "6625872809c8d6e55169b62c"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 13,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 39 Profiloplysninger (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b48c",
+      "pos": 180,
+      "shortLink": "CF86WitS",
+      "shortUrl": "https://trello.com/c/CF86WitS",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/CF86WitS/13-us-39-profiloplysninger-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b56b",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b48c",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.184Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b488",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.148Z",
+      "desc": "Som kunde vil jeg kunne ændre mine personlige oplysninger, så jeg kan sikre, at de er korrekte.",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7c+1owqn9md2u@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b5f2",
+        "6625872809c8d6e55169b5f6"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 11,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 40 Ændre profiloplysninger (Kunde)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b488",
+      "pos": 360,
+      "shortLink": "Gk6jJb30",
+      "shortUrl": "https://trello.com/c/Gk6jJb30",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/Gk6jJb30/11-us-40-%C3%A6ndre-profiloplysninger-kunde",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b55a",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b488",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.164Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b489",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.244Z",
+      "desc": "*Som* medarbejder, *Ønsker jeg* at kunne logge ind på ordreportalen, *Med det formål* at kunne ekspedere ordrer.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7d+2ndwne8lxw@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b633",
+        "6625872809c8d6e55169b637"
+      ],
+      "idLabels": [
+        "66258730f3e7e3fde9e799b2"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 15,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258730f3e7e3fde9e799b2",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "5",
+          "color": "orange",
+          "uses": 4
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 33 Log Ind på Ordreportal (Medarbejder)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b489",
+      "pos": 720,
+      "shortLink": "YSwqD5gJ",
+      "shortUrl": "https://trello.com/c/YSwqD5gJ",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/YSwqD5gJ/15-us-33-log-ind-p%C3%A5-ordreportal-medarbejder",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b56d",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b489",
+          "value": "{\"storyPoints\":5}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.184Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b48a",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 3,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.552Z",
+      "desc": "*Som* bestyrer, *Ønsker jeg* at kunne oprette og opdatere produkter i webshoppen, *Med det formål* at sikre, at produktudvalget altid er aktuelt og korrekt prissat.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7e+2qhdv86ex7@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b613",
+        "6625872809c8d6e55169b619"
+      ],
+      "idLabels": [
+        "66258730f3e7e3fde9e799b2"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 14,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258730f3e7e3fde9e799b2",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "5",
+          "color": "orange",
+          "uses": 4
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 4 Produktadministration (Bestyrer)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b48a",
+      "pos": 1440,
+      "shortLink": "fe2HIOVM",
+      "shortUrl": "https://trello.com/c/fe2HIOVM",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/fe2HIOVM/14-us-4-produktadministration-bestyrer",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b56a",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b48a",
+          "value": "{\"storyPoints\":5}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.184Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b48d",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.353Z",
+      "desc": "*Som* medarbejder, *Ønsker jeg* at kunne se alle ordrer, *Med det formål* at få et overblik over arbejdsbyrden.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7h+0aeepzhqg8@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b60b",
+        "6625872809c8d6e55169b60f"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 16,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 16 Ordreoversigt (Medarbejder)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b48d",
+      "pos": 2880,
+      "shortLink": "0st7Zvw4",
+      "shortUrl": "https://trello.com/c/0st7Zvw4",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/0st7Zvw4/16-us-16-ordreoversigt-medarbejder",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b561",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b48d",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.172Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b463",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.236Z",
+      "desc": "*Som* medarbejder, *Ønsker jeg* at kunne se og administrere indkommende ordrer, *Med det formål* at effektivisere processen for ordreklargøring og levering.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g6b+1d3kxnpe08@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b5c9",
+        "6625872809c8d6e55169b5c5"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 10,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 3 Ordrehåndtering (Medarbejder)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b463",
+      "pos": 3840,
+      "shortLink": "gFRt69vO",
+      "shortUrl": "https://trello.com/c/gFRt69vO",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/gFRt69vO/10-us-3-ordreh%C3%A5ndtering-medarbejder",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b535",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b463",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.109Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b486",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.337Z",
+      "desc": "*Som* medarbejder, *Ønsker jeg* at kunne opdatere ordrestatus, *Med det formål* at tydeliggøre for alle brugere, hvor langt ordren er i processen.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7a+12jix2cu56@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b602",
+        "6625872809c8d6e55169b606"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a57"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 18,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a57",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "3",
+          "color": "yellow",
+          "uses": 9
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 35 Opdatere Ordrestatus (Medarbejder)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b486",
+      "pos": 69376,
+      "shortLink": "wIEeEVnK",
+      "shortUrl": "https://trello.com/c/wIEeEVnK",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/wIEeEVnK/18-us-35-opdatere-ordrestatus-medarbejder",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b562",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b486",
+          "value": "{\"storyPoints\":3}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.172Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b487",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.251Z",
+      "desc": "*Som* medarbejder, *Ønsker jeg* at kunne se ordredetaljer om blomsterarrangementet, *Med det formål* at kunne ekspedere ordrer korrekt og effektivt.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7b+2hn9hzsy63@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b61d",
+        "6625872809c8d6e55169b621"
+      ],
+      "idLabels": [
+        "66258730f3e7e3fde9e799b4"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 12,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258730f3e7e3fde9e799b4",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "1",
+          "color": "green_light",
+          "uses": 2
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 34 Se Ordredetaljer (Medarbejder)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b487",
+      "pos": 134912,
+      "shortLink": "5EdFpGw8",
+      "shortUrl": "https://trello.com/c/5EdFpGw8",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/5EdFpGw8/12-us-34-se-ordredetaljer-medarbejder",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b56c",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b487",
+          "value": "{\"storyPoints\":1}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.184Z"
+        }
+      ],
+      "customFieldItems": []
+    },
+    {
+      "id": "6625872709c8d6e55169b48b",
+      "address": null,
+      "badges": {
+        "attachmentsByType": {
+          "trello": {
+            "board": 0,
+            "card": 0
+          }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": true,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+      },
+      "checkItemStates": [],
+      "closed": false,
+      "coordinates": null,
+      "creationMethod": null,
+      "dueComplete": false,
+      "dateLastActivity": "2024-04-21T21:38:03.452Z",
+      "desc": "*Som* medarbejder, *Ønsker jeg* at markere en ordre som klar til afhentning og fuldført, *Med det formål* at administrere ordreflowet effektivt.\n",
+      "descData": {
+        "emoji": {
+
+        }
+      },
+      "due": null,
+      "dueReminder": null,
+      "email": "carstenhaislu+324fs9eaxj1gdx45agl+32c4oyiz8e2fenx6g7f+0i79hhdax8@boards.trello.com",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idChecklists": [
+        "6625872809c8d6e55169b5fe",
+        "6625872809c8d6e55169b5fa"
+      ],
+      "idLabels": [
+        "66258731f3e7e3fde9e79a5a"
+      ],
+      "idList": "6625872709c8d6e55169b284",
+      "idMembers": [],
+      "idMembersVoted": [],
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "idShort": 17,
+      "idAttachmentCover": null,
+      "labels": [
+        {
+          "id": "66258731f3e7e3fde9e79a5a",
+          "idBoard": "662586fa057c62f10ece1bec",
+          "name": "2",
+          "color": "green",
+          "uses": 3
+        }
+      ],
+      "limits": {
+        "attachments": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 1000,
+            "warnAt": 800
+          }
+        },
+        "checklists": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 500,
+            "warnAt": 400
+          }
+        },
+        "stickers": {
+          "perCard": {
+            "status": "ok",
+            "disableAt": 70,
+            "warnAt": 56
+          }
+        }
+      },
+      "locationName": null,
+      "manualCoverAttachment": false,
+      "name": "US 19 Ordreklargøring (Medarbejder)",
+      "nodeId": "ari:cloud:trello::card/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b48b",
+      "pos": 200448,
+      "shortLink": "bXc6Iux6",
+      "shortUrl": "https://trello.com/c/bXc6Iux6",
+      "staticMapUrl": null,
+      "start": null,
+      "subscribed": false,
+      "url": "https://trello.com/c/bXc6Iux6/17-us-19-ordreklarg%C3%B8ring-medarbejder",
+      "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+      },
+      "isTemplate": false,
+      "cardRole": null,
+      "attachments": [],
+      "pluginData": [
+        {
+          "id": "6625872809c8d6e55169b560",
+          "idPlugin": "638372c5e00ec1016bb45460",
+          "scope": "card",
+          "idModel": "6625872709c8d6e55169b48b",
+          "value": "{\"storyPoints\":2}",
+          "access": "shared",
+          "dateLastUpdated": "2024-04-21T21:37:44.172Z"
+        }
+      ],
+      "customFieldItems": []
+    }
+  ],
+  "labels": [
+    {
+      "id": "66258731f3e7e3fde9e79a57",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "3",
+      "color": "yellow",
+      "uses": 9
+    },
+    {
+      "id": "66258730f3e7e3fde9e799b2",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "5",
+      "color": "orange",
+      "uses": 4
+    },
+    {
+      "id": "66258731f3e7e3fde9e79a5a",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "2",
+      "color": "green",
+      "uses": 3
+    },
+    {
+      "id": "66258730f3e7e3fde9e799b4",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "1",
+      "color": "green_light",
+      "uses": 2
+    },
+    {
+      "id": "662586fad1e83f0fc6668992",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "",
+      "color": "blue",
+      "uses": 0
+    },
+    {
+      "id": "662586fad1e83f0fc666898c",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "",
+      "color": "green",
+      "uses": 0
+    },
+    {
+      "id": "662586fad1e83f0fc6668999",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "",
+      "color": "orange",
+      "uses": 0
+    },
+    {
+      "id": "662586fad1e83f0fc666898f",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "",
+      "color": "purple",
+      "uses": 0
+    },
+    {
+      "id": "662586fad1e83f0fc666898e",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "",
+      "color": "red",
+      "uses": 0
+    },
+    {
+      "id": "662586fad1e83f0fc666898d",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "name": "",
+      "color": "yellow",
+      "uses": 0
+    }
+  ],
+  "lists": [
+    {
+      "id": "6625871c199417cec93b2131",
+      "name": "Sprint 1",
+      "closed": false,
+      "color": null,
+      "idBoard": "662586fa057c62f10ece1bec",
+      "pos": 75488,
+      "subscribed": false,
+      "softLimit": null,
+      "creationMethod": null,
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "limits": {
+        "cards": {
+          "openPerList": {
+            "status": "ok",
+            "disableAt": 5000,
+            "warnAt": 4000
+          },
+          "totalPerList": {
+            "status": "ok",
+            "disableAt": 1000000,
+            "warnAt": 800000
+          }
+        }
+      },
+      "nodeId": "ari:cloud:trello::list/workspace/65f2efc72f599dc8ad6d6423/6625871c199417cec93b2131"
+    },
+    {
+      "id": "6625872709c8d6e55169b284",
+      "name": "Sprint 2",
+      "closed": false,
+      "color": null,
+      "idBoard": "662586fa057c62f10ece1bec",
+      "pos": 150976,
+      "subscribed": false,
+      "softLimit": null,
+      "creationMethod": null,
+      "idOrganization": "65f2efc72f599dc8ad6d6423",
+      "limits": {
+        "cards": {
+          "openPerList": {
+            "status": "ok",
+            "disableAt": 5000,
+            "warnAt": 4000
+          },
+          "totalPerList": {
+            "status": "ok",
+            "disableAt": 1000000,
+            "warnAt": 800000
+          }
+        }
+      },
+      "nodeId": "ari:cloud:trello::list/workspace/65f2efc72f599dc8ad6d6423/6625872709c8d6e55169b284"
+    }
+  ],
+  "members": [
+    {
+      "id": "65f2e3e80c300d80a06e3c35",
+      "aaId": "712020:4991bc84-2250-4d25-b604-2bed70137e28",
+      "activityBlocked": false,
+      "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3",
+      "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+      "bio": "",
+      "bioData": null,
+      "confirmed": true,
+      "fullName": "Cal Lydeking",
+      "idEnterprise": null,
+      "idEnterprisesDeactivated": [],
+      "idMemberReferrer": null,
+      "idPremOrgsAdmin": [
+        "65f2efc72f599dc8ad6d6423"
+      ],
+      "initials": "CL",
+      "memberType": "normal",
+      "nonPublic": {
+        "fullName": "Carsten Haislund Lydeking",
+        "initials": "CL",
+        "avatarUrl": "https://trello-members.s3.amazonaws.com/65f2e3e80c300d80a06e3c35/0a8da67c1aff87e7c773c5a38b4678a3",
+        "avatarHash": "0a8da67c1aff87e7c773c5a38b4678a3"
+      },
+      "nonPublicAvailable": true,
+      "products": [],
+      "url": "https://trello.com/carstenhaislundlydeking",
+      "username": "carstenhaislundlydeking",
+      "status": "disconnected"
+    }
+  ],
+  "checklists": [
+    {
+      "id": "6625871d199417cec93b23e3",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b22cd",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b23e4",
+          "name": "Implementer en produktoversigtsside med alle tilgængelige produkter.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b23e3"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b23e7",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b22cd",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b23e8",
+          "name": "Givet at en kunde besøger produktoversigtssiden, *når* de kigger igennem siden, *så* skal de kunne se alle produkter, der er til salg.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b23e7"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2455",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230d",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2456",
+          "name": "Implementer registrerings funktion",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 17407,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2455"
+        },
+        {
+          "id": "6625871d199417cec93b2457",
+          "name": "Opret registreringsside",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 33817,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2455"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b245b",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230d",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b245c",
+          "name": "Givet at en anonym bruger, når denne vil registrerer sig på sitet, så vil denne få en bruger, som vedkommende kan logge ind med",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 17134,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b245b"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2470",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230f",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2471",
+          "name": "Givet at en kunde vælger et produkt, *når* de klikker på \"tilføj til kurv\"-knappen, *så* skal produktet blive tilføjet til deres kurv.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2470"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b246c",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230f",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b246d",
+          "name": "Implementer en funktion til at tilføje produkter til en indkøbskurv.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b246c"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2462",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230b",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2463",
+          "name": "Implementer log ud funktion",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 17332,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2462"
+        },
+        {
+          "id": "6625871d199417cec93b2464",
+          "name": "Implementer auto-log ud funktion",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 34713,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2462"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2468",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230b",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2469",
+          "name": "Givet at en kunde vil logge ud, når denne er færdig med at interagere med sitet, så vil denne logges ud og returneres til forsiden",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16617,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2468"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b247d",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b2311",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b247e",
+          "name": "Udvikle en proces, hvor kunden kan omdanne indholdet af kurven til en ordre.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b247d"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2481",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b2311",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2482",
+          "name": "Givet at en kunde har valgt produkter i kurven, *når* de klikker på \"bestil\", *så* skal de kunne gennemføre købet og se en ordrebekræftelse.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2481"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2493",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230a",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2494",
+          "name": "Givet at en kunde vil se en bestemt produktkategori, *når* de leder efter et produkt der opfylder deres behov, *så* får de en tilsvarende afgrænset visning af produktkataloget.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 17321,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2493"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2479",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230e",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b247a",
+          "name": "Givet at en bruger ønsker at ændre sin bestilling, *når* de besøger kurvsiden, *så* skal de kunne ændre antallet af produkter eller fjerne dem fra kurven.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2479"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2498",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230c",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2499",
+          "name": "Kræv at brugere afgiver kontaktinformation, uden at oprette bruger",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2498"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b249c",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230c",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b249d",
+          "name": "Givet at en anonym kunde ønsker at købe produkterne i kurv, *når* de forsøger at gøre dette, *så* bliver de bedt om at logge ind, oprette en konto eller afgive kontaktinformation.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b249c"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2475",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230e",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2476",
+          "name": "Implementer en redigeringsfunktion i kurven, hvor brugeren kan opdatere antallet eller fjerne produkter fra kurven.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2475"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b248b",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b2310",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b248c",
+          "name": "Givet at en registreret kunde ønsker at logge ind når denne ønsker at interagere med siden som en registreret bruger, så vil denne logge ind, såfremt korrekt password og username er anvendt",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16585,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b248b"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b248f",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b230a",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2490",
+          "name": "Implementer kategorier, hvor produkter der har samme tema vises",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16756,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b248f"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625871d199417cec93b2485",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625871c199417cec93b2310",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625871d199417cec93b2486",
+          "name": "Implementer login funktion",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16571,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2485"
+        },
+        {
+          "id": "6625871d199417cec93b2487",
+          "name": "Implementer \"forkert password\" funktion",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 33191,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625871d199417cec93b2485"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b5c9",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b463",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b5ca",
+          "name": "Givet at en medarbejder er logget ind, *når* de tilgår administrationspanelet, *så* skal de kunne se en liste over aktive ordrer og opdatere deres status.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b5c9"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b5c5",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b463",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b5c6",
+          "name": "Implementer en administrationsside for medarbejdere til håndtering af nye ordrer.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b5c5"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b5fe",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48b",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b5ff",
+          "name": "Givet at en ordre er færdigpakket, *når* medarbejderen opdaterer systemet, *så* skal statussen ændres, så kunden og andre medarbejdere kan se, at ordren er klar eller afhentet.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b5fe"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b602",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b486",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b603",
+          "name": "Skabe en funktion, der tillader medarbejdere at opdatere status for en ordre i realtid.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b602"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b5fa",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48b",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b5fb",
+          "name": "Skab en funktion, hvor medarbejdere kan opdatere ordrens status til \"klar til afhentning\" og senere \"afhentet\".",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b5fa"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b606",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b486",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b607",
+          "name": "Givet at en ordre er i gang med at blive ekspederet, *når* medarbejderen opdaterer ordrens status, *så* skal denne opdatering være synlig for alle relevante parter, herunder andre medarbejdere og kunden, hvis de tjekker status online.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b606"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b60b",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48d",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b60c",
+          "name": "Udvikle et dashboard, hvor medarbejdere kan se en liste over alle aktuelle ordrer.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b60b"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b5f2",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b488",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b5f3",
+          "name": "Kunde skal kunne ændre i egen personlige oplysninger",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16748,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b5f2"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b60f",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48d",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b610",
+          "name": "Givet at en medarbejder er logget ind, *når* de tilgår dashboardet, *så* skal de kunne se og sortere alle ordrer efter status, dato og andre relevante kriterier.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b60f"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b5f6",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b488",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b5f7",
+          "name": "Givet at en kunde vil opdatere sine oplysninger, når disse har ændret sig, så vil kunden kunne se sine oplysninger er opdateret til det af kunden angivne værdier",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 17367,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b5f6"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b613",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48a",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b614",
+          "name": "Udvikle en brugergrænseflade for produktadministration i administrationspanelet.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b613"
+        },
+        {
+          "id": "6625872809c8d6e55169b615",
+          "name": "Implementere et samlet dashboard med oversigt over alle Produkter",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 17635,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b613"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b61d",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b487",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b61e",
+          "name": "Udvikle en funktion, der viser fulde detaljer for hver ordre, inklusive specifikationer for blomsterarrangementet.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b61d"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b619",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48a",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b61a",
+          "name": "Givet at en bestyrer er logget ind, *når* de tilgår produktadministrationsmodulet, *så* skal de kunne tilføje nye produkter, redigere eksisterende produkter og arkivere forældede produkter.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b619"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b621",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b487",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b622",
+          "name": "Givet at en medarbejder behandler en ordre, *når* de tilgår ordren på systemet, *så* skal de kunne se alle relevante detaljer om blomsterarrangementet, som er nødvendige for at færdiggøre ordren korrekt.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b621"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b628",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48c",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b629",
+          "name": "Opret side, hvor den kunde, der er logget ind, kan se sine egne oplysninger",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16944,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b628"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b62c",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b48c",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b62d",
+          "name": "Givet at en kunde vil se sine egne registrerede oplysninger, når kunden er på sin profilside, så vil kunden kunne se dem på en heuristisk designet facon",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 16477,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b62c"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b633",
+      "name": "Tasks",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b489",
+      "pos": 1000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b634",
+          "name": "Implementer en sikker log ind-funktion specifikt for medarbejdere på ordreportalen.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b633"
+        }
+      ],
+      "creationMethod": null
+    },
+    {
+      "id": "6625872809c8d6e55169b637",
+      "name": "Acceptance Criteria",
+      "idBoard": "662586fa057c62f10ece1bec",
+      "idCard": "6625872709c8d6e55169b489",
+      "pos": 2000,
+      "limits": {
+        "checkItems": {
+          "perChecklist": {
+            "status": "ok",
+            "disableAt": 200,
+            "warnAt": 160
+          }
+        }
+      },
+      "checkItems": [
+        {
+          "id": "6625872809c8d6e55169b638",
+          "name": "Givet at en medarbejder står foran sin arbejdsstation, *når* de indtaster deres legitimationsoplysninger, *så* skal de have adgang til ordreportalen, hvor de kan administrere ordrer.",
+          "nameData": {
+            "emoji": {
+
+            }
+          },
+          "pos": 1000,
+          "state": "incomplete",
+          "due": null,
+          "dueReminder": null,
+          "idMember": null,
+          "idChecklist": "6625872809c8d6e55169b637"
+        }
+      ],
+      "creationMethod": null
+    }
+  ],
+  "customFields": [],
+  "memberships": [
+    {
+      "id": "662586fa057c62f10ece1bf5",
+      "idMember": "65f2e3e80c300d80a06e3c35",
+      "memberType": "admin",
+      "unconfirmed": false,
+      "deactivated": false
+    }
+  ],
+  "pluginData": []
+}
