@@ -28,6 +28,7 @@ partial class Converter
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Converter));
         chooseFileButton = new Button();
         openFileDialog1 = new OpenFileDialog();
         filePathJSON = new TextBox();
@@ -44,7 +45,7 @@ partial class Converter
         // 
         // chooseFileButton
         // 
-        chooseFileButton.Location = new Point(513, 223);
+        chooseFileButton.Location = new Point(606, 159);
         chooseFileButton.Name = "chooseFileButton";
         chooseFileButton.Size = new Size(112, 34);
         chooseFileButton.TabIndex = 0;
@@ -59,15 +60,15 @@ partial class Converter
         // filePathJSON
         // 
         filePathJSON.BorderStyle = BorderStyle.FixedSingle;
-        filePathJSON.Location = new Point(12, 119);
+        filePathJSON.Location = new Point(12, 111);
         filePathJSON.Multiline = true;
         filePathJSON.Name = "filePathJSON";
-        filePathJSON.Size = new Size(613, 65);
+        filePathJSON.Size = new Size(706, 32);
         filePathJSON.TabIndex = 1;
         // 
         // convertButton
         // 
-        convertButton.Location = new Point(513, 263);
+        convertButton.Location = new Point(606, 199);
         convertButton.Name = "convertButton";
         convertButton.Size = new Size(112, 34);
         convertButton.TabIndex = 2;
@@ -82,16 +83,16 @@ partial class Converter
         textBox1.Multiline = true;
         textBox1.Name = "textBox1";
         textBox1.ReadOnly = true;
-        textBox1.Size = new Size(613, 101);
+        textBox1.Size = new Size(706, 93);
         textBox1.TabIndex = 4;
-        textBox1.Text = "Trello Converter. This WinForm app has been developed for converting Trello exports in JSON format into a more malleable CSV and markdown files\r\n";
+        textBox1.Text = resources.GetString("textBox1.Text");
         // 
         // enumerate
         // 
         enumerate.AutoSize = true;
         enumerate.Checked = true;
         enumerate.CheckState = CheckState.Checked;
-        enumerate.Location = new Point(162, 227);
+        enumerate.Location = new Point(307, 159);
         enumerate.Name = "enumerate";
         enumerate.Size = new Size(122, 29);
         enumerate.TabIndex = 5;
@@ -104,7 +105,7 @@ partial class Converter
         generateMarkdown.AutoSize = true;
         generateMarkdown.Checked = true;
         generateMarkdown.CheckState = CheckState.Checked;
-        generateMarkdown.Location = new Point(12, 267);
+        generateMarkdown.Location = new Point(12, 194);
         generateMarkdown.Name = "generateMarkdown";
         generateMarkdown.Size = new Size(144, 29);
         generateMarkdown.TabIndex = 6;
@@ -115,7 +116,7 @@ partial class Converter
         // deEnumerate
         // 
         deEnumerate.AutoSize = true;
-        deEnumerate.Location = new Point(12, 227);
+        deEnumerate.Location = new Point(162, 159);
         deEnumerate.Name = "deEnumerate";
         deEnumerate.Size = new Size(144, 29);
         deEnumerate.TabIndex = 7;
@@ -128,7 +129,7 @@ partial class Converter
         reverseOrder.AutoSize = true;
         reverseOrder.Checked = true;
         reverseOrder.CheckState = CheckState.Checked;
-        reverseOrder.Location = new Point(307, 227);
+        reverseOrder.Location = new Point(435, 159);
         reverseOrder.Name = "reverseOrder";
         reverseOrder.Size = new Size(142, 29);
         reverseOrder.TabIndex = 8;
@@ -141,7 +142,7 @@ partial class Converter
         closeOnSucces.AutoSize = true;
         closeOnSucces.Checked = true;
         closeOnSucces.CheckState = CheckState.Checked;
-        closeOnSucces.Location = new Point(307, 267);
+        closeOnSucces.Location = new Point(307, 194);
         closeOnSucces.Name = "closeOnSucces";
         closeOnSucces.Size = new Size(163, 29);
         closeOnSucces.TabIndex = 9;
@@ -154,7 +155,7 @@ partial class Converter
         generateLATEX.AutoSize = true;
         generateLATEX.Checked = true;
         generateLATEX.CheckState = CheckState.Checked;
-        generateLATEX.Location = new Point(162, 267);
+        generateLATEX.Location = new Point(162, 194);
         generateLATEX.Name = "generateLATEX";
         generateLATEX.Size = new Size(140, 29);
         generateLATEX.TabIndex = 10;
@@ -165,7 +166,7 @@ partial class Converter
         // originalFormat
         // 
         originalFormat.AutoSize = true;
-        originalFormat.Location = new Point(12, 190);
+        originalFormat.Location = new Point(12, 159);
         originalFormat.Name = "originalFormat";
         originalFormat.Size = new Size(139, 29);
         originalFormat.TabIndex = 11;
@@ -177,7 +178,7 @@ partial class Converter
         // 
         AutoScaleDimensions = new SizeF(10F, 25F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(637, 304);
+        ClientSize = new Size(734, 241);
         Controls.Add(originalFormat);
         Controls.Add(generateLATEX);
         Controls.Add(closeOnSucces);
