@@ -57,9 +57,8 @@ namespace TrelloConverter
                 return;
             }
 
-            jsonList = PrepForConversion(jsonList);
-
             jsonList = jsonList.OrderBy(x => x.ListName).ThenBy(x => x.ReorderPosition).ToList();
+            jsonList = PrepForConversion(jsonList);
 
             if (mustDeEnumerate && !mustEnumerate)
             {
@@ -203,12 +202,14 @@ namespace TrelloConverter
                 {
                     file.WriteLine("\"{0}\",\"{1}\",\"{2}\",\"{3}\",,,", newCard.Name, newCard.Desc, labelJoin, newCard.ListName);
                 }
-
-                foreach (var checklist in newCard.Checklists)
+                if (newCard.Checklists != null)
                 {
-                    foreach (var checkItem in checklist.CheckItems)
+                    foreach (var checklist in newCard.Checklists)
                     {
-                        file.WriteLine(",,,,\"{0}\",\"{1}\"", checklist.Name, checkItem.Name);
+                        foreach (var checkItem in checklist.CheckItems)
+                        {
+                            file.WriteLine(",,,,\"{0}\",\"{1}\"", checklist.Name, checkItem.Name);
+                        }
                     }
                 }
             }
@@ -222,19 +223,20 @@ namespace TrelloConverter
             {
                 file.WriteLine($"### {card.Name}");
                 file.WriteLine($"{card.Desc}\n");
-
-                foreach (var checklist in card.Checklists)
+                if (card.Checklists != null)
                 {
-                    int indexer = 1;
-                    file.WriteLine($"**{checklist.Name}:**");
-                    foreach (var checkItem in checklist.CheckItems)
+                    foreach (var checklist in card.Checklists)
                     {
-                        file.WriteLine($"{indexer}. {checkItem.Name}");
-                        indexer++;
+                        int indexer = 1;
+                        file.WriteLine($"**{checklist.Name}:**");
+                        foreach (var checkItem in checklist.CheckItems)
+                        {
+                            file.WriteLine($"{indexer}. {checkItem.Name}");
+                            indexer++;
+                        }
+                        file.WriteLine("");
                     }
-                    file.WriteLine("");
                 }
-
                 string labelDescriptions = string.Join(", ", card.Labels.Select(label => $"{label.Name} ({label.Color})"));
                 file.WriteLine($"**Estimate:** {labelDescriptions}");
                 file.WriteLine();
@@ -308,19 +310,27 @@ namespace TrelloConverter
             {
                 card.Name = ScourString(card.Name);
                 card.Desc = ScourString(card.Desc);
+                if (card.Checklists != null)
+                {
+                    foreach (Checklist checklist in card.Checklists)
+                    {
+                        checklist.Name = ScourString(checklist.Name);
+                        foreach (CheckItem checkItem in checklist.CheckItems)
+                        {
+                            checkItem.Name = ScourString(checkItem.Name);
+                        }
+                    }
+                }
                 foreach (var label in card.Labels)
                 {
                     switch (label.Name)
                     {
-                        case "":
-                            label.CorrectedColor = "white";
-                            break;
                         case "1":
                             label.CorrectedColor = "green";
                             label.Color = "green";
                             break;
                         case "2":
-                            label.CorrectedColor = "olive";
+                            label.CorrectedColor = "lime";
                             label.Color = "lime";
                             break;
                         case "3":
@@ -335,14 +345,9 @@ namespace TrelloConverter
                             label.CorrectedColor = "red";
                             label.Color = "red";
                             break;
-                    }
-                }
-                foreach (var checklist in card.Checklists)
-                {
-                    checklist.Name = ScourString(checklist.Name);
-                    foreach (var checkItem in checklist.CheckItems)
-                    {
-                        checkItem.Name = ScourString(checkItem.Name);
+                        default:
+                            label.CorrectedColor = "white";
+                            break;
                     }
                 }
             }

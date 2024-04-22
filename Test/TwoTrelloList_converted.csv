@@ -1,5 +1,5 @@
 Card Name,Card Description,Labels,List Name,Checklist,Checklist item
-"US-001 Se Alle Produkter (Kunde)","Som kunde, Ønsker jeg at se alle tilgængelige produkter, Med det formål at vælge et produkt.","1 (green_light)","Sprint 1",,,
+"US-001 Se Alle Produkter (Kunde)","Som kunde, Ønsker jeg at se alle tilgængelige produkter, Med det formål at vælge et produkt.","1 (green)","Sprint 1",,,
 ,,,,"Tasks","Implementer en produktoversigtsside med alle tilgængelige produkter."
 ,,,,"Acceptance Criteria","Givet at en kunde besøger produktoversigtssiden, når de kigger igennem siden, så skal de kunne se alle produkter, der er til salg."
 "US-002 Oversigt over Produkter (Kunde)","Som kunde vil jeg kunne se en oversigt over blomsterarrangementer, så jeg kan vælge det, der passer til lejligheden.","3 (yellow)","Sprint 1",,,
@@ -8,10 +8,10 @@ Card Name,Card Description,Labels,List Name,Checklist,Checklist item
 "US-003 Tilføj til Kurv (Kunde)","Som kunde, Ønsker jeg at tilføje et produkt til min kurv, Med det formål at samle min bestilling.","5 (orange)","Sprint 1",,,
 ,,,,"Acceptance Criteria","Givet at en kunde vælger et produkt, når de klikker på 'tilføj til kurv'-knappen, så skal produktet blive tilføjet til deres kurv."
 ,,,,"Tasks","Implementer en funktion til at tilføje produkter til en indkøbskurv."
-"US-004 Ændre Produkter i Kurv (Bruger)","Som bruger, Ønsker jeg at ændre mængden af produkter i min kurv, Med det formål at justere min bestilling før køb.","2 (green)","Sprint 1",,,
+"US-004 Ændre Produkter i Kurv (Bruger)","Som bruger, Ønsker jeg at ændre mængden af produkter i min kurv, Med det formål at justere min bestilling før køb.","2 (lime)","Sprint 1",,,
 ,,,,"Acceptance Criteria","Givet at en bruger ønsker at ændre sin bestilling, når de besøger kurvsiden, så skal de kunne ændre antallet af produkter eller fjerne dem fra kurven."
 ,,,,"Tasks","Implementer en redigeringsfunktion i kurven, hvor brugeren kan opdatere antallet eller fjerne produkter fra kurven."
-"US-005 Opret Ordre (Kunde)","Som kunde, Ønsker jeg at skabe en ordre fra min kurv, Med det formål at købe de valgte produkter.","2 (green)","Sprint 1",,,
+"US-005 Opret Ordre (Kunde)","Som kunde, Ønsker jeg at skabe en ordre fra min kurv, Med det formål at købe de valgte produkter.","2 (lime)","Sprint 1",,,
 ,,,,"Tasks","Udvikle en proces, hvor kunden kan omdanne indholdet af kurven til en ordre."
 ,,,,"Acceptance Criteria","Givet at en kunde har valgt produkter i kurven, når de klikker på 'bestil', så skal de kunne gennemføre købet og se en ordrebekræftelse."
 "US-006 Kurv til Ordre","Som ejer, Ønsker jeg at kunden skal give relevant kontaktinformation for at kunne købe en ordre fra kurven, Med det formål at undgå anonyme køb.","3 (yellow)","Sprint 1",,,
@@ -51,9 +51,9 @@ Card Name,Card Description,Labels,List Name,Checklist,Checklist item
 "US-016 Opdatere Ordrestatus (Medarbejder)","Som medarbejder, Ønsker jeg at kunne opdatere ordrestatus, Med det formål at tydeliggøre for alle brugere, hvor langt ordren er i processen.","3 (yellow)","Sprint 2",,,
 ,,,,"Tasks","Skabe en funktion, der tillader medarbejdere at opdatere status for en ordre i realtid."
 ,,,,"Acceptance Criteria","Givet at en ordre er i gang med at blive ekspederet, når medarbejderen opdaterer ordrens status, så skal denne opdatering være synlig for alle relevante parter, herunder andre medarbejdere og kunden, hvis de tjekker status online."
-"US-017 Se Ordredetaljer (Medarbejder)","Som medarbejder, Ønsker jeg at kunne se ordredetaljer om blomsterarrangementet, Med det formål at kunne ekspedere ordrer korrekt og effektivt.","1 (green_light)","Sprint 2",,,
+"US-017 Se Ordredetaljer (Medarbejder)","Som medarbejder, Ønsker jeg at kunne se ordredetaljer om blomsterarrangementet, Med det formål at kunne ekspedere ordrer korrekt og effektivt.","1 (green)","Sprint 2",,,
 ,,,,"Tasks","Udvikle en funktion, der viser fulde detaljer for hver ordre, inklusive specifikationer for blomsterarrangementet."
 ,,,,"Acceptance Criteria","Givet at en medarbejder behandler en ordre, når de tilgår ordren på systemet, så skal de kunne se alle relevante detaljer om blomsterarrangementet, som er nødvendige for at færdiggøre ordren korrekt."
-"US-018 Ordreklargøring (Medarbejder)","Som medarbejder, Ønsker jeg at markere en ordre som klar til afhentning og fuldført, Med det formål at administrere ordreflowet effektivt.","2 (green)","Sprint 2",,,
+"US-018 Ordreklargøring (Medarbejder)","Som medarbejder, Ønsker jeg at markere en ordre som klar til afhentning og fuldført, Med det formål at administrere ordreflowet effektivt.","2 (lime)","Sprint 2",,,
 ,,,,"Acceptance Criteria","Givet at en ordre er færdigpakket, når medarbejderen opdaterer systemet, så skal statussen ændres, så kunden og andre medarbejdere kan se, at ordren er klar eller afhentet."
 ,,,,"Tasks","Skab en funktion, hvor medarbejdere kan opdatere ordrens status til 'klar til afhentning' og senere 'afhentet'."

@@ -7,7 +7,7 @@ Som kunde, Ønsker jeg at se alle tilgængelige produkter, Med det formål at v�
 **Acceptance Criteria:**
 1. Givet at en kunde besøger produktoversigtssiden, når de kigger igennem siden, så skal de kunne se alle produkter, der er til salg.
 
-**Estimate:** 1 (green_light)
+**Estimate:** 1 (green)
 
 **Sprint:** Sprint 1
 
@@ -55,7 +55,7 @@ Som bruger, Ønsker jeg at ændre mængden af produkter i min kurv, Med det form
 **Tasks:**
 1. Implementer en redigeringsfunktion i kurven, hvor brugeren kan opdatere antallet eller fjerne produkter fra kurven.
 
-**Estimate:** 2 (green)
+**Estimate:** 2 (lime)
 
 **Sprint:** Sprint 1
 
@@ -71,7 +71,7 @@ Som kunde, Ønsker jeg at skabe en ordre fra min kurv, Med det formål at købe 
 **Acceptance Criteria:**
 1. Givet at en kunde har valgt produkter i kurven, når de klikker på 'bestil', så skal de kunne gennemføre købet og se en ordrebekræftelse.
 
-**Estimate:** 2 (green)
+**Estimate:** 2 (lime)
 
 **Sprint:** Sprint 1
 
@@ -267,7 +267,7 @@ Som medarbejder, Ønsker jeg at kunne se ordredetaljer om blomsterarrangementet,
 **Acceptance Criteria:**
 1. Givet at en medarbejder behandler en ordre, når de tilgår ordren på systemet, så skal de kunne se alle relevante detaljer om blomsterarrangementet, som er nødvendige for at færdiggøre ordren korrekt.
 
-**Estimate:** 1 (green_light)
+**Estimate:** 1 (green)
 
 **Sprint:** Sprint 2
 
@@ -283,7 +283,7 @@ Som medarbejder, Ønsker jeg at markere en ordre som klar til afhentning og fuld
 **Tasks:**
 1. Skab en funktion, hvor medarbejdere kan opdatere ordrens status til 'klar til afhentning' og senere 'afhentet'.
 
-**Estimate:** 2 (green)
+**Estimate:** 2 (lime)
 
 **Sprint:** Sprint 2
 
