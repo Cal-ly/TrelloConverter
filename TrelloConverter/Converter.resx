@@ -120,4 +120,8 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Trello Converter. This WinForm app has been developed for converting Trello exports in JSON format into a more malleable CSV and Markdown files. Can De- and Renumber UserStories. Can output a LaTeX file (.tex), if needed in documentation. 
+// CAL</value>
+  </data>
 </root>
