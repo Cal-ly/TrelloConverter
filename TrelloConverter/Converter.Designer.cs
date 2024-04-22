@@ -45,9 +45,9 @@ partial class Converter
         // 
         // chooseFileButton
         // 
-        chooseFileButton.Location = new Point(606, 159);
+        chooseFileButton.Location = new Point(612, 201);
         chooseFileButton.Name = "chooseFileButton";
-        chooseFileButton.Size = new Size(112, 34);
+        chooseFileButton.Size = new Size(147, 34);
         chooseFileButton.TabIndex = 0;
         chooseFileButton.Text = "Choose File";
         chooseFileButton.UseVisualStyleBackColor = true;
@@ -60,17 +60,17 @@ partial class Converter
         // filePathJSON
         // 
         filePathJSON.BorderStyle = BorderStyle.FixedSingle;
-        filePathJSON.Location = new Point(12, 111);
+        filePathJSON.Location = new Point(12, 135);
         filePathJSON.Multiline = true;
         filePathJSON.Name = "filePathJSON";
-        filePathJSON.Size = new Size(706, 32);
+        filePathJSON.Size = new Size(747, 32);
         filePathJSON.TabIndex = 1;
         // 
         // convertButton
         // 
-        convertButton.Location = new Point(606, 199);
+        convertButton.Location = new Point(612, 241);
         convertButton.Name = "convertButton";
-        convertButton.Size = new Size(112, 34);
+        convertButton.Size = new Size(147, 34);
         convertButton.TabIndex = 2;
         convertButton.Text = "Convert";
         convertButton.UseVisualStyleBackColor = true;
@@ -78,12 +78,13 @@ partial class Converter
         // 
         // textBox1
         // 
+        textBox1.BackColor = SystemColors.ControlDark;
         textBox1.BorderStyle = BorderStyle.None;
         textBox1.Location = new Point(12, 12);
         textBox1.Multiline = true;
         textBox1.Name = "textBox1";
         textBox1.ReadOnly = true;
-        textBox1.Size = new Size(706, 93);
+        textBox1.Size = new Size(747, 106);
         textBox1.TabIndex = 4;
         textBox1.Text = resources.GetString("textBox1.Text");
         // 
@@ -92,9 +93,9 @@ partial class Converter
         enumerate.AutoSize = true;
         enumerate.Checked = true;
         enumerate.CheckState = CheckState.Checked;
-        enumerate.Location = new Point(307, 159);
+        enumerate.Location = new Point(325, 205);
         enumerate.Name = "enumerate";
-        enumerate.Size = new Size(122, 29);
+        enumerate.Size = new Size(128, 29);
         enumerate.TabIndex = 5;
         enumerate.Text = "Enumerate";
         enumerate.UseVisualStyleBackColor = true;
@@ -105,9 +106,9 @@ partial class Converter
         generateMarkdown.AutoSize = true;
         generateMarkdown.Checked = true;
         generateMarkdown.CheckState = CheckState.Checked;
-        generateMarkdown.Location = new Point(12, 194);
+        generateMarkdown.Location = new Point(12, 245);
         generateMarkdown.Name = "generateMarkdown";
-        generateMarkdown.Size = new Size(144, 29);
+        generateMarkdown.Size = new Size(151, 29);
         generateMarkdown.TabIndex = 6;
         generateMarkdown.Text = "Generate .md";
         generateMarkdown.UseVisualStyleBackColor = true;
@@ -116,9 +117,9 @@ partial class Converter
         // deEnumerate
         // 
         deEnumerate.AutoSize = true;
-        deEnumerate.Location = new Point(162, 159);
+        deEnumerate.Location = new Point(167, 205);
         deEnumerate.Name = "deEnumerate";
-        deEnumerate.Size = new Size(144, 29);
+        deEnumerate.Size = new Size(152, 29);
         deEnumerate.TabIndex = 7;
         deEnumerate.Text = "UnEnumerate";
         deEnumerate.UseVisualStyleBackColor = true;
@@ -129,9 +130,9 @@ partial class Converter
         reverseOrder.AutoSize = true;
         reverseOrder.Checked = true;
         reverseOrder.CheckState = CheckState.Checked;
-        reverseOrder.Location = new Point(435, 159);
+        reverseOrder.Location = new Point(459, 205);
         reverseOrder.Name = "reverseOrder";
-        reverseOrder.Size = new Size(142, 29);
+        reverseOrder.Size = new Size(147, 29);
         reverseOrder.TabIndex = 8;
         reverseOrder.Text = "Import ready";
         reverseOrder.UseVisualStyleBackColor = true;
@@ -142,9 +143,9 @@ partial class Converter
         closeOnSucces.AutoSize = true;
         closeOnSucces.Checked = true;
         closeOnSucces.CheckState = CheckState.Checked;
-        closeOnSucces.Location = new Point(307, 194);
+        closeOnSucces.Location = new Point(325, 245);
         closeOnSucces.Name = "closeOnSucces";
-        closeOnSucces.Size = new Size(163, 29);
+        closeOnSucces.Size = new Size(168, 29);
         closeOnSucces.TabIndex = 9;
         closeOnSucces.Text = "Close on succes";
         closeOnSucces.UseVisualStyleBackColor = true;
@@ -155,9 +156,9 @@ partial class Converter
         generateLATEX.AutoSize = true;
         generateLATEX.Checked = true;
         generateLATEX.CheckState = CheckState.Checked;
-        generateLATEX.Location = new Point(162, 194);
+        generateLATEX.Location = new Point(169, 245);
         generateLATEX.Name = "generateLATEX";
-        generateLATEX.Size = new Size(140, 29);
+        generateLATEX.Size = new Size(150, 29);
         generateLATEX.TabIndex = 10;
         generateLATEX.Text = "Generate .tex";
         generateLATEX.UseVisualStyleBackColor = true;
@@ -166,9 +167,9 @@ partial class Converter
         // originalFormat
         // 
         originalFormat.AutoSize = true;
-        originalFormat.Location = new Point(12, 159);
+        originalFormat.Location = new Point(12, 205);
         originalFormat.Name = "originalFormat";
-        originalFormat.Size = new Size(139, 29);
+        originalFormat.Size = new Size(144, 29);
         originalFormat.TabIndex = 11;
         originalFormat.Text = "Keep Format";
         originalFormat.UseVisualStyleBackColor = true;
@@ -178,7 +179,8 @@ partial class Converter
         // 
         AutoScaleDimensions = new SizeF(10F, 25F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(734, 241);
+        BackColor = SystemColors.ControlDark;
+        ClientSize = new Size(771, 287);
         Controls.Add(originalFormat);
         Controls.Add(generateLATEX);
         Controls.Add(closeOnSucces);
@@ -190,8 +192,9 @@ partial class Converter
         Controls.Add(convertButton);
         Controls.Add(filePathJSON);
         Controls.Add(chooseFileButton);
+        Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
         Name = "Converter";
-        Text = "Form1";
+        Text = "Trello Converter";
         ResumeLayout(false);
         PerformLayout();
     }
