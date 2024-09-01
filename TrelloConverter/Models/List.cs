@@ -1,9 +1,8 @@
-﻿namespace TrelloConverter.Models
+﻿namespace TrelloConverter.Models;
+
+public class List
 {
-    public class List
-    {
-        //[JsonPropertyName("id")]
-        public string? Id { get; set; }
-        public string? Name { get; set; }
-    }
+    //[JsonPropertyName("id")]
+    public string? Id { get; set; }
+    public string? Name { get; set; }
 }

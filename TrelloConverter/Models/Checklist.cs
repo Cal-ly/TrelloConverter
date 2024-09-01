@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace TrelloConverter.Models;
+﻿namespace TrelloConverter.Models;
 
 public class Checklist
 {
