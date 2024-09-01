@@ -1,21 +1,28 @@
 # TrelloConverter
 
-TrelloConverter is a .NET application designed to convert Trello board data into various formats such as CSV, Markdown, and LaTeX. This project includes both the main application and unit tests to ensure the functionality of the conversion processes.
+**TrelloConverter** is a powerful .NET application meticulously designed to transform Trello board data into a variety of formats, including CSV, Markdown, and LaTeX. Whether you are a project manager, developer, or data analyst, this tool ensures seamless conversion processes with high reliability, supported by comprehensive unit tests.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Features
 
-- Convert Trello JSON data to CSV format.
-- Convert Trello JSON data to Markdown format.
-- Convert Trello JSON data to LaTeX format.
-- Options to keep original format, enumerate, de-enumerate, reverse order, and close application after conversion.
+TrelloConverter is equipped with a robust set of features to cater to diverse data conversion needs:
+
+- **CSV Conversion**: Effortlessly convert Trello JSON data into CSV format, allowing for easy manipulation and analysis in spreadsheet applications.
+- **Markdown Generation**: Automatically generate well-structured Markdown files from Trello data, ideal for documentation and project reports.
+- **LaTeX Export**: Produce high-quality LaTeX files from Trello boards, perfect for academic papers and professional presentations.
+- **Customizable Conversion Options**:
+  - **Preserve Original Format**: Maintain the original format of your data.
+  - **Enumerate/De-enumerate**: Add or remove enumeration prefixes in task names.
+  - **Reverse Order**: Reverse the order of tasks for backward planning.
+  - **Auto-Close**: Option to automatically close the application after conversion.
 
 ## Screenshot
 
@@ -23,61 +30,75 @@ TrelloConverter is a .NET application designed to convert Trello board data into
 
 ## Installation
 
-To use TrelloConverter, download the latest release from the [Releases](https://github.com/Cal-ly/TrelloConverter/releases) page and run the executable. No installation is required. Or..
+### Quick Setup
 
-### Prerequisites
+Download the latest release from the [Releases](https://github.com/Cal-ly/TrelloConverter/releases) page and run the executable. No installation is required.
+
+### Manual Setup
+
+For those who prefer building from source, follow these steps:
+
+#### Prerequisites
+
+Ensure your environment is ready by installing the following:
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Visual Studio](https://visualstudio.microsoft.com/)
 
-### Clone the Repository
+#### Clone the Repository
 
-git clone https://github.com/Cal-ly/TrelloConverter.git cd TrelloConverter
+```bash
+git clone https://github.com/Cal-ly/TrelloConverter.git
+cd TrelloConverter
+```
 
-### Build the Solution
+#### Build the Solution
 
-Open the solution in Visual Studio and build it. This will restore the necessary NuGet packages and compile the project.
+Open the solution in Visual Studio and build it. This will restore all necessary NuGet packages and compile the project, preparing it for execution.
 
 ## Usage
 
 ### Running the Application
 
+To run the application in a development environment:
+
 1. Open the solution in Visual Studio.
 2. Set `TrelloConverter` as the startup project.
-3. Run the application.
+3. Press `F5` to run the application.
 
 ### Converting Trello Data
 
-1. **Choose a File**: Click on the "Choose File" button to select a Trello JSON export file.
-2. **Set Conversion Options**: Adjust the conversion settings according to your needs.
-3. **Convert**: Click the "Convert" button to generate the output files in the desired formats.
+1. **Choose a File**: Select the "Choose File" button to open a dialog and select your Trello JSON export.
+2. **Set Conversion Options**: Customize the conversion settings to fit your needs, such as output format and task order.
+3. **Convert**: Click the "Convert" button to generate output files in your chosen formats.
 
 ### Unit Tests
 
-To run the unit tests:
+To ensure the application runs smoothly and accurately:
 
 1. Open the Test Explorer in Visual Studio.
-2. Run all tests to ensure everything is working correctly.
+2. Run all tests to verify the functionality of the conversion processes.
 
 ## Project Structure
 
-- **TrelloConverter**: Contains the main application code.
-  - `Converter.cs`: Core logic for converting Trello data.
-- **TrelloConverterTests**: Contains unit tests for the application.
-  - `TrelloConverterTests.csproj`: Project file for the test project.
-- **TrelloConverter.Models**: Contains the base classes for data-manipulation
+The project is organized to facilitate both development and testing:
+
+- **TrelloConverter**: This directory contains the core application code.
+  - `Converter.cs`: Implements the primary logic for converting Trello JSON data into different formats.
+- **TrelloConverterTests**: Houses the unit tests to validate the application's functionality.
+  - `ConverterTests.cs`: Contains test cases for the `Converter.cs` class, ensuring reliable conversions.
+- **TrelloConverter.Models**: Defines the base classes and data models used for manipulating and structuring Trello data.
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+We welcome contributions to TrelloConverter! To contribute, please:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix (`git checkout -b feature-branch`).
+3. Make and commit your changes (`git commit -am 'Add new feature'`).
+4. Push your branch to GitHub (`git push origin feature-branch`).
+5. Submit a Pull Request with a detailed explanation of your changes.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+TrelloConverter is licensed under the MIT License, a permissive license that allows for commercial and private use, modification, and distribution. For more details, please refer to the [LICENSE](LICENSE) file.
