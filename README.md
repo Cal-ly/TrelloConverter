@@ -17,7 +17,13 @@ TrelloConverter is a .NET application designed to convert Trello board data into
 - Convert Trello JSON data to LaTeX format.
 - Options to keep original format, enumerate, de-enumerate, reverse order, and close application after conversion.
 
+## Screenshot
+
+![TrelloConverter Screenshot](https://github.com/Cal-ly/TrelloConverter/blob/master/Screenshot%20TrelloConverter.png)
+
 ## Installation
+
+To use TrelloConverter, download the latest release from the [Releases](https://github.com/Cal-ly/TrelloConverter/releases) page and run the executable. No installation is required. Or..
 
 ### Prerequisites
 
@@ -27,7 +33,6 @@ TrelloConverter is a .NET application designed to convert Trello board data into
 ### Clone the Repository
 
 git clone https://github.com/Cal-ly/TrelloConverter.git cd TrelloConverter
-
 
 ### Build the Solution
 
@@ -43,9 +48,9 @@ Open the solution in Visual Studio and build it. This will restore the necessary
 
 ### Converting Trello Data
 
-1. Use the "Choose File" button to select the Trello JSON file.
-2. Configure the desired options (e.g., output format, enumeration).
-3. Click the "Convert" button to generate the output files.
+1. **Choose a File**: Click on the "Choose File" button to select a Trello JSON export file.
+2. **Set Conversion Options**: Adjust the conversion settings according to your needs.
+3. **Convert**: Click the "Convert" button to generate the output files in the desired formats.
 
 ### Unit Tests
 
@@ -60,6 +65,7 @@ To run the unit tests:
   - `Converter.cs`: Core logic for converting Trello data.
 - **TrelloConverterTests**: Contains unit tests for the application.
   - `TrelloConverterTests.csproj`: Project file for the test project.
+- **TrelloConverter.Models**: Contains the base classes for data-manipulation
 
 ## Contributing
 
