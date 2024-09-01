@@ -25,7 +25,7 @@ public partial class Converter : Form
     {
         InitializeComponent();
     }
-    private void ChooseFileButton_Click(object sender, EventArgs e)
+    public void ChooseFileButton_Click(object sender, EventArgs e)
     {
         openFileDialog1.Filter = "JSON files (*.json)|*.json";
         openFileDialog1.Title = "Select a JSON file";
@@ -35,7 +35,7 @@ public partial class Converter : Form
             filePathJSON.Text = $"{openFileDialog1.FileName}";
         }
     }
-    private void ConvertButton_Click(object sender, EventArgs e)
+    public void ConvertButton_Click(object sender, EventArgs e)
     {
         filePathInput = Path.GetFullPath(filePathJSON.Text);
         filePathDir = Path.GetDirectoryName(filePathJSON.Text) ?? string.Empty;
@@ -95,7 +95,7 @@ public partial class Converter : Form
             }
         }
     }
-    private static List<Card> LoadJsonToObject(string filePathJson)
+    public static List<Card> LoadJsonToObject(string filePathJson)
     {
         List<Card> cards = new List<Card>();
         var trelloData = new TrelloData();
@@ -182,7 +182,7 @@ public partial class Converter : Form
         }
         return cards;
     }
-    private static void WriteCSVtoFile(List<Card> cards, string filePathOutput)
+    public static void WriteCSVtoFile(List<Card> cards, string filePathOutput)
     {
         using StreamWriter file = new StreamWriter(filePathOutput, append: false);
         file.WriteLine("Card Name,Card Description,Labels,List Name,Checklist,Checklist item");
@@ -218,7 +218,7 @@ public partial class Converter : Form
         }
         file.Close();
     }
-    private static void WriteMarkdownToFile(List<Card> cards, string filePathOutput)
+    public static void WriteMarkdownToFile(List<Card> cards, string filePathOutput)
     {
         using StreamWriter file = new StreamWriter(filePathOutput, append: false);
 
@@ -251,7 +251,7 @@ public partial class Converter : Form
 
         file.Close();
     }
-    private static void WriteLATEXToFile(List<Card> cards, string filePathOutput)
+    public static void WriteLATEXToFile(List<Card> cards, string filePathOutput)
     {
         List<Card> latexList = new(cards);
         RemoveUsPrefix(latexList);
@@ -306,7 +306,7 @@ public partial class Converter : Form
         }
         file.Close();
     }
-    private static List<Card> PrepForConversion(List<Card> cards)
+    public static List<Card> PrepForConversion(List<Card> cards)
     {
         List<Card> prepList = new(cards);
         foreach (var card in prepList)
@@ -362,7 +362,7 @@ public partial class Converter : Form
         }
         return prepList;
     }
-    private static List<Card> ReverseOrder(List<Card> cards)
+    public static List<Card> ReverseOrder(List<Card> cards)
     {
         List<Card> reverseList = new(cards);
         return reverseList.OrderBy(x => x.ListName).ThenByDescending(x => x.ReorderPosition).ToList();
@@ -388,7 +388,7 @@ public partial class Converter : Form
             cardIndexer++;
         }
     }
-    private static string ScourString(string input)
+    public static string ScourString(string input)
     {
         input = input.Replace("*", "");
         input = input.Replace("_", "");
