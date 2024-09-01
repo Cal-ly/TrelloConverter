@@ -26,7 +26,7 @@ TrelloConverter is a .NET application designed to convert Trello board data into
 
 ### Clone the Repository
 
-git clone https://github.com/yourusername/TrelloConverter.git cd TrelloConverter
+git clone https://github.com/Cal-ly/TrelloConverter.git cd TrelloConverter
 
 
 ### Build the Solution
