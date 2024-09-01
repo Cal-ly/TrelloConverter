@@ -107,6 +107,11 @@ namespace TrelloConverter
                 trelloData = (TrelloData?)serializer.Deserialize(file, typeof(TrelloData));
             }
 
+            if (trelloData?.Cards == null)
+            {
+                return cards;
+            }
+
             int cardIndexer = 1;
             foreach (var card in trelloData.Cards)
             {
@@ -118,15 +123,15 @@ namespace TrelloConverter
                 newCard.Name = card.Name ?? string.Empty;
                 newCard.Desc = card.Desc ?? string.Empty;
                 newCard.Labels = new List<Models.Label>();
-                newCard.ListName = trelloData.Lists.FirstOrDefault(x => x.Id == card.IdList)?.Name ?? string.Empty;
-                foreach (var label in card.Labels)
+                newCard.ListName = trelloData.Lists?.FirstOrDefault(x => x.Id == card.IdList)?.Name ?? string.Empty;
+                foreach (var label in card.Labels ?? new List<Models.Label>())
                 {
                     Models.Label newLabel = new();
                     newLabel.Name = label.Name;
                     newLabel.Color = label.Color;
                     newCard.Labels.Add(newLabel);
                 }
-                foreach (var checklist in trelloData.Checklists)
+                foreach (var checklist in trelloData.Checklists ?? Enumerable.Empty<Checklist>())
                 {
                     if (checklist.IdCard == card.Id)
                     {
@@ -136,7 +141,7 @@ namespace TrelloConverter
                             Checklist newChecklist = new();
                             newChecklist.Name = checklist.Name;
                             newChecklist.CheckItems = new List<CheckItem>();
-                            foreach (var checkItem in checklist.CheckItems)
+                            foreach (var checkItem in checklist.CheckItems ?? Enumerable.Empty<CheckItem>())
                             {
                                 CheckItem newCheckItem = new();
                                 newCheckItem.Name = checkItem.Name;
@@ -150,11 +155,11 @@ namespace TrelloConverter
                             {
                                 if (cardChecklist.Name == checklist.Name)
                                 {
-                                    foreach (var checkItem in checklist.CheckItems)
+                                    foreach (var checkItem in checklist.CheckItems ?? Enumerable.Empty<CheckItem>())
                                     {
                                         CheckItem newCheckItem = new();
                                         newCheckItem.Name = checkItem.Name;
-                                        cardChecklist.CheckItems.Add(newCheckItem);
+                                        cardChecklist.CheckItems?.Add(newCheckItem);
                                     }
                                 }
                             }
@@ -164,7 +169,7 @@ namespace TrelloConverter
                             Checklist newChecklist = new();
                             newChecklist.Name = checklist.Name;
                             newChecklist.CheckItems = new List<CheckItem>();
-                            foreach (var checkItem in checklist.CheckItems)
+                            foreach (var checkItem in checklist.CheckItems ?? Enumerable.Empty<CheckItem>())
                             {
                                 CheckItem newCheckItem = new();
                                 newCheckItem.Name = checkItem.Name;
@@ -186,10 +191,10 @@ namespace TrelloConverter
             foreach (var newCard in cards)
             {
                 string labelJoin = string.Empty;
-                foreach (var label in newCard.Labels)
+                foreach (var label in newCard.Labels ?? Enumerable.Empty<Models.Label>())
                 {
                     labelJoin += $"{label.Name} ({label.Color})";
-                    if (newCard.Labels.Count > 1 && label != newCard.Labels.Last())
+                    if (newCard.Labels != null && newCard.Labels.Count > 1 && label != newCard.Labels.Last())
                     {
                         labelJoin += ",";
                     }
@@ -206,7 +211,7 @@ namespace TrelloConverter
                 {
                     foreach (var checklist in newCard.Checklists)
                     {
-                        foreach (var checkItem in checklist.CheckItems)
+                        foreach (var checkItem in checklist.CheckItems ?? Enumerable.Empty<CheckItem>())
                         {
                             file.WriteLine(",,,,\"{0}\",\"{1}\"", checklist.Name, checkItem.Name);
                         }
@@ -229,7 +234,7 @@ namespace TrelloConverter
                     {
                         int indexer = 1;
                         file.WriteLine($"**{checklist.Name}:**");
-                        foreach (var checkItem in checklist.CheckItems)
+                        foreach (var checkItem in checklist.CheckItems ?? Enumerable.Empty<CheckItem>())
                         {
                             file.WriteLine($"{indexer}. {checkItem.Name}");
                             indexer++;
@@ -237,7 +242,7 @@ namespace TrelloConverter
                         file.WriteLine("");
                     }
                 }
-                string labelDescriptions = string.Join(", ", card.Labels.Select(label => $"{label.Name} ({label.Color})"));
+                string labelDescriptions = string.Join(", ", card.Labels?.Select(label => $"{label.Name} ({label.Color})") ?? Enumerable.Empty<string>());
                 file.WriteLine($"**Estimate:** {labelDescriptions}");
                 file.WriteLine();
                 file.WriteLine($"**Sprint:** {card.ListName}\n");
@@ -276,7 +281,7 @@ namespace TrelloConverter
                     {
                         file.WriteLine($@"\subsubsection*{{\textbf{{{checklist.Name}}}}}");
                         file.WriteLine(@"\begin{enumerate}");
-                        foreach (var item in checklist.CheckItems)
+                        foreach (var item in checklist.CheckItems ?? Enumerable.Empty<CheckItem>())
                         {
                             file.WriteLine($@"  \item {item.Name}");
                         }
@@ -308,46 +313,52 @@ namespace TrelloConverter
             List<Card> prepList = new(cards);
             foreach (var card in prepList)
             {
-                card.Name = ScourString(card.Name);
-                card.Desc = ScourString(card.Desc);
+                card.Name = ScourString(card.Name ?? string.Empty);
+                card.Desc = ScourString(card.Desc ?? string.Empty);
                 if (card.Checklists != null)
                 {
                     foreach (Checklist checklist in card.Checklists)
                     {
-                        checklist.Name = ScourString(checklist.Name);
-                        foreach (CheckItem checkItem in checklist.CheckItems)
+                        checklist.Name = ScourString(checklist.Name ?? string.Empty);
+                        if (checklist.CheckItems != null)
                         {
-                            checkItem.Name = ScourString(checkItem.Name);
+                            foreach (CheckItem checkItem in checklist.CheckItems)
+                            {
+                                checkItem.Name = ScourString(checkItem.Name ?? string.Empty);
+                            }
                         }
                     }
                 }
-                foreach (var label in card.Labels)
+                if (card.Labels != null)
                 {
-                    switch (label.Name)
+                    foreach (var label in card.Labels)
                     {
-                        case "1":
-                            label.CorrectedColor = "green";
-                            label.Color = "green";
-                            break;
-                        case "2":
-                            label.CorrectedColor = "lime";
-                            label.Color = "lime";
-                            break;
-                        case "3":
-                            label.CorrectedColor = "yellow";
-                            label.Color = "yellow";
-                            break;
-                        case "5":
-                            label.CorrectedColor = "orange";
-                            label.Color = "orange";
-                            break;
-                        case "8":
-                            label.CorrectedColor = "red";
-                            label.Color = "red";
-                            break;
-                        default:
-                            label.CorrectedColor = "white";
-                            break;
+                        switch (label.Name)
+                        {
+                            case "1":
+                                label.CorrectedColor = "green";
+                                label.Color = "green";
+                                break;
+                            case "2":
+                                label.CorrectedColor = "lime";
+                                label.Color = "lime";
+                                break;
+                            case "3":
+                                label.CorrectedColor = "yellow";
+                                label.Color = "yellow";
+                                break;
+                            case "5":
+                                label.CorrectedColor = "orange";
+                                label.Color = "orange";
+                                break;
+                            case "8":
+                                label.CorrectedColor = "red";
+                                label.Color = "red";
+                                break;
+                            default:
+                                label.CorrectedColor = "white";
+                                break;
+                        }
                     }
                 }
             }
@@ -362,7 +373,10 @@ namespace TrelloConverter
         {
             foreach (var card in cards)
             {
-                card.Name = Regex.Replace(card.Name, patternUS, "");
+                if (!string.IsNullOrEmpty(card.Name))
+                {
+                    card.Name = Regex.Replace(card.Name, patternUS, "");
+                }
             }
         }
         public static void AddUsPrefix(List<Card> jsonList)
